@@ -21,7 +21,10 @@ if not os.path.exists(data_path):
         data_path = os.path.join("mimic-iv-ext-direct-1.0.0", "My_dataset", "combined_rag_data.json")
 
 with open(data_path, "r") as f:
-    kb_items = json.load(f)
+    data = json.load(f)
+
+# Filter to only include Knowledge Base items
+kb_items = [item for item in data if "medicalKB" in item]
 
 model = SentenceTransformer('all-MiniLM-L6-v2')
 

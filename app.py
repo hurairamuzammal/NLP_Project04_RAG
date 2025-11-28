@@ -6,7 +6,7 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 import numpy as np
 
 # Load KB
-with open("combined_rag_data.json","r") as f:
+with open("mimic-iv-ext-direct-1.0.0\My_dataset\combined_rag_data.json","r") as f:
     kb_items=json.load(f)
 
 model = SentenceTransformer('all-MiniLM-L6-v2')
@@ -37,7 +37,34 @@ def generate_answer(query):
 
 # Streamlit interface
 st.title("Medical RAG Assistant")
-user_input = st.text_area("Enter patient case:")
+
+# Initialize session state
+if "input_text" not in st.session_state:
+    st.session_state.input_text = ""
+
+st.subheader("Try an Example Case:")
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    if st.button("Example 1: NSTEMI"):
+        st.session_state.input_text = """Patient endorses right sided chest pain for the last 2 days which worsened today, at which point she started having nausea and vomiting. Chest pain both at rest and on exertion. 
+In the ED initial vitals were: 96.7 70 163/78 18 97% RA 
+EKG: ST depressions in V2-V4 
+Labs/studies notable for: Trop-T: 0.55, lactate 2.9, K 6.0"""
+
+with col2:
+    if st.button("Example 2: Pulmonary Embolism"):
+        st.session_state.input_text = """Sudden onset of dyspnea and sharp chest pain worsened by deep breaths. Patient has a history of DVT and recent surgery.
+Vitals: Tachycardia (110 bpm), Tachypnea (24/min), O2 Sat 92% on RA.
+Signs: Swelling and redness in right calf."""
+
+with col3:
+    if st.button("Example 3: Diabetes Type 2"):
+        st.session_state.input_text = """45-year-old male presents with increased thirst, frequent urination, and unexplained weight loss.
+Labs: Fasting Plasma Glucose 140 mg/dL. HbA1c 7.5%.
+Patient is obese and has a sedentary lifestyle."""
+
+user_input = st.text_area("Enter patient case:", value=st.session_state.input_text, height=200)
 
 if st.button("Diagnose"):
     if user_input.strip():

@@ -5,9 +5,23 @@ import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import numpy as np
 
+import os
+
 # Load KB
-with open("mimic-iv-ext-direct-1.0.0\My_dataset\combined_rag_data.json","r") as f:
-    kb_items=json.load(f)
+base_dir = os.path.dirname(os.path.abspath(__file__))
+data_path = os.path.join(base_dir, "mimic-iv-ext-direct-1.0.0", "My_dataset", "combined_rag_data.json")
+
+# Fallback for different folder structures (e.g. if running from root vs subfolder)
+if not os.path.exists(data_path):
+    # Try looking in the current directory if the file was moved
+    if os.path.exists("combined_rag_data.json"):
+        data_path = "combined_rag_data.json"
+    else:
+        # Try the original path the user might have intended if the folder structure is different
+        data_path = os.path.join("mimic-iv-ext-direct-1.0.0", "My_dataset", "combined_rag_data.json")
+
+with open(data_path, "r") as f:
+    kb_items = json.load(f)
 
 model = SentenceTransformer('all-MiniLM-L6-v2')
 

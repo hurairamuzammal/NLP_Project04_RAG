@@ -1,0 +1,9 @@
+transformers
+accelerate
+sentence-transformers
+faiss-cpu
+torch
+streamlit
+python-dotenv
+huggingface-hub
+numpy

@@ -86,30 +86,30 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
     if st.button("Example 1: NSTEMI", use_container_width=True):
-        st.session_state.input_text = """You are a medical assistant.
-Explain the symptoms of a 60-year-old male with sudden chest pain radiating to the back."""
+        st.session_state.input_text = """Explain the symptoms of a 60-year-old male with sudden chest pain radiating to the back.
+Vitals: BP 160/90 mmHg, HR 100 bpm, RR 20/min."""
     
     if st.button("Example 4: Acute Appendicitis", use_container_width=True):
-        st.session_state.input_text = """You are a medical assistant.
-A 25-year-old male complains of periumbilical pain migrating to the right lower quadrant, associated with nausea and low-grade fever."""
+        st.session_state.input_text = """A 25-year-old male complains of periumbilical pain migrating to the right lower quadrant, associated with nausea and low-grade fever.
+Vitals: Temp 38.5°C, HR 95 bpm. Labs: WBC 14,000/mm³."""
 
 with col2:
     if st.button("Example 2: Pulmonary Embolism", use_container_width=True):
-        st.session_state.input_text = """You are a medical assistant.
-A 55-year-old female presents with sudden onset shortness of breath and pleuritic chest pain. She recently returned from a long-haul flight."""
+        st.session_state.input_text = """A 55-year-old female presents with sudden onset shortness of breath and pleuritic chest pain. She recently returned from a long-haul flight.
+Vitals: O2 sat 88% on room air, HR 110 bpm, BP 110/70 mmHg."""
 
     if st.button("Example 5: Ischemic Stroke", use_container_width=True):
-        st.session_state.input_text = """You are a medical assistant.
-A 70-year-old female presents with sudden right-sided weakness, facial droop, and slurred speech. History of atrial fibrillation."""
+        st.session_state.input_text = """A 70-year-old female presents with sudden right-sided weakness, facial droop, and slurred speech. History of atrial fibrillation.
+Vitals: BP 180/100 mmHg, HR 88 bpm (irregular). Symptoms started 2 hours ago."""
 
 with col3:
     if st.button("Example 3: Diabetes Type 2", use_container_width=True):
-        st.session_state.input_text = """You are a medical assistant.
-A 45-year-old male presents with increased thirst, frequent urination, and unexplained weight loss. Labs show Fasting Plasma Glucose 140 mg/dL and HbA1c 7.5%."""
+        st.session_state.input_text = """A 45-year-old male presents with increased thirst, frequent urination, and unexplained weight loss.
+Labs: Fasting Plasma Glucose 140 mg/dL, HbA1c 7.5%. BMI 32."""
 
     if st.button("Example 6: COPD Exacerbation", use_container_width=True):
-        st.session_state.input_text = """You are a medical assistant.
-A 65-year-old male with a history of smoking presents with worsening dyspnea, increased sputum production, and wheezing."""
+        st.session_state.input_text = """A 65-year-old male with a history of smoking presents with worsening dyspnea, increased sputum production, and wheezing.
+Vitals: RR 24/min, O2 sat 90% on room air. Lung exam: Diffuse wheezing."""
 
 user_input = st.text_area("Enter patient case:", value=st.session_state.input_text, height=200)
 

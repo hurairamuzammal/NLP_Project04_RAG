@@ -61,7 +61,7 @@ def generate_answer(query, api_key):
         return f"Error generating response: {str(e)}"
 
 # Streamlit interface
-st.title("Medical RAG Assistant")
+st.title("Medical Assistance using RAG")
 
 # Load .env file
 load_dotenv()

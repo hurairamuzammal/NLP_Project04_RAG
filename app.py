@@ -51,7 +51,12 @@ def generate_answer(query, api_key):
     retrieved = retrieve(query)
     context_str = "\n".join([f"- [{item['id']}] {item['medicalKB']} (Relevance: {score:.2f})"
                              for item, score in retrieved])
-    prompt = f"You are a medical expert.\n{context_str}\nPatient case:\n{query}\nGive reasoning and answer."
+    
+    # Hidden instructions added to the prompt
+    system_instruction = """First explain what the disease could be then give all the reasons.
+Use headings or bullet points where needed."""
+    
+    prompt = f"You are a medical expert.\n{context_str}\nPatient case:\n{query}\n\n{system_instruction}"
     
     try:
         model = genai.GenerativeModel('gemini-2.0-flash')
@@ -75,38 +80,36 @@ if "input_text" not in st.session_state:
     st.session_state.input_text = ""
 
 st.subheader("Try an Example Case:")
+
+# Create a clean grid for examples
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    if st.button("Example 1: NSTEMI"):
+    if st.button("Example 1: NSTEMI", use_container_width=True):
         st.session_state.input_text = """You are a medical assistant.
-Explain the symptoms of a 60-year-old male with sudden chest pain radiating to the back.
-First explain what the disease could be then give all the reasons.
-Use headings or bullet points where needed."""
-
+Explain the symptoms of a 60-year-old male with sudden chest pain radiating to the back."""
+    
+    if st.button("Example 4: Acute Appendicitis", use_container_width=True):
+        st.session_state.input_text = """You are a medical assistant.
+A 25-year-old male complains of periumbilical pain migrating to the right lower quadrant, associated with nausea and low-grade fever."""
 
 with col2:
-    if st.button("Example 2: Pulmonary Embolism"):
+    if st.button("Example 2: Pulmonary Embolism", use_container_width=True):
         st.session_state.input_text = """You are a medical assistant.
-A 55-year-old female presents with sudden onset shortness of breath and pleuritic chest pain. She recently returned from a long-haul flight.
-First explain what the disease could be then give all the reasons.
-Use headings or bullet points where needed."""
+A 55-year-old female presents with sudden onset shortness of breath and pleuritic chest pain. She recently returned from a long-haul flight."""
+
+    if st.button("Example 5: Ischemic Stroke", use_container_width=True):
+        st.session_state.input_text = """You are a medical assistant.
+A 70-year-old female presents with sudden right-sided weakness, facial droop, and slurred speech. History of atrial fibrillation."""
 
 with col3:
-    if st.button("Example 3: Diabetes Type 2"):
+    if st.button("Example 3: Diabetes Type 2", use_container_width=True):
         st.session_state.input_text = """You are a medical assistant.
-A 45-year-old male presents with increased thirst, frequent urination, and unexplained weight loss. Labs show Fasting Plasma Glucose 140 mg/dL and HbA1c 7.5%.
-First explain what the disease could be then give all the reasons.
-Use headings or bullet points where needed."""
+A 45-year-old male presents with increased thirst, frequent urination, and unexplained weight loss. Labs show Fasting Plasma Glucose 140 mg/dL and HbA1c 7.5%."""
 
-col4, col5, col6 = st.columns(3)
-
-with col4:
-    if st.button("Example 4: Acute Appendicitis"):
+    if st.button("Example 6: COPD Exacerbation", use_container_width=True):
         st.session_state.input_text = """You are a medical assistant.
-A 25-year-old male complains of periumbilical pain migrating to the right lower quadrant, associated with nausea and low-grade fever.
-First explain what the disease could be then give all the reasons.
-Use headings or bullet points where needed."""
+A 65-year-old male with a history of smoking presents with worsening dyspnea, increased sputum production, and wheezing."""
 
 user_input = st.text_area("Enter patient case:", value=st.session_state.input_text, height=200)
 

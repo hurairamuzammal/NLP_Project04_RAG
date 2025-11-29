@@ -7,4 +7,5 @@ streamlit
 python-dotenv
 huggingface-hub
 numpy
+python-dotenv
 google-generativeai

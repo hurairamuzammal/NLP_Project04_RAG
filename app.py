@@ -1,6 +1,6 @@
 import streamlit as st
 import json
-from constants import GEMINI_API_KEY
+from dotenv import load_dotenv
 from sentence_transformers import SentenceTransformer, util
 import torch
 import google.generativeai as genai
@@ -63,8 +63,12 @@ def generate_answer(query, api_key):
 # Streamlit interface
 st.title("Medical RAG Assistant")
 
-# API Key Input
-api_key = GEMINI_API_KEY
+# Load .env file
+load_dotenv()
+
+# Get API key
+api_key = os.getenv("GEMINI_API_KEY")
+
 
 # Initialize session state
 if "input_text" not in st.session_state:

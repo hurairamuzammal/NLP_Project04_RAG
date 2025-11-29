@@ -45,7 +45,7 @@ def retrieve(query, k=4):
 
 def generate_answer(query, api_key):
     if not api_key:
-        return "Please enter your Google Gemini API Key in the sidebar.", [], {}
+        return "Please enter your Google Gemini API Key in the sidebar.", []
     
     genai.configure(api_key=api_key)
     retrieved = retrieve(query)
@@ -61,18 +61,9 @@ Use headings or bullet points where needed."""
     try:
         gemini_model = genai.GenerativeModel('gemini-2.0-flash')
         response = gemini_model.generate_content(prompt)
-        
-        # Calculate evaluation metrics
-        answer_emb = model.encode(response.text, convert_to_tensor=True)
-        query_emb = model.encode(query, convert_to_tensor=True)
-        context_emb = model.encode(context_str, convert_to_tensor=True)
-        
-        answer_relevance = util.cos_sim(answer_emb, query_emb).item()
-        context_faithfulness = util.cos_sim(answer_emb, context_emb).item()
-        
-        return response.text, retrieved, {"relevance": answer_relevance, "faithfulness": context_faithfulness}
+        return response.text, retrieved
     except Exception as e:
-        return f"Error generating response: {str(e)}", [], {}
+        return f"Error generating response: {str(e)}", []
 
 # Streamlit interface
 st.title("Medical Assistance using RAG")
@@ -124,7 +115,8 @@ user_input = st.text_area("Enter patient case:", value=st.session_state.input_te
 
 if st.button("Diagnose"):
     if user_input.strip():
-        answer, retrieved_items, metrics = generate_answer(user_input, api_key)
+        with st.spinner("Analyzing patient case..."):
+            answer, retrieved_items = generate_answer(user_input, api_key)
         
         if retrieved_items:
             st.subheader("Retrieved Context (RAG)")
@@ -134,12 +126,3 @@ if st.button("Diagnose"):
         
         st.subheader("Answer")
         st.write(answer)
-        
-        if metrics:
-            st.divider()
-            st.subheader("Model Evaluation Metrics")
-            m_col1, m_col2 = st.columns(2)
-            with m_col1:
-                st.metric("Answer Relevance (to Query)", f"{metrics['relevance']:.4f}")
-            with m_col2:
-                st.metric("Context Faithfulness (to RAG)", f"{metrics['faithfulness']:.4f}")

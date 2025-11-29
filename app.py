@@ -79,14 +79,14 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
     if st.button("Example 1: NSTEMI"):
-        st.session_state.input_text = """Patient endorses right sided chest pain for the last 2 days which worsened today, at which point she started having nausea and vomiting. Chest pain both at rest and on exertion. 
+        st.session_state.input_text = """Patient is suffering right sided chest pain for the last 2 days which worsened today, at which point she started having nausea and vomiting. Chest pain both at rest and on exertion. 
 In the ED initial vitals were: 96.7 70 163/78 18 97% RA 
 EKG: ST depressions in V2-V4 
 Labs/studies notable for: Trop-T: 0.55, lactate 2.9, K 6.0"""
 
 with col2:
     if st.button("Example 2: Pulmonary Embolism"):
-        st.session_state.input_text = """Sudden onset of dyspnea and sharp chest pain worsened by deep breaths. Patient has a history of DVT and recent surgery.
+        st.session_state.input_text = """Patient is suffering from Sudden onset of dyspnea and sharp chest pain worsened by deep breaths. Patient has a history of DVT and recent surgery.
 Vitals: Tachycardia (110 bpm), Tachypnea (24/min), O2 Sat 92% on RA.
 Signs: Swelling and redness in right calf."""
 

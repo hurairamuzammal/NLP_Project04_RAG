@@ -1,8 +1,9 @@
 import streamlit as st
 import json
+from constants import GEMINI_API_KEY
 from sentence_transformers import SentenceTransformer, util
 import torch
-from transformers import AutoTokenizer, AutoModelForCausalLM
+import google.generativeai as genai
 import numpy as np
 
 import os
@@ -32,9 +33,8 @@ model = SentenceTransformer('all-MiniLM-L6-v2')
 kb_embeddings = model.encode([f"{item['id']} : {item['medicalKB']}" for item in kb_items], convert_to_tensor=True)
 
 # Load LLM
-tokenizer = AutoTokenizer.from_pretrained("deepseek-ai/DeepSeek-R1-Distill-Qwen-7B", use_fast=False)
-llm = AutoModelForCausalLM.from_pretrained("deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
-                                           torch_dtype=torch.float16, device_map="auto")
+# LLM is now Gemini API, configured dynamically
+
 
 def retrieve(query, k=4):
     q_emb = model.encode(query, convert_to_tensor=True)
@@ -43,17 +43,28 @@ def retrieve(query, k=4):
     top_idx = top_idx[np.argsort(-scores[top_idx])]
     return [(kb_items[i], float(scores[i])) for i in top_idx]
 
-def generate_answer(query):
+def generate_answer(query, api_key):
+    if not api_key:
+        return "Please enter your Google Gemini API Key in the sidebar."
+    
+    genai.configure(api_key=api_key)
     retrieved = retrieve(query)
     context_str = "\n".join([f"- [{item['id']}] {item['medicalKB']} (Relevance: {score:.2f})"
                              for item, score in retrieved])
     prompt = f"You are a medical expert.\n{context_str}\nPatient case:\n{query}\nGive reasoning and answer."
-    inputs = tokenizer(prompt, return_tensors="pt").to(llm.device)
-    output = llm.generate(**inputs, max_new_tokens=256)
-    return tokenizer.decode(output[0], skip_special_tokens=True)
+    
+    try:
+        model = genai.GenerativeModel('gemini-2.0-flash')
+        response = model.generate_content(prompt)
+        return response.text
+    except Exception as e:
+        return f"Error generating response: {str(e)}"
 
 # Streamlit interface
 st.title("Medical RAG Assistant")
+
+# API Key Input
+api_key = GEMINI_API_KEY
 
 # Initialize session state
 if "input_text" not in st.session_state:
@@ -85,6 +96,6 @@ user_input = st.text_area("Enter patient case:", value=st.session_state.input_te
 
 if st.button("Diagnose"):
     if user_input.strip():
-        answer = generate_answer(user_input)
+        answer = generate_answer(user_input, api_key)
         st.subheader("Answer")
         st.write(answer)

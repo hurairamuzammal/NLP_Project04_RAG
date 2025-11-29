@@ -45,7 +45,7 @@ def retrieve(query, k=4):
 
 def generate_answer(query, api_key):
     if not api_key:
-        return "Please enter your Google Gemini API Key in the sidebar."
+        return "Please enter your Google Gemini API Key in the sidebar.", [], {}
     
     genai.configure(api_key=api_key)
     retrieved = retrieve(query)
@@ -59,11 +59,20 @@ Use headings or bullet points where needed."""
     prompt = f"You are a medical expert.\n{context_str}\nPatient case:\n{query}\n\n{system_instruction}"
     
     try:
-        model = genai.GenerativeModel('gemini-2.0-flash')
-        response = model.generate_content(prompt)
-        return response.text
+        gemini_model = genai.GenerativeModel('gemini-2.0-flash')
+        response = gemini_model.generate_content(prompt)
+        
+        # Calculate evaluation metrics
+        answer_emb = model.encode(response.text, convert_to_tensor=True)
+        query_emb = model.encode(query, convert_to_tensor=True)
+        context_emb = model.encode(context_str, convert_to_tensor=True)
+        
+        answer_relevance = util.cos_sim(answer_emb, query_emb).item()
+        context_faithfulness = util.cos_sim(answer_emb, context_emb).item()
+        
+        return response.text, retrieved, {"relevance": answer_relevance, "faithfulness": context_faithfulness}
     except Exception as e:
-        return f"Error generating response: {str(e)}"
+        return f"Error generating response: {str(e)}", [], {}
 
 # Streamlit interface
 st.title("Medical Assistance using RAG")
@@ -86,7 +95,7 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
     if st.button("Example 1: NSTEMI", use_container_width=True):
-        st.session_state.input_text = """Explain the symptoms of a 60-year-old male with sudden chest pain radiating to the back.
+        st.session_state.input_text = """A 60-year-old male is suffering from sudden chest pain radiating to the back.
 Vitals: BP 160/90 mmHg, HR 100 bpm, RR 20/min."""
     
     if st.button("Example 4: Acute Appendicitis", use_container_width=True):
@@ -115,6 +124,22 @@ user_input = st.text_area("Enter patient case:", value=st.session_state.input_te
 
 if st.button("Diagnose"):
     if user_input.strip():
-        answer = generate_answer(user_input, api_key)
+        answer, retrieved_items, metrics = generate_answer(user_input, api_key)
+        
+        if retrieved_items:
+            st.subheader("Retrieved Context (RAG)")
+            for item, score in retrieved_items:
+                with st.expander(f"Relevance: {score:.4f} - {item['id']}"):
+                    st.write(item['medicalKB'])
+        
         st.subheader("Answer")
         st.write(answer)
+        
+        if metrics:
+            st.divider()
+            st.subheader("Model Evaluation Metrics")
+            m_col1, m_col2 = st.columns(2)
+            with m_col1:
+                st.metric("Answer Relevance (to Query)", f"{metrics['relevance']:.4f}")
+            with m_col2:
+                st.metric("Context Faithfulness (to RAG)", f"{metrics['faithfulness']:.4f}")

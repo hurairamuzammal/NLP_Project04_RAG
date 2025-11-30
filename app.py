@@ -46,6 +46,7 @@ st.markdown("""
         /* Button styling */
         .stButton > button {
             width: 100%;
+            height: 40px;
             border-radius: 8px;
             font-weight: 500;
             transition: all 0.3s ease;
@@ -157,9 +158,18 @@ def generate_answer(query, api_key):
     
     avg_relevance_score = sum(score for _, score in retrieved) / len(retrieved) if retrieved else 0.0
 
-    system_instruction = """Start your response with a clear DIAGNOSIS TITLE (e.g., "DIAGNOSIS: Acute Ischemic Stroke").
-Then explain the reasoning with evidence from the patient case.
-Use clear headings and bullet points.
+    system_instruction = """Structure your response as follows:
+
+1. EXTRACTED KNOWLEDGE BASE INFORMATION:
+   - Summarize the key relevant medical information from the provided context
+
+2. DIAGNOSIS: [State the diagnosis clearly, e.g., "Acute Ischemic Stroke"]
+
+3. REASONING:
+   - Use the extracted KB information to support your diagnosis
+   - Reference specific symptoms and vitals from the patient case
+   - Use bullet points for clarity
+
 IMPORTANT: Do NOT include any patient names or sensitive personal information in your response. Focus only on medical analysis."""
 
     prompt = f"You are a medical expert.\n{context_str}\nPatient case:\n{query}\n\n{system_instruction}"

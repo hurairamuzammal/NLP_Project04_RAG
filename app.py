@@ -148,7 +148,7 @@ def retrieve(query, k=2):
 # ---------------------------
 def generate_answer(query, api_key):
     if not api_key:
-        return "Please enter your Google Gemini API Key in the sidebar.", [], 0.0
+        return "Please enter your Google Gemini API Key in the sidebar.", [], 0.0, 0.0
     
     genai.configure(api_key=api_key)
     retrieved = retrieve(query, k=2)
@@ -156,7 +156,10 @@ def generate_answer(query, api_key):
     context_str = "\n".join([f"- [{item['id']}] {item['medicalKB']} (Relevance: {score:.2f})"
                              for item, score in retrieved])
     
+    # Calculate average relevance score (convert from cosine similarity)
     avg_relevance_score = sum(score for _, score in retrieved) / len(retrieved) if retrieved else 0.0
+    # Ensure score is between 0 and 1
+    avg_relevance_score = min(max(avg_relevance_score, 0.0), 1.0)
 
     system_instruction = """Structure your response as follows:
 
@@ -177,9 +180,14 @@ IMPORTANT: Do NOT include any patient names or sensitive personal information in
     try:
         gemini_model = genai.GenerativeModel('gemini-2.0-flash')
         response = gemini_model.generate_content(prompt)
-        return response.text, retrieved, avg_relevance_score
+        
+        # Calculate diagnostic confidence (based on retrieval quality and response length)
+        response_quality = min(len(response.text) / 500, 1.0)  # Normalize by expected length
+        diagnostic_confidence = (avg_relevance_score * 0.7 + response_quality * 0.3)
+        
+        return response.text, retrieved, avg_relevance_score, diagnostic_confidence
     except Exception as e:
-        return f"Error generating response: {str(e)}", [], 0.0
+        return f"Error generating response: {str(e)}", [], 0.0, 0.0
 
 # ---------------------------
 # Streamlit UI
@@ -225,29 +233,82 @@ st.markdown("")  # Add spacing
 if st.button("Diagnose", use_container_width=True, type="primary"):
     if user_input.strip():
         with st.spinner("Analyzing patient case..."):
-            answer, retrieved_items, relevance_score = generate_answer(user_input, api_key)
+            answer, retrieved_items, retrieval_score, confidence_score = generate_answer(user_input, api_key)
+        
+        st.markdown("---")
+        st.markdown("## Diagnostic Analysis Results")
+        
+        # Section 1: Knowledge Base Extraction
+        st.markdown("### 1. Knowledge Base Extraction")
+        st.caption("Retrieved medical knowledge entries from FAISS vector database")
+        
+        if retrieved_items:
+            for idx, (item, score) in enumerate(retrieved_items, 1):
+                # Determine entry type
+                entry_type = "Medical Knowledge Base" if "medicalKB" in item else "Patient Case"
+                
+                # Color code by score
+                if score > 0.7:
+                    score_badge = ":green[HIGH RELEVANCE]"
+                elif score > 0.5:
+                    score_badge = ":orange[MEDIUM RELEVANCE]"
+                else:
+                    score_badge = ":red[LOW RELEVANCE]"
+                
+                st.markdown(f"**Entry {idx}: {item['id']}**")
+                col_type, col_score = st.columns([2, 1])
+                with col_type:
+                    st.text(f"Type: {entry_type}")
+                with col_score:
+                    st.metric("Similarity Score", f"{score:.4f}", help="FAISS cosine similarity (0-1 scale)")
+                
+                with st.expander(f"View {entry_type} Content", expanded=(idx==1)):
+                    st.markdown(score_badge)
+                    st.write(item['medicalKB'])
+                
+                st.markdown("")  # Spacing
         
         st.markdown("---")
         
-        # Create two columns for better layout
-        col_rag, col_score = st.columns([3, 1])
-        
-        with col_rag:
-            if retrieved_items:
-                st.subheader("Retrieved Knowledge Base Entries")
-                st.caption(f"Showing top {len(retrieved_items)} most relevant medical knowledge entries based on FAISS similarity search")
-                for idx, (item, score) in enumerate(retrieved_items, 1):
-                    score_color = "🟢" if score > 0.7 else "🟡" if score > 0.5 else "🔴"
-                    with st.expander(f"{score_color} Entry {idx}: {item['id']} (Relevance Score: {score:.4f})", expanded=(idx==1)):
-                        st.markdown(f"**Similarity Score:** `{score:.4f}` (FAISS cosine similarity)")
-                        st.markdown("**Medical Knowledge:**")
-                        st.write(item['medicalKB'])
-        
-        with col_score:
-            st.metric(label="Overall Relevance Score", value=f"{relevance_score:.2%}")
-        
-        st.markdown("---")
-        st.subheader("Diagnostic Analysis")
+        # Section 2: Gemini Diagnosis & Reasoning
+        st.markdown("### 2. AI Diagnostic Analysis (Gemini 2.0 Flash)")
         st.write(answer)
+        
+        st.markdown("---")
+        
+        # Section 3: Scoring Summary
+        st.markdown("### 3. Diagnostic Confidence Metrics")
+        
+        col1, col2, col3 = st.columns(3)
+        
+        with col1:
+            st.metric(
+                label="Retrieval Quality",
+                value=f"{retrieval_score:.1%}",
+                help="Average FAISS similarity score of retrieved knowledge base entries"
+            )
+        
+        with col2:
+            st.metric(
+                label="Diagnostic Confidence",
+                value=f"{confidence_score:.1%}",
+                help="Overall confidence combining retrieval quality and response completeness"
+            )
+        
+        with col3:
+            # Calculate reliability indicator
+            if confidence_score > 0.75:
+                reliability = "High"
+                rel_color = "green"
+            elif confidence_score > 0.50:
+                reliability = "Moderate"
+                rel_color = "orange"
+            else:
+                reliability = "Low"
+                rel_color = "red"
+            
+            st.markdown(f"**Reliability**")
+            st.markdown(f":{rel_color}[{reliability}]")
+            st.caption(f"Based on {len(retrieved_items)} KB entries")
     else:
         st.warning("Please enter a patient case to diagnose.")

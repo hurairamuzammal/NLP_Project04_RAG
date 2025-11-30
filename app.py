@@ -121,26 +121,95 @@ kb_items = [item for item in data if "medicalKB" in item]
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
 # ---------------------------
-# Load FAISS index
+# Debug Information (will display in UI)
 # ---------------------------
-faiss_index = faiss.read_index(FAISS_PATH)
+DEBUG_INFO = {
+    "json_exists": os.path.exists(DATA_PATH),
+    "json_path": DATA_PATH,
+    "faiss_exists": os.path.exists(FAISS_PATH),
+    "faiss_path": FAISS_PATH,
+    "num_kb_items": len(kb_items),
+    "embedding_dim": model.get_sentence_embedding_dimension()
+}
+
+# ---------------------------
+# Load or Build FAISS index
+# ---------------------------
+if os.path.exists(FAISS_PATH):
+    try:
+        faiss_index = faiss.read_index(FAISS_PATH)
+        DEBUG_INFO["faiss_loaded"] = True
+        DEBUG_INFO["faiss_dim"] = faiss_index.d
+        DEBUG_INFO["faiss_total"] = faiss_index.ntotal
+        
+        # Verify dimension matches
+        if faiss_index.d != model.get_sentence_embedding_dimension():
+            raise ValueError(f"FAISS dimension mismatch: {faiss_index.d} vs {model.get_sentence_embedding_dimension()}")
+    except Exception as e:
+        DEBUG_INFO["faiss_load_error"] = str(e)
+        faiss_index = None
+else:
+    DEBUG_INFO["faiss_loaded"] = False
+    faiss_index = None
+
+# Rebuild FAISS index if needed
+if faiss_index is None and len(kb_items) > 0:
+    st.warning("FAISS index not found or invalid. Rebuilding...")
+    # Generate embeddings for all KB items
+    kb_texts = [item['medicalKB'] for item in kb_items]
+    kb_embeddings = model.encode(kb_texts, convert_to_tensor=True, show_progress_bar=True)
+    kb_embeddings_np = kb_embeddings.cpu().detach().numpy().astype("float32")
+    
+    # Normalize embeddings for cosine similarity
+    faiss.normalize_L2(kb_embeddings_np)
+    
+    # Build FAISS index
+    dimension = kb_embeddings_np.shape[1]
+    faiss_index = faiss.IndexFlatIP(dimension)  # Inner product = cosine similarity when normalized
+    faiss_index.add(kb_embeddings_np)
+    
+    # Save the index
+    os.makedirs(os.path.dirname(FAISS_PATH), exist_ok=True)
+    faiss.write_index(faiss_index, FAISS_PATH)
+    
+    DEBUG_INFO["faiss_rebuilt"] = True
+    DEBUG_INFO["faiss_dim"] = dimension
+    DEBUG_INFO["faiss_total"] = faiss_index.ntotal
 
 # ---------------------------
 # FAISS retrieval
 # ---------------------------
-def retrieve(query, k=2):
+def retrieve(query, k=2, debug=False):
+    if faiss_index is None:
+        return []
+    
+    # Encode query
     q_emb = model.encode([query], convert_to_tensor=True)
     q_emb_np = q_emb.cpu().detach().numpy().astype("float32")
+    
+    # IMPORTANT: Normalize query to match normalized index
     faiss.normalize_L2(q_emb_np)
 
     # If FAISS index has fewer vectors than k, adjust k
     actual_k = min(k, faiss_index.ntotal)
     scores, idx = faiss_index.search(q_emb_np, actual_k)
     
+    if debug:
+        st.write("**Debug - FAISS Retrieval:**")
+        st.write(f"Query embedding shape: {q_emb_np.shape}")
+        st.write(f"FAISS indices: {idx}")
+        st.write(f"FAISS scores: {scores}")
+        st.write(f"Number of KB items: {len(kb_items)}")
+    
     top_results = []
     for j, i in enumerate(idx[0]):
-        if i < len(kb_items):
-            top_results.append((kb_items[i], float(scores[0][j])))
+        # Skip invalid indices (FAISS returns -1 when no match)
+        if i >= 0 and i < len(kb_items):
+            score = float(scores[0][j])
+            # Ensure score is valid (not NaN or negative for normalized vectors)
+            if not np.isnan(score) and score >= 0:
+                top_results.append((kb_items[i], score))
+    
     return top_results
 
 # ---------------------------

@@ -13,7 +13,7 @@ import torch
 # ---------------------------
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 FAISS_PATH = os.path.join(BASE_DIR, "FAISS_File", "medical_kb_index.faiss")
-DATA_PATH = os.path.join(BASE_DIR, "My_dataset", "combined_rag_data.json")
+DATA_PATH = os.path.join(BASE_DIR, "mimic-iv-ext-direct-1.0.0\My_dataset", "combined_rag_data.json")
 
 # ---------------------------
 # Load KB

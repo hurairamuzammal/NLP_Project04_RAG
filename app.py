@@ -117,7 +117,7 @@ Vitals: RR 24/min, O2 sat 90% on room air. Lung exam: Diffuse wheezing."""
 user_input = st.text_area("Enter patient case:", value=st.session_state.input_text, height=200)
 
 # Privacy statement
-st.caption("🔒 Privacy Notice: Please avoid entering patient names or any sensitive personal information.")
+st.caption("❕Privacy Notice: Please avoid entering patient names or any sensitive personal information.")
 
 if st.button("Diagnose"):
     if user_input.strip():

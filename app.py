@@ -204,65 +204,15 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
     if st.button("Case 1: NSTEMI with CAD History", use_container_width=True):
-        st.session_state.input_text = """Chief Complaint: Chest pain at rest
-        
-History: Female patient with dull ache in back and chest starting yesterday at rest, different from previous sharp pain episodes. Pain lasted longer than usual, associated with ongoing SOB for several weeks. Multiple SL nitroglycerin at home did not relieve pain.
-
-Past Medical History: Coronary artery disease, Type 2 diabetes (uncontrolled), hypertension, hypothyroidism, asthma, sleep apnea, morbid obesity (BMI 40-44.9).
-
-Family History: Father with MI
-
-Vitals: BP 186/71 mmHg, HR 88 bpm, Temp 98°F, RR 18/min, O2 sat 98% RA
-
-Physical Exam: Distant heart sounds, RRR no murmur, CTAB, soft obese abdomen, 1+ pitting edema bilaterally
-
-Labs: Troponin 0.60, WBC 9.3, Hgb 13.7, Glucose 339, HCO3 24
-
-EKG: Sinus rhythm, rate 62, QTC 456, no new ischemic changes"""
+        st.session_state.input_text = """A female patient presented with dull aching pain in the back and chest that began yesterday while at rest. This pain is different from her usual sharp chest pain episodes and lasted significantly longer. The pain was not relieved by multiple sublingual nitroglycerin tablets taken at home. She reports ongoing shortness of breath for several weeks. She has a significant cardiac history including coronary artery disease, and multiple comorbidities: uncontrolled type 2 diabetes mellitus, hypertension, hypothyroidism, asthma, obstructive sleep apnea, and morbid obesity with BMI between 40-44.9. Her father had a myocardial infarction. On examination, vital signs showed blood pressure 186/71 mmHg, heart rate 88 beats per minute, temperature 98°F, respiratory rate 18 per minute, and oxygen saturation 98% on room air. Physical examination revealed distant heart sounds, regular rate and rhythm without murmurs, clear lungs bilaterally, soft obese abdomen, and 1+ bilateral pitting edema. Laboratory studies showed elevated troponin at 0.60, white blood cell count 9.3, hemoglobin 13.7, markedly elevated glucose at 339, and bicarbonate 24. Electrocardiogram demonstrated sinus rhythm at rate 62, QTc interval 456 milliseconds, with no new ischemic changes."""
 
 with col2:
     if st.button("Case 2: NSTEMI with 3-Vessel Disease", use_container_width=True):
-        st.session_state.input_text = """Chief Complaint: Urinary retention, then profound weakness and hypotension
-
-History: 66-year-old male developed profound weakness, hypotension, and diaphoresis after Foley placement. Intermittent weakness episodes and syncope over past month. Decreased exercise tolerance, becomes SOB with brief activity. No chest pain with this episode.
-
-Past Medical History: Chronic back pain, no medical care for past decade
-
-Family History: Noncontributory
-
-Vitals: BP 157/85 mmHg, HR 98 bpm, Temp 98.4°F, RR 16/min, O2 sat 98%
-
-Physical Exam: Comfortable, clear chest, regular heart rhythm, soft abdomen, no edema, warm and dry skin
-
-Labs: Troponin 0.34, WBC 10.8, Hgb 15.4, Glucose 127, HbA1c 5.5
-
-EKG: T wave inversions in inferolateral leads, <1mm ST elevations in I and aVL with Qs anteriorly and inferiorly
-
-Cardiac Cath: 3 vessel disease with fully occluded RCA and LAD/Cx with diffuse disease
-
-Echo: LVEF 15% with akinetic apex, severe regional LV dysfunction"""
+        st.session_state.input_text = """A 66-year-old male initially presented with urinary retention requiring Foley catheter placement, after which he developed profound weakness, hypotension, and diaphoresis. Over the past month, he has experienced intermittent weakness episodes and syncopal events. His exercise tolerance has significantly decreased, becoming short of breath with even brief periods of activity. Notably, he denied chest pain during this acute episode. He has chronic back pain and has not received medical care for the past decade. Vital signs at presentation were blood pressure 157/85 mmHg, heart rate 98 beats per minute, temperature 98.4°F, respiratory rate 16 per minute, and oxygen saturation 98%. Physical examination showed a comfortable-appearing patient with clear chest auscultation, regular cardiac rhythm, soft abdomen, no peripheral edema, and warm dry skin. Laboratory results revealed troponin elevation at 0.34, white blood cell count 10.8, hemoglobin 15.4, glucose 127, and hemoglobin A1c 5.5%. Electrocardiogram showed T wave inversions in the inferolateral leads with less than 1mm ST elevations in leads I and aVL, and Q waves anteriorly and inferiorly. Cardiac catheterization demonstrated severe three-vessel coronary artery disease with complete occlusion of the right coronary artery and diffuse disease in the left anterior descending and circumflex arteries. Echocardiography revealed severely reduced left ventricular ejection fraction of 15% with akinesis of the apex and severe regional left ventricular systolic dysfunction."""
 
 with col3:
     if st.button("Case 3: NSTEMI with DM/AFib", use_container_width=True):
-        st.session_state.input_text = """Chief Complaint: Epigastric pain
-
-History: Male with diabetes, atrial fibrillation, and hypertension presenting with one day of epigastric pressure at rest, non-radiating. Pain started while sitting, lasted until sleep. Similar pain occurred morning of admission after taking medications. Complete relief with ASA 325mg at home. No exertional pain, SOB, nausea, or diaphoresis. Also reports diarrhea x1 month.
-
-Past Medical History: Type II diabetes (on oral agents and insulin), atrial fibrillation, hypertension
-
-Family History: Father MI, mother DM
-
-Vitals: BP 140/82 mmHg, HR 74 bpm, Temp 98.4°F, RR 21/min, O2 sat 95% RA
-
-Physical Exam: NAD, clear oropharynx, regular heart rhythm, CTAB, soft non-tender abdomen, no edema
-
-Labs: Troponin 0.27 (later 1.77), WBC 9.5, Hgb 15.0, Glucose 286, INR 1.0
-
-EKG: ST elevation in III, T wave inversions in V4-V6, ST depressions in I and V6, consistent with acute ischemia
-
-Cardiac Cath: Diffuse CAD, heavily calcified RCA with severe ectasia and 60-70% stenoses
-
-Echo: LVEF 50% with apical hypokinesis and focal apical dyskinesis"""
+        st.session_state.input_text = """A male patient with known diabetes mellitus, atrial fibrillation, and hypertension presented with one day of epigastric pressure occurring at rest without radiation. The pain began while sitting and persisted until he fell asleep. Similar epigastric discomfort occurred the morning of admission after taking his daily medications. He experienced complete pain relief after taking aspirin 325mg at home. He denied exertional chest pain, shortness of breath, nausea, vomiting, or diaphoresis. Additionally, he reported having diarrhea for approximately one month. He is on both oral agents and insulin for diabetes management. His family history is significant for myocardial infarction in his father and diabetes in his mother. Vital signs on presentation were blood pressure 140/82 mmHg, heart rate 74 beats per minute, temperature 98.4°F, respiratory rate 21 per minute, and oxygen saturation 95% on room air. Physical examination revealed a patient in no acute distress with clear oropharynx, regular cardiac rhythm, clear lung fields bilaterally, soft non-tender abdomen, and no peripheral edema. Initial laboratory studies showed troponin 0.27 which subsequently rose to 1.77, white blood cell count 9.5, hemoglobin 15.0, elevated glucose at 286, and international normalized ratio 1.0. Electrocardiogram demonstrated ST segment elevation in lead III, T wave inversions in leads V4 through V6, and ST segment depressions in leads I and V6, findings consistent with acute myocardial ischemia. Cardiac catheterization revealed diffuse coronary artery disease with a heavily calcified right coronary artery showing severe ectasia and stenoses ranging from 60-70%. Echocardiography showed left ventricular ejection fraction of 50% with apical hypokinesis and focal apical dyskinesis."""
 
 st.markdown("")  # Add spacing
 st.markdown("### Enter Patient Case")
@@ -284,9 +234,13 @@ if st.button("Diagnose", use_container_width=True, type="primary"):
         
         with col_rag:
             if retrieved_items:
-                st.subheader("Retrieved Context (Top-2 from Knowledge Base)")
-                for item, score in retrieved_items:
-                    with st.expander(f"Relevance: {score:.4f} - {item['id']}"):
+                st.subheader("Retrieved Knowledge Base Entries")
+                st.caption(f"Showing top {len(retrieved_items)} most relevant medical knowledge entries based on FAISS similarity search")
+                for idx, (item, score) in enumerate(retrieved_items, 1):
+                    score_color = "🟢" if score > 0.7 else "🟡" if score > 0.5 else "🔴"
+                    with st.expander(f"{score_color} Entry {idx}: {item['id']} (Relevance Score: {score:.4f})", expanded=(idx==1)):
+                        st.markdown(f"**Similarity Score:** `{score:.4f}` (FAISS cosine similarity)")
+                        st.markdown("**Medical Knowledge:**")
                         st.write(item['medicalKB'])
         
         with col_score:

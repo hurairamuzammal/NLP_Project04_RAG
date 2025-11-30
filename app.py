@@ -157,8 +157,9 @@ def generate_answer(query, api_key):
     
     avg_relevance_score = sum(score for _, score in retrieved) / len(retrieved) if retrieved else 0.0
 
-    system_instruction = """First explain what the disease could be then give all the reasons.
-Use headings or bullet points where needed.
+    system_instruction = """Start your response with a clear DIAGNOSIS TITLE (e.g., "DIAGNOSIS: Acute Ischemic Stroke").
+Then explain the reasoning with evidence from the patient case.
+Use clear headings and bullet points.
 IMPORTANT: Do NOT include any patient names or sensitive personal information in your response. Focus only on medical analysis."""
 
     prompt = f"You are a medical expert.\n{context_str}\nPatient case:\n{query}\n\n{system_instruction}"
@@ -173,7 +174,7 @@ IMPORTANT: Do NOT include any patient names or sensitive personal information in
 # ---------------------------
 # Streamlit UI
 # ---------------------------
-st.title("🏥 Medical Assistance using RAG with FAISS")
+st.title("Medical Assistance using RAG with FAISS")
 st.markdown("#### AI-powered diagnostic assistant using Retrieval-Augmented Generation")
 st.markdown("---")
 
@@ -185,7 +186,7 @@ api_key = os.getenv("GEMINI_API_KEY")
 if "input_text" not in st.session_state:
     st.session_state.input_text = ""
 
-st.subheader("📋 Try an Example Case")
+st.subheader("Try an Example Case")
 st.markdown("")  # Add spacing
 
 # Example buttons in a 3-column layout
@@ -220,12 +221,12 @@ st.markdown("### Enter Patient Case")
 user_input = st.text_area("", value=st.session_state.input_text, height=200, placeholder="Describe the patient symptoms, vitals, and relevant medical history...")
 
 # Privacy statement
-st.caption("🔒 Privacy Notice: Please avoid entering patient names or any sensitive personal information.")
+st.caption("Privacy Notice: Please avoid entering patient names or any sensitive personal information.")
 
 st.markdown("")  # Add spacing
-if st.button("🔍 Diagnose", use_container_width=True, type="primary"):
+if st.button("Diagnose", use_container_width=True, type="primary"):
     if user_input.strip():
-        with st.spinner("🔄 Analyzing patient case..."):
+        with st.spinner("Analyzing patient case..."):
             answer, retrieved_items, relevance_score = generate_answer(user_input, api_key)
         
         st.markdown("---")
@@ -235,7 +236,7 @@ if st.button("🔍 Diagnose", use_container_width=True, type="primary"):
         
         with col_rag:
             if retrieved_items:
-                st.subheader("📚 Retrieved Context (Top-2 from Knowledge Base)")
+                st.subheader("Retrieved Context (Top-2 from Knowledge Base)")
                 for item, score in retrieved_items:
                     with st.expander(f"Relevance: {score:.4f} - {item['id']}"):
                         st.write(item['medicalKB'])
@@ -244,7 +245,7 @@ if st.button("🔍 Diagnose", use_container_width=True, type="primary"):
             st.metric(label="Overall Relevance Score", value=f"{relevance_score:.2%}")
         
         st.markdown("---")
-        st.subheader("💡 Diagnostic Analysis")
+        st.subheader("Diagnostic Analysis")
         st.write(answer)
     else:
-        st.warning("⚠️ Please enter a patient case to diagnose.")
+        st.warning("Please enter a patient case to diagnose.")

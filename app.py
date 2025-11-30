@@ -203,28 +203,66 @@ st.markdown("")  # Add spacing
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    if st.button("Example 1: NSTEMI", use_container_width=True):
-        st.session_state.input_text = """A 60-year-old male is suffering from sudden chest pain radiating to the back.
-Vitals: BP 160/90 mmHg, HR 100 bpm, RR 20/min."""
-    if st.button("Example 4: Acute Appendicitis", use_container_width=True):
-        st.session_state.input_text = """A 25-year-old male complains of periumbilical pain migrating to the right lower quadrant, associated with nausea and low-grade fever.
-Vitals: Temp 38.5°C, HR 95 bpm. Labs: WBC 14,000/mm³."""
+    if st.button("Case 1: NSTEMI with CAD History", use_container_width=True):
+        st.session_state.input_text = """Chief Complaint: Chest pain at rest
+        
+History: Female patient with dull ache in back and chest starting yesterday at rest, different from previous sharp pain episodes. Pain lasted longer than usual, associated with ongoing SOB for several weeks. Multiple SL nitroglycerin at home did not relieve pain.
+
+Past Medical History: Coronary artery disease, Type 2 diabetes (uncontrolled), hypertension, hypothyroidism, asthma, sleep apnea, morbid obesity (BMI 40-44.9).
+
+Family History: Father with MI
+
+Vitals: BP 186/71 mmHg, HR 88 bpm, Temp 98°F, RR 18/min, O2 sat 98% RA
+
+Physical Exam: Distant heart sounds, RRR no murmur, CTAB, soft obese abdomen, 1+ pitting edema bilaterally
+
+Labs: Troponin 0.60, WBC 9.3, Hgb 13.7, Glucose 339, HCO3 24
+
+EKG: Sinus rhythm, rate 62, QTC 456, no new ischemic changes"""
 
 with col2:
-    if st.button("Example 2: Pulmonary Embolism", use_container_width=True):
-        st.session_state.input_text = """A 55-year-old female presents with sudden onset shortness of breath and pleuritic chest pain. She recently returned from a long-haul flight.
-Vitals: O2 sat 88% on room air, HR 110 bpm, BP 110/70 mmHg."""
-    if st.button("Example 5: Ischemic Stroke", use_container_width=True):
-        st.session_state.input_text = """A 70-year-old female presents with sudden right-sided weakness, facial droop, and slurred speech. History of atrial fibrillation.
-Vitals: BP 180/100 mmHg, HR 88 bpm (irregular). Symptoms started 2 hours ago."""
+    if st.button("Case 2: NSTEMI with 3-Vessel Disease", use_container_width=True):
+        st.session_state.input_text = """Chief Complaint: Urinary retention, then profound weakness and hypotension
+
+History: 66-year-old male developed profound weakness, hypotension, and diaphoresis after Foley placement. Intermittent weakness episodes and syncope over past month. Decreased exercise tolerance, becomes SOB with brief activity. No chest pain with this episode.
+
+Past Medical History: Chronic back pain, no medical care for past decade
+
+Family History: Noncontributory
+
+Vitals: BP 157/85 mmHg, HR 98 bpm, Temp 98.4°F, RR 16/min, O2 sat 98%
+
+Physical Exam: Comfortable, clear chest, regular heart rhythm, soft abdomen, no edema, warm and dry skin
+
+Labs: Troponin 0.34, WBC 10.8, Hgb 15.4, Glucose 127, HbA1c 5.5
+
+EKG: T wave inversions in inferolateral leads, <1mm ST elevations in I and aVL with Qs anteriorly and inferiorly
+
+Cardiac Cath: 3 vessel disease with fully occluded RCA and LAD/Cx with diffuse disease
+
+Echo: LVEF 15% with akinetic apex, severe regional LV dysfunction"""
 
 with col3:
-    if st.button("Example 3: Diabetes Type 2", use_container_width=True):
-        st.session_state.input_text = """A 45-year-old male presents with increased thirst, frequent urination, and unexplained weight loss.
-Labs: Fasting Plasma Glucose 140 mg/dL, HbA1c 7.5%. BMI 32."""
-    if st.button("Example 6: COPD Exacerbation", use_container_width=True):
-        st.session_state.input_text = """A 65-year-old male with a history of smoking presents with worsening dyspnea, increased sputum production, and wheezing.
-Vitals: RR 24/min, O2 sat 90% on room air. Lung exam: Diffuse wheezing."""
+    if st.button("Case 3: NSTEMI with DM/AFib", use_container_width=True):
+        st.session_state.input_text = """Chief Complaint: Epigastric pain
+
+History: Male with diabetes, atrial fibrillation, and hypertension presenting with one day of epigastric pressure at rest, non-radiating. Pain started while sitting, lasted until sleep. Similar pain occurred morning of admission after taking medications. Complete relief with ASA 325mg at home. No exertional pain, SOB, nausea, or diaphoresis. Also reports diarrhea x1 month.
+
+Past Medical History: Type II diabetes (on oral agents and insulin), atrial fibrillation, hypertension
+
+Family History: Father MI, mother DM
+
+Vitals: BP 140/82 mmHg, HR 74 bpm, Temp 98.4°F, RR 21/min, O2 sat 95% RA
+
+Physical Exam: NAD, clear oropharynx, regular heart rhythm, CTAB, soft non-tender abdomen, no edema
+
+Labs: Troponin 0.27 (later 1.77), WBC 9.5, Hgb 15.0, Glucose 286, INR 1.0
+
+EKG: ST elevation in III, T wave inversions in V4-V6, ST depressions in I and V6, consistent with acute ischemia
+
+Cardiac Cath: Diffuse CAD, heavily calcified RCA with severe ectasia and 60-70% stenoses
+
+Echo: LVEF 50% with apical hypokinesis and focal apical dyskinesis"""
 
 st.markdown("")  # Add spacing
 st.markdown("### Enter Patient Case")

@@ -1,0 +1,21 @@
+# ADD THIS CODE TO app.py AFTER LINE 274 (after: st.session_state.input_text = "")
+
+# Debug Panel in Sidebar
+with st.sidebar:
+    st.header("System Diagnostics")
+    
+    with st.expander("Debug Information", expanded=True):
+        st.json(DEBUG_INFO)
+        
+        if DEBUG_INFO.get("num_kb_items", 0) == 0:
+            st.error("❌ No KB items loaded! Check JSON file path.")
+        elif not DEBUG_INFO.get("faiss_loaded", False) and not DEBUG_INFO.get("faiss_rebuilt", False):
+            st.error("❌ FAISS index failed to load!")
+        else:
+            st.success("✅ System initialized successfully")
+            
+        # Show retrieval test button
+        if st.button("Test Retrieval"):
+            test_query = "chest pain"
+            test_results = retrieve(test_query, k=2, debug=True)
+            st.write(f"Retrieved {len(test_results)} items for query: '{test_query}'")

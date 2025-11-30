@@ -131,8 +131,15 @@ def retrieve(query, k=2):
     q_emb = model.encode([query], convert_to_tensor=True)
     q_emb_np = q_emb.cpu().detach().numpy().astype("float32")
     faiss.normalize_L2(q_emb_np)
-    scores, idx = faiss_index.search(q_emb_np, k)
-    top_results = [(kb_items[i], float(scores[0][j])) for j, i in enumerate(idx[0])]
+
+    # If FAISS index has fewer vectors than k, adjust k
+    actual_k = min(k, faiss_index.ntotal)
+    scores, idx = faiss_index.search(q_emb_np, actual_k)
+    
+    top_results = []
+    for j, i in enumerate(idx[0]):
+        if i < len(kb_items):
+            top_results.append((kb_items[i], float(scores[0][j])))
     return top_results
 
 # ---------------------------

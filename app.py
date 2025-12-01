@@ -145,6 +145,11 @@ if os.path.exists(FAISS_PATH):
         # Verify dimension matches
         if faiss_index.d != model.get_sentence_embedding_dimension():
             raise ValueError(f"FAISS dimension mismatch: {faiss_index.d} vs {model.get_sentence_embedding_dimension()}")
+        
+        # CRITICAL: Verify vector count matches KB items count
+        if faiss_index.ntotal != len(kb_items):
+            raise ValueError(f"FAISS vector count mismatch: {faiss_index.ntotal} vs {len(kb_items)} KB items. Rebuilding required.")
+            
     except Exception as e:
         DEBUG_INFO["faiss_load_error"] = str(e)
         faiss_index = None
@@ -181,6 +186,8 @@ if faiss_index is None and len(kb_items) > 0:
 # ---------------------------
 def retrieve(query, k=2, debug=False):
     if faiss_index is None:
+        if debug:
+            st.error("FAISS index is None! Cannot retrieve.")
         return []
     
     # Encode query
@@ -196,19 +203,35 @@ def retrieve(query, k=2, debug=False):
     
     if debug:
         st.write("**Debug - FAISS Retrieval:**")
+        st.write(f"Query: '{query[:50]}...'")
         st.write(f"Query embedding shape: {q_emb_np.shape}")
+        st.write(f"FAISS index total vectors: {faiss_index.ntotal}")
         st.write(f"FAISS indices: {idx}")
         st.write(f"FAISS scores: {scores}")
         st.write(f"Number of KB items: {len(kb_items)}")
+        st.write(f"Requested k: {k}, Actual k: {actual_k}")
     
     top_results = []
     for j, i in enumerate(idx[0]):
         # Skip invalid indices (FAISS returns -1 when no match)
         if i >= 0 and i < len(kb_items):
             score = float(scores[0][j])
+            if debug:
+                st.write(f"Processing index {i}, score {score}")
             # Ensure score is valid (not NaN or negative for normalized vectors)
             if not np.isnan(score) and score >= 0:
                 top_results.append((kb_items[i], score))
+                if debug:
+                    st.success(f"Added item {i} with score {score:.4f}")
+            else:
+                if debug:
+                    st.warning(f"Skipped item {i} - invalid score: {score}")
+        else:
+            if debug:
+                st.warning(f"Skipped invalid index: {i}")
+    
+    if debug:
+        st.write(f"**Final: Retrieved {len(top_results)} items**")
     
     return top_results
 
@@ -281,11 +304,11 @@ with st.sidebar:
         st.json(DEBUG_INFO)
         
         if DEBUG_INFO.get("num_kb_items", 0) == 0:
-            st.error("❌ No KB items loaded! Check JSON file path.")
+            st.error("No KB items loaded! Check JSON file path.")
         elif not DEBUG_INFO.get("faiss_loaded", False) and not DEBUG_INFO.get("faiss_rebuilt", False):
-            st.error("❌ FAISS index failed to load!")
+            st.error("FAISS index failed to load!")
         else:
-            st.success("✅ System initialized successfully")
+            st.success("System initialized successfully")
             
         # Show retrieval test button
         if st.button("Test Retrieval"):
@@ -313,7 +336,7 @@ with col3:
 
 st.markdown("")  # Add spacing
 st.markdown("### Enter Patient Case")
-user_input = st.text_area("", value=st.session_state.input_text, height=200, placeholder="Describe the patient symptoms, vitals, and relevant medical history...")
+user_input = st.text_area("Patient Case Input", value=st.session_state.input_text, height=200, placeholder="Describe the patient symptoms, vitals, and relevant medical history...", label_visibility="collapsed")
 
 # Privacy statement
 st.caption("Privacy Notice: Please avoid entering patient names or any sensitive personal information.")

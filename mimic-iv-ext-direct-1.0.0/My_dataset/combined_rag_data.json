@@ -1,15 +1,15 @@
 [
   {
     "id": "KB_0001",
-    "medicalKB": "diagnostic/Suspected ACS/Strongly Suspected ACS/NSTE-ACS/UA: []"
+    "medicalKB": "diagnostic/Suspected ACS/Strongly Suspected ACS/NSTE-ACS/UA: hs-cTn levels are normal，Normal ECG"
   },
   {
     "id": "KB_0002",
-    "medicalKB": "diagnostic/Suspected ACS/Strongly Suspected ACS/NSTE-ACS/NSTEMI: []"
+    "medicalKB": "diagnostic/Suspected ACS/Strongly Suspected ACS/NSTE-ACS/NSTEMI: The peak hs-cTn exceeded the 99th percentile of the normal control value; Elevated levels of cardiac biomarkers, especially troponin T or I"
   },
   {
     "id": "KB_0003",
-    "medicalKB": "diagnostic/Suspected ACS/Strongly Suspected ACS/STEMI-ACS: []"
+    "medicalKB": "diagnostic/Suspected ACS/Strongly Suspected ACS/STEMI-ACS: ST-elevation; ECG Wide and deep Q waves;T-wave inversion hs-cTn increases at 3-4 hours and peaks at 11-12 hours;Elevated levels of cardiac biomarkers, especially troponin T or I"
   },
   {
     "id": "KB_0004",
@@ -41,15 +41,15 @@
   },
   {
     "id": "KB_0011",
-    "medicalKB": "diagnostic/Suspected Adrenal Insufficiency/Primary Adrenal Insufficiency: []"
+    "medicalKB": "diagnostic/Suspected Adrenal Insufficiency/Primary Adrenal Insufficiency: 1. Often there are high ACTH levels because the adrenal glands do not respond to ACTH \n 2. Both PAI and SAI may present with hyporesponsiveness, but in PAI cortisol does not increase even when ACTH is given because the adrenal glands are damaged \n 3. In PAI, imaging studies may show structural abnormalities in the adrenal glands.\n 4. May be associated with significant electrolyte imbalances such as hyponatremia and hyperkalemia \n 5. Aldosterone is usually not involved, so hyperkalemia is unlikely \n 6 have Addison's disease."
   },
   {
     "id": "KB_0012",
-    "medicalKB": "diagnostic/Suspected Adrenal Insufficiency/Secondary Adrenal Insufficiency: []"
+    "medicalKB": "diagnostic/Suspected Adrenal Insufficiency/Secondary Adrenal Insufficiency: 1. ACTH levels are low or normal because the problem originates from the pituitary gland or hypothalamus, which does not secrete ACTH adequately.\n 2. Cortisol increases when ACTH is given \n 3 For SAI, an MRI or CT scan may be needed to evaluate the structure of the pituitary gland and hypothalamus ."
   },
   {
     "id": "KB_0013",
-    "medicalKB": "diagnostic/Suspected Adrenal Insufficiency/Congenital Adrenal Hyperplasia: []"
+    "medicalKB": "diagnostic/Suspected Adrenal Insufficiency/Congenital Adrenal Hyperplasia: 1.Hormone measurements in blood and urine, specifically 17 hydroxyprogesterone (17-OHP), cortisol, androgens, and aldosterone. 2.Patients with CAH often present with abnormally elevated 17-OHP levels. 3.ACTH stimulation test: Measures changes in 17-OHP levels before and after ACTH (adrenocorticotropic hormone) injection to evaluate adrenocortical function.4. Genetic testing can confirm the diagnosis of CAH and identify the specific type of enzyme defect, the most common being 21-hydroxylase deficiency."
   },
   {
     "id": "KB_0014",
@@ -77,7 +77,7 @@
   },
   {
     "id": "KB_0020",
-    "medicalKB": "diagnostic/Suspected Alzheimer/Alzheimer: []"
+    "medicalKB": "diagnostic/Suspected Alzheimer/Alzheimer: 1. Clinical Assessment\n    Detailed medical history and neuropsychological tests: Evaluate the patient's cognitive functions, including memory, attention, language abilities, executive functions, and visuospatial skills.\n    Neuropsychological assessment tools: Such as the Mini-Mental State Examination (MMSE) and the Montreal Cognitive Assessment (MoCA).\n2. Imaging Studies\n    Magnetic Resonance Imaging (MRI): Used to check for structural changes in the brain, particularly atrophy in the hippocampus and other memory-related areas.\n    Positron Emission Tomography (PET):\n        FDG-PET: Assesses brain metabolic activity; patients with Alzheimer's disease typically show reduced glucose metabolism in the temporal-parietal lobes.\n        Amyloid PET: Detects amyloid-beta deposits in the brain, a significant biomarker of Alzheimer's disease.\n3. Cerebrospinal Fluid (CSF) Biomarkers\n    Amyloid-beta 42 (Aβ42): In patients with Alzheimer's, the level of Aβ42 in the CSF is typically reduced.\n    Total tau and phosphorylated tau proteins: Levels of these markers are usually elevated in the CSF of patients with Alzheimer's.\n4. Genetic Testing\n    APOE ε4 allele: This is one of the most significant genetic markers known to be associated with an increased risk of Alzheimer's disease."
   },
   {
     "id": "KB_0021",
@@ -93,11 +93,11 @@
   },
   {
     "id": "KB_0024",
-    "medicalKB": "diagnostic/Suspected Aortic Dissection/Type A Aortic Dissection: []"
+    "medicalKB": "diagnostic/Suspected Aortic Dissection/Type A Aortic Dissection: CT, MRI, TEE checking\nType A: Dissection affecting the ascending aorta and possibly extending into the descending aorta"
   },
   {
     "id": "KB_0025",
-    "medicalKB": "diagnostic/Suspected Aortic Dissection/Type B Aortic Dissection: []"
+    "medicalKB": "diagnostic/Suspected Aortic Dissection/Type B Aortic Dissection: CT, MRI, TEE checking\nType B: Dissection limited to descending aorta"
   },
   {
     "id": "KB_0026",
@@ -117,23 +117,23 @@
   },
   {
     "id": "KB_0030",
-    "medicalKB": "diagnostic/Suspected Asthma/Asthma/Severe Asthma: []"
+    "medicalKB": "diagnostic/Suspected Asthma/Asthma/Severe Asthma: doesn't respond well to conventional treatments needs stronger treatments;family history can also increase the probability;  acute attack regularly and severe; persistent flow limitation, even after giving enough bronchodilators; often accompanied with obesity or anxiety and depression"
   },
   {
     "id": "KB_0031",
-    "medicalKB": "diagnostic/Suspected Asthma/Asthma/Allergic Asthma: []"
+    "medicalKB": "diagnostic/Suspected Asthma/Asthma/Allergic Asthma: Triggered by allergens such as pollen, dust mites, or pet dander, etc."
   },
   {
     "id": "KB_0032",
-    "medicalKB": "diagnostic/Suspected Asthma/Asthma/Non-Allergic Asthma: []"
+    "medicalKB": "diagnostic/Suspected Asthma/Asthma/Non-Allergic Asthma: Triggered by factors not related to allergies, like stress, exercise, illnesses, or cold air, etc."
   },
   {
     "id": "KB_0033",
-    "medicalKB": "diagnostic/Suspected Asthma/Asthma/Cough-Variant Asthma: []"
+    "medicalKB": "diagnostic/Suspected Asthma/Asthma/Cough-Variant Asthma: long-lasting dry cough that is not accompanied by other typical asthma symptoms such as wheezing or difficulty breathing; diurnal variation of peak expiratory flow>20%; often accompanied by a marked irritating cough at night; bronchodilators are effective"
   },
   {
     "id": "KB_0034",
-    "medicalKB": "diagnostic/Suspected Asthma/Asthma/Asthma-COPD: []"
+    "medicalKB": "diagnostic/Suspected Asthma/Asthma/Asthma-COPD: Features of both asthma and chronic obstructive pulmonary disease (COPD), with symptoms and airflow limitation that aren't fully reversible;lasting airflow limitation; the elder has obvious symptoms"
   },
   {
     "id": "KB_0035",
@@ -173,11 +173,11 @@
   },
   {
     "id": "KB_0044",
-    "medicalKB": "diagnostic/Suspected Atrial Fibrillation/Paroxysmal Atrial Fibrillation: []"
+    "medicalKB": "diagnostic/Suspected Atrial Fibrillation/Paroxysmal Atrial Fibrillation: ECG: Episodes of AF that terminate spontaneously, usually within 7 days, most often within 24 hours. During an episode, the ECG shows absence of P waves, replaced by irregular atrial activity, and irregular R-R intervals"
   },
   {
     "id": "KB_0045",
-    "medicalKB": "diagnostic/Suspected Atrial Fibrillation/Persistent Atrial Fibrillation: []"
+    "medicalKB": "diagnostic/Suspected Atrial Fibrillation/Persistent Atrial Fibrillation: ECG: AF episodes that last more than 7 days. The ECG features are similar, showing no P waves, irregular atrial activity, and irregular R-R intervals."
   },
   {
     "id": "KB_0046",
@@ -197,19 +197,19 @@
   },
   {
     "id": "KB_0050",
-    "medicalKB": "diagnostic/Suspected Cardiomyopathy/Dilated Cardiomyopathy: []"
+    "medicalKB": "diagnostic/Suspected Cardiomyopathy/Dilated Cardiomyopathy: Echocardiogram: Demonstrates enlargement of the left ventricle or both ventricles and reduced contractile function. Specific values include increased Left Ventricular End-Diastolic Diameter (LVEDD) and a Left Ventricular Ejection Fraction (LVEF) below the normal range (<50%).\nECG: May reveal signs of abnormal rhythms or ventricular enlargement.\nMRI: Can further assess cardiac structure and function, confirming ventricular volume enlargement and myocardial mass increase.\nCardiac catheterization and endomyocardial biopsy: In certain cases, these may be necessary to determine the heart's pressures and pumping efficiency and to directly examine the heart muscle tissue."
   },
   {
     "id": "KB_0051",
-    "medicalKB": "diagnostic/Suspected Cardiomyopathy/Hypertrophic Cardiomyopathy: []"
+    "medicalKB": "diagnostic/Suspected Cardiomyopathy/Hypertrophic Cardiomyopathy: Echocardiogram: Increased thickness of the myocardial wall (typically >15mm) without any other cardiac disease that could explain the thickening.\nMRI: Used for a detailed assessment of myocardial thickness and to detect areas of hypertrophy that might not be visible on an echocardiogram"
   },
   {
     "id": "KB_0052",
-    "medicalKB": "diagnostic/Suspected Cardiomyopathy/Restrictive Cardiomyopathy: []"
+    "medicalKB": "diagnostic/Suspected Cardiomyopathy/Restrictive Cardiomyopathy: Echocardiogram: Shows normal or nearly normal ventricular sizes and wall thickness but abnormal ventricular filling and mitral inflow patterns indicative of restrictive filling.\nMRI: Helps assess cardiac structure, particularly for any fibrosis or calcification of the myocardium and pericardium.\nCardiac catheterization: Measures intracardiac pressures, showing elevated pressures during mitral inflow, consistent with a typical restrictive filling pattern."
   },
   {
     "id": "KB_0053",
-    "medicalKB": "diagnostic/Suspected Cardiomyopathy/Arrhythmogenic Right Ventricular Cardiomyopathy: []"
+    "medicalKB": "diagnostic/Suspected Cardiomyopathy/Arrhythmogenic Right Ventricular Cardiomyopathy: Echocardiogram: May reveal specific arrhythmias, T-wave inversions in right ventricular leads, and epsilon waves on the ECG\nECG: Shows enlargement and dysfunction of the right ventricle.\nMRI: Visualizes fatty infiltration and/or scarring of the right ventricle.\nCardiac Biopsy: In some cases, can diagnose by detecting fat and fibrous tissue changes in the myocardium."
   },
   {
     "id": "KB_0054",
@@ -237,19 +237,19 @@
   },
   {
     "id": "KB_0060",
-    "medicalKB": "diagnostic/Suspected COPD/COPD/Mild COPD: []"
+    "medicalKB": "diagnostic/Suspected COPD/COPD/Mild COPD: FEV1 ≥ 80% predicted"
   },
   {
     "id": "KB_0061",
-    "medicalKB": "diagnostic/Suspected COPD/COPD/Moderate COPD: []"
+    "medicalKB": "diagnostic/Suspected COPD/COPD/Moderate COPD: 50% ≤ FEV1 < 80% predicted"
   },
   {
     "id": "KB_0062",
-    "medicalKB": "diagnostic/Suspected COPD/COPD/Severe COPD: []"
+    "medicalKB": "diagnostic/Suspected COPD/COPD/Severe COPD: 30% ≤ FEV1 < 50% predicted"
   },
   {
     "id": "KB_0063",
-    "medicalKB": "diagnostic/Suspected COPD/COPD/Very Severe COPD: []"
+    "medicalKB": "diagnostic/Suspected COPD/COPD/Very Severe COPD: FEV1 < 30% predicted or FEV1 < 50% predicted plus chronic respiratory failure"
   },
   {
     "id": "KB_0064",
@@ -285,19 +285,19 @@
   },
   {
     "id": "KB_0072",
-    "medicalKB": "diagnostic/Suspected Diabetes/Diabetes/Type I Diabetes: []"
+    "medicalKB": "diagnostic/Suspected Diabetes/Diabetes/Type I Diabetes: Type 1 diabetes often involves an autoimmune process, so the following autoimmune markers can be used to aid diagnosis: anti-islet cell antibodies (ICA) ;anti-glutamate decarboxylase antibodies (GADA); anti-insulin antibodies (IAA) ;anti-tyrosine phosphatase-related Antibodies (IA-2A);These antibodies are positive in most patients with type 1 diabetes but are usually absent in patients with type 2 diabetes."
   },
   {
     "id": "KB_0073",
-    "medicalKB": "diagnostic/Suspected Diabetes/Diabetes/Type II Diabetes: []"
+    "medicalKB": "diagnostic/Suspected Diabetes/Diabetes/Type II Diabetes: Type 2 diabetes is often associated with insulin resistance and may involve testing for  Insulin levels and C-peptide levels: The diagnosis of type II diabetes should be determined according to the curve shape of the values of C-peptide release test and insulin release test in different states,for example,fasting,30min,60min,120min,180min. Able-bodied person:fasting basic plasma insulin is 5-20mlU/L,OGTT reached the peak value after 10min,and insulin returns to the basic level after 180 min;fasting C-peptide level was 1.1-4.4ng/ml,the secretion reached the peak which reaches 5-6 times of the basic value. Pre-diabetic patients:often in early stage type II diabetes, insulin levels may be normal or high. Classic type II diabetes:fasting insulin levels are normal or  above the  normal range.the peak is delayed after oral glucose,may reach the peak at 120min,but did not fall to the normal levels at 180min;fasting C-peptide level can be normal,high or low,the release curve rises slowly after taking sugar,the peak is delayed,and the release curve still does not fall back to the fasting level after 180 min. C-peptide testing can help evaluate the function of pancreatic beta cells and their ability to produce insulin."
   },
   {
     "id": "KB_0074",
-    "medicalKB": "diagnostic/Suspected Diabetes/Diabetes/Specific Types of Diabetes: []"
+    "medicalKB": "diagnostic/Suspected Diabetes/Diabetes/Specific Types of Diabetes: Due to other conditions"
   },
   {
     "id": "KB_0075",
-    "medicalKB": "diagnostic/Suspected Diabetes/Diabetes/Gestational Diabetes Mellitus: []"
+    "medicalKB": "diagnostic/Suspected Diabetes/Diabetes/Gestational Diabetes Mellitus: Diagnosed during pregnancy through glucose testing strategies that may include the OGTT"
   },
   {
     "id": "KB_0076",
@@ -333,11 +333,11 @@
   },
   {
     "id": "KB_0084",
-    "medicalKB": "diagnostic/Suspected Epilepsy/Non-epileptic Seizure: []"
+    "medicalKB": "diagnostic/Suspected Epilepsy/Non-epileptic Seizure: Maybe related to specific situations, such as emotional stress or psychological trauma, without prodromal symptoms\nEEG shows normal or no typical epileptic discharges"
   },
   {
     "id": "KB_0085",
-    "medicalKB": "diagnostic/Suspected Epilepsy/Epilepsy: []"
+    "medicalKB": "diagnostic/Suspected Epilepsy/Epilepsy: EEG typical epileptiform discharges, such as spikes and slow waves, may be recorded;\nVideo EEG-recorded epileptiform discharges, matching clinical seizure symptoms;\nImaging Studies:\n    MRI: Preferred imaging modality for its ability to reveal subtle structural abnormalities such as cavernomas, cerebellar hypoplasia, or heterotopia, which could underlie epilepsy.\t\n    CT Scan: Often used in emergency settings for rapid identification of large-scale abnormalities like tumors, hemorrhage, or significant brain atrophy, particularly when an MRI is not immediately available."
   },
   {
     "id": "KB_0086",
@@ -361,7 +361,7 @@
   },
   {
     "id": "KB_0091",
-    "medicalKB": "diagnostic/Suspected Gastro-oesophageal Reflux Disease/Gastro-oesophageal Reflux Disease: []"
+    "medicalKB": "diagnostic/Suspected Gastro-oesophageal Reflux Disease/Gastro-oesophageal Reflux Disease: conclusive evidence for gastro- esophageal reflux disease(off therapy): \nEndoscopy (endoscopy should be performed 2–4 weeks after discontinuation of antisecretory therapy ): LA grades B, C and D oesophagitis, biopsy proven Barrett’s oesophagus and peptic stricture are conclusive for a diagnosis of GERD.\nAmbulatory reflux monitor (pH or pH-impendance):AET>6% on at least 2 days of wireless pH monitoring or total AET>6% on pH-impedance monitoring  (Total reflux episodes >80/day and baseline impedance of <1500 ohms  are adjunctive evidence).\nEsophageal Manometry\n  Lower Esophageal Sphincter (LES) Resting Pressure: Normal values: 10-45 mmHg\n  Lower Esophageal Sphincter Relaxation Pressure: During swallowing, the LES should relax completely, approaching the intrathoracic pressure.\n  Esophageal Body Peristaltic Wave Amplitude: Normal values: 30-180 mmHg\n  Esophageal Peristaltic Wave Propagation Speed: Normal values: 2-4 cm/s\n  Complete Peristaltic Waves: Normally, more than 70% of swallowing actions should induce effective peristaltic waves."
   },
   {
     "id": "KB_0092",
@@ -377,15 +377,15 @@
   },
   {
     "id": "KB_0095",
-    "medicalKB": "diagnostic/Suspected Heart Failure/Strongly Suspected Heart Failure/Heart Failure/HFrEF: []"
+    "medicalKB": "diagnostic/Suspected Heart Failure/Strongly Suspected Heart Failure/Heart Failure/HFrEF: LVEF≤40%"
   },
   {
     "id": "KB_0096",
-    "medicalKB": "diagnostic/Suspected Heart Failure/Strongly Suspected Heart Failure/Heart Failure/HFmrEF: []"
+    "medicalKB": "diagnostic/Suspected Heart Failure/Strongly Suspected Heart Failure/Heart Failure/HFmrEF: LVEF41–49%"
   },
   {
     "id": "KB_0097",
-    "medicalKB": "diagnostic/Suspected Heart Failure/Strongly Suspected Heart Failure/Heart Failure/HFpEF: []"
+    "medicalKB": "diagnostic/Suspected Heart Failure/Strongly Suspected Heart Failure/Heart Failure/HFpEF: LVEF≥50%"
   },
   {
     "id": "KB_0098",
@@ -421,7 +421,7 @@
   },
   {
     "id": "KB_0106",
-    "medicalKB": "diagnostic/Suspected Hyperlipidemia/Hyperlipidemia: []"
+    "medicalKB": "diagnostic/Suspected Hyperlipidemia/Hyperlipidemia: Total Cholesterol\n    Borderline high: 200-239 mg/dL\n    High: 240 mg/dL and above\nLDL Cholesterol (Low-Density Lipoprotein Cholesterol)\n    Borderline high: 130-159 mg/dL\n    High: 160-189 mg/dL\n    Very high: 190 mg/dL and above\nHDL Cholesterol (High-Density Lipoprotein Cholesterol)\n    Low: Less than 40 mg/dL for men and less than 50 mg/dL for women \n    High: 60 mg/dL and above\nTriglycerides\n    Borderline high: 150-199 mg/dL\n    High: 200-499 mg/dL\n    Very high: 500 mg/dL and above"
   },
   {
     "id": "KB_0107",
@@ -437,7 +437,7 @@
   },
   {
     "id": "KB_0110",
-    "medicalKB": "diagnostic/Suspected Hypertension/Hypertension: []"
+    "medicalKB": "diagnostic/Suspected Hypertension/Hypertension: an elevation of BP (SBP≥140mmHg or DBP≥90mmHg) confirmed by at least two to three visits is the diagnostic criteria of hypertension"
   },
   {
     "id": "KB_0111",
@@ -453,11 +453,11 @@
   },
   {
     "id": "KB_0114",
-    "medicalKB": "diagnostic/Suspected Migraine/Migraine Without Aura: []"
+    "medicalKB": "diagnostic/Suspected Migraine/Migraine Without Aura: Headache attacks often begin suddenly, with no apparent warning period. \nA: At least 5 attacks.\nB: Each attack lasts from 2 to 72 hours.\nC: The attack has two or more of the following characteristics:\n     Unilateral pain\n     pain of pulsating nature\n     Moderate or severe pain intensity\n     Physical activity (such as walking up and down stairs) can worsen pain\nD: accompanied by at least one of the following symptoms during the attack:\n     Nausea and/or vomiting\n     Sensitivity to light, sound, or smells (photophobia, soundphobia, or odorphobia"
   },
   {
     "id": "KB_0115",
-    "medicalKB": "diagnostic/Suspected Migraine/Migraine With Aura: []"
+    "medicalKB": "diagnostic/Suspected Migraine/Migraine With Aura: Headache attacks are preceded by a specific set of symptoms of neurological dysfunction. The aura usually lasts from 5 to 60 minutes and is immediately followed or overlapped by a headache attack. These include visual abnormalities (such as flashes of light, loss of visual field), sensory abnormalities (such as tingling or numbness in the hands and feet), and speech or language impairment. In rare cases, aura may include movement disorders."
   },
   {
     "id": "KB_0116",
@@ -477,19 +477,19 @@
   },
   {
     "id": "KB_0120",
-    "medicalKB": "diagnostic/Suspected Multiple Sclerosis/Multiple Sclerosis/Relapsing-Remitting Multiple Sclerosis: []"
+    "medicalKB": "diagnostic/Suspected Multiple Sclerosis/Multiple Sclerosis/Relapsing-Remitting Multiple Sclerosis: Clinical Presentation: At least two clinical attacks, each with symptoms indicating involvement of different central nervous system (CNS) areas. The condition has distinct attacks (relapses) and remission periods. During an attack, symptoms suddenly worsen, followed by a remission phase in which symptoms partially or completely subside and the condition remains stable without significant progression.\nMRI:Presence of at least two distinct lesions in different CNS locations consistent with demyelination. Utilization of weighted imaging and contrast enhancement to demonstrate the presence and evolution of new and old lesions.\nCerebrospinal Fluid (CSF):Detection of oligoclonal bands (OCB) or elevated IgG index (value above 0.7)."
   },
   {
     "id": "KB_0121",
-    "medicalKB": "diagnostic/Suspected Multiple Sclerosis/Multiple Sclerosis/Primary Progressive Multiple Sclerosis: []"
+    "medicalKB": "diagnostic/Suspected Multiple Sclerosis/Multiple Sclerosis/Primary Progressive Multiple Sclerosis: Clinical Presentation: Disease progression from onset without distinct relapses.\nDisease Duration: Progression for at least 1 year.\nMRI:Presence of at least two T2-weighted lesions in the brain and/or spinal cord.\nCerebrospinal Fluid (CSF):Detection of oligoclonal bands or elevated IgG index (value above 0.7)."
   },
   {
     "id": "KB_0122",
-    "medicalKB": "diagnostic/Suspected Multiple Sclerosis/Multiple Sclerosis/Secondary Progressive Multiple Sclerosis: []"
+    "medicalKB": "diagnostic/Suspected Multiple Sclerosis/Multiple Sclerosis/Secondary Progressive Multiple Sclerosis: Clinical Presentation: Initially presents as RRMS, later transitioning to sustained worsening of disease with or without new relapses.\nDisease Duration: Progression to SPMS at least 3 years after RRMS diagnosis.\nMRI:Continued increase in the number of CNS lesions.\nCerebrospinal Fluid (CSF):Confirmation of persistent oligoclonal bands or elevated IgG index."
   },
   {
     "id": "KB_0123",
-    "medicalKB": "diagnostic/Suspected Multiple Sclerosis/Multiple Sclerosis/Benign Multiple Sclerosis: []"
+    "medicalKB": "diagnostic/Suspected Multiple Sclerosis/Multiple Sclerosis/Benign Multiple Sclerosis: Clinical Presentation: After 10 years, maintains good function with minimal disability (EDSS score ≤ 3).\nLong-Term Observation: Approximately 55% of patients maintain low disability status over the next 10 years.\nMRI:May show fewer CNS lesions, with slow lesion progression."
   },
   {
     "id": "KB_0124",
@@ -521,11 +521,11 @@
   },
   {
     "id": "KB_0131",
-    "medicalKB": "diagnostic/Suspected Peptic Ulcer Disease/Gastric Ulcers: []"
+    "medicalKB": "diagnostic/Suspected Peptic Ulcer Disease/Gastric Ulcers: Upper Endoscopy: Typically located on the lesser curvature of the stomach, especially in the antrum and body of the stomach; May be accompanied by thickening of the stomach wall, and redness or swelling of the mucosa.\n;H. pylori Testing: Urea breath testing, stool antigen testing, rapid urease testing, or histology."
   },
   {
     "id": "KB_0132",
-    "medicalKB": "diagnostic/Suspected Peptic Ulcer Disease/Duodenal Ulcers: []"
+    "medicalKB": "diagnostic/Suspected Peptic Ulcer Disease/Duodenal Ulcers: Upper Endoscopy: Most commonly found in the duodenal bulb, the initial part of the duodenum. Duodenal ulcers usually appear round or oval with clearer edges, and the center sometimes shows white scar tissue; Common accompanying features include congestion and swelling of the nearby duodenal mucosa. Less commonly, perforation or bleeding may occur.\nH. ;pylori Testing: Urea breath testing, stool antigen testing, rapid urease testing, or histology."
   },
   {
     "id": "KB_0133",
@@ -545,15 +545,15 @@
   },
   {
     "id": "KB_0137",
-    "medicalKB": "diagnostic/Suspected Pituitary Disease/Pituitary Microadenomas: []"
+    "medicalKB": "diagnostic/Suspected Pituitary Disease/Pituitary Microadenomas: Pituitary adenomas that are less than 1 centimeter (10 millimeters) in size are called microadenomas. ; The gold standard diagnosis is through magnetic resonance imaging (MRI), which can accurately show the size and location of adenomas."
   },
   {
     "id": "KB_0138",
-    "medicalKB": "diagnostic/Suspected Pituitary Disease/Pituitary Macroadenomas: []"
+    "medicalKB": "diagnostic/Suspected Pituitary Disease/Pituitary Macroadenomas: Pituitary adenomas that are 1 cm or larger in size are called macroadenomas. In addition to MRI, giant adenomas may also cause symptoms through their compression of surrounding structures, such as vision problems, in which case visual field testing is also required."
   },
   {
     "id": "KB_0139",
-    "medicalKB": "diagnostic/Suspected Pituitary Disease/Pituitary  Silent Adenomas : []"
+    "medicalKB": "diagnostic/Suspected Pituitary Disease/Pituitary  Silent Adenomas : Nonfunctioning adenomas are pituitary adenomas that do not produce physiologically active levels of hormone, and they do not cause the clinical symptoms associated with hormone excess. Often discovered incidentally during MRI examinations, they are so-called incidentalomas"
   },
   {
     "id": "KB_0140",
@@ -581,11 +581,11 @@
   },
   {
     "id": "KB_0146",
-    "medicalKB": "diagnostic/Suspected Pneumonia/Pneumonia/Bacterial Pneumonia: []"
+    "medicalKB": "diagnostic/Suspected Pneumonia/Pneumonia/Bacterial Pneumonia: Detection of specific bacteria by PCR or other molecular biology methods. Or suppuration caused by bacteria"
   },
   {
     "id": "KB_0147",
-    "medicalKB": "diagnostic/Suspected Pneumonia/Pneumonia/Viral Pneumonia: []"
+    "medicalKB": "diagnostic/Suspected Pneumonia/Pneumonia/Viral Pneumonia: PCR technology detects the genetic material of a specific virus"
   },
   {
     "id": "KB_0148",
@@ -613,15 +613,15 @@
   },
   {
     "id": "KB_0154",
-    "medicalKB": "diagnostic/Suspected Pulmonary Embolism/Pulmonary Embolism/Massive PE: []"
+    "medicalKB": "diagnostic/Suspected Pulmonary Embolism/Pulmonary Embolism/Massive PE: The patient develops hemodynamic instability, such as sustained hypotension, shock, or cardiac arrest. These patients are high-risk PE and require immediate thrombolytic treatment or surgical intervention."
   },
   {
     "id": "KB_0155",
-    "medicalKB": "diagnostic/Suspected Pulmonary Embolism/Pulmonary Embolism/Submassive PE: []"
+    "medicalKB": "diagnostic/Suspected Pulmonary Embolism/Pulmonary Embolism/Submassive PE: The patient is hemodynamically stable, but there is evidence of RV functional impairment, such as RV enlargement or ventricular septal deviation on echocardiography, and elevated blood biomarkers (such as cardiac troponin). These patients are intermediate-risk PE and require hospitalization and close monitoring to detect potential hemodynamic instability promptly."
   },
   {
     "id": "KB_0156",
-    "medicalKB": "diagnostic/Suspected Pulmonary Embolism/Pulmonary Embolism/Low-risk PE: []"
+    "medicalKB": "diagnostic/Suspected Pulmonary Embolism/Pulmonary Embolism/Low-risk PE: The patient has stable hemodynamics, no evidence of RV function impairment, and normal blood biomarker levels. A low Pulmonary Embolism Severity Index (PESI) or simplified PESI (sPESI) score indicates a low risk of death."
   },
   {
     "id": "KB_0157",
@@ -653,11 +653,11 @@
   },
   {
     "id": "KB_0164",
-    "medicalKB": "diagnostic/Suspected Stroke/Ischemic Stroke: []"
+    "medicalKB": "diagnostic/Suspected Stroke/Ischemic Stroke: MRI Scan (especially the DWI sequence):\n    Positive DWI: Indicates ischemic damage to brain tissue at the time of scanning. On DWI, ischemic areas appear as high signal (bright white).\n    ADC Images: Accompanying DWI, this sequence shows low signal (dark areas) representing restricted movement of water molecules, characteristic of early ischemia.\nCT Scan:\n    Early ischemic changes: Within hours of an ischemic stroke, subtle loss of cerebral cortex and narrowing of brain sulci, referred to as \"sulcal effacement\", may be observed.\n    Low-density areas: Low-density areas in the brain parenchyma indicating ischemic tissue.\nCarotid and Intracranial Vessel Imaging:\n    Ultrasound: Carotid intima-media thickness ≥1.0 mm or visible plaque.\n    CTA/MRA: Demonstrating arterial stenosis of ≥50%."
   },
   {
     "id": "KB_0165",
-    "medicalKB": "diagnostic/Suspected Stroke/Hemorrhagic Stroke: []"
+    "medicalKB": "diagnostic/Suspected Stroke/Hemorrhagic Stroke: Non-contrast CT Scan:\n    High-density areas: Typical manifestation of hemorrhagic stroke on CT is a high-density area representing fresh bleeding. The density usually ranges from 50-80 Hounsfield Units (HU).\n    Hemorrhage volume: The volume and location of the bleed correlate closely with clinical manifestations; larger volumes generally have a poorer prognosis.\nMRI Scan:\n    T1 and T2 Weighted Imaging: Hemorrhage shows different signals on T1 and T2 sequences depending on the age of the bleed. Fresh bleeding may appear isointense or hypointense on T1 and hyperintense on T2.\n    Gradient Echo Sequence (GRE): Especially sensitive to blood breakdown products, such as deoxyhemoglobin and iron, used for detecting microbleeds.\nCerebral Angiography:\n    Detection of vascular abnormalities: Aneurysms, vascular malformations, or stenoses. Diagnosis of an aneurysm typically requires visualization of a typical \"saccular\" dilation."
   },
   {
     "id": "KB_0166",
@@ -725,11 +725,11 @@
   },
   {
     "id": "KB_0182",
-    "medicalKB": "diagnostic/Suspected Tuberculosis/LTBI: []"
+    "medicalKB": "diagnostic/Suspected Tuberculosis/LTBI: Interferon-gamma release test (IGRA): This is a blood test that can detect whether there is an immune response to Mycobacterium tuberculosis in the body. It is not affected by BCG vaccination, so it is especially suitable in areas where BCG has been vaccinated.    \nTuberculin test (TST): Inject a certain amount of purified protein derivative (PPD) into the skin and observe the reaction of the skin 48 to 72 hours later to determine whether the patient is infected with Mycobacterium tuberculosis. Results need to be judged based on the size of the induration, usually 5 mm or larger is considered a positive reaction, but this also depends on the individual's specific circumstances such as HIV infection or recent exposure to a case of tuberculosis."
   },
   {
     "id": "KB_0183",
-    "medicalKB": "diagnostic/Suspected Tuberculosis/Tuberculosis: []"
+    "medicalKB": "diagnostic/Suspected Tuberculosis/Tuberculosis: Sputum smear microscopy: This is a rapid test that uses a microscope to examine sputum samples for tuberculosis bacteria. Although simple and low-cost, it is less sensitive. \nSputum culture: This is the gold standard for diagnosing tuberculosis. The sputum sample is cultured in a specific medium to see if Mycobacterium tuberculosis is growing. Culture can provide information about resistance but takes a long time (usually weeks to months). \nMolecular biology detection methods: such as PCR technology, which can quickly detect the genetic material of Mycobacterium tuberculosis with high sensitivity and specificity, and is especially suitable for patients with negative sputum smear. \nChest X-ray: Chest X-ray is a commonly used screening tool for patients suspected of having active pulmonary tuberculosis, which can reveal abnormalities in the lungs, such as patchy shadows, cavities, etc."
   },
   {
     "id": "KB_0184",
@@ -753,7 +753,7 @@
   },
   {
     "id": "KB_0189",
-    "medicalKB": "diagnostic/Suspected Upper Gastrointestinal Bleeding/Upper Gastrointestinal Bleeding: []"
+    "medicalKB": "diagnostic/Suspected Upper Gastrointestinal Bleeding/Upper Gastrointestinal Bleeding: Bleeding outside the digestive tract was excluded: Melena caused by eating and bleeding from the respiratory tract mouth, nose, and throat were excluded.\nGastroscopy: Bleeding is observed or has stopped"
   },
   {
     "id": "KB_0190",
@@ -768,7 +768,7 @@
     "medicalKB": "knowledge/Upper Gastrointestinal Bleeding: Bleeding outside the digestive tract was excluded: Melena caused by eating and bleeding from the respiratory tract mouth, nose, and throat were excluded.\nGastroscopy: Bleeding is observed or has stopped\n"
   },
   {
-    "id": "11535902-DS-14",
+    "id": "PC_0001",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "NSTEMI",
@@ -784,7 +784,7 @@
     }
   },
   {
-    "id": "11859083-DS-17",
+    "id": "PC_0002",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "NSTEMI",
@@ -800,7 +800,7 @@
     }
   },
   {
-    "id": "11990712-DS-12",
+    "id": "PC_0003",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "NSTEMI",
@@ -816,7 +816,7 @@
     }
   },
   {
-    "id": "11992836-DS-23",
+    "id": "PC_0004",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "NSTEMI",
@@ -832,7 +832,7 @@
     }
   },
   {
-    "id": "12054012-DS-14",
+    "id": "PC_0005",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "NSTEMI",
@@ -848,7 +848,7 @@
     }
   },
   {
-    "id": "12137011-DS-27",
+    "id": "PC_0006",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "NSTEMI",
@@ -864,7 +864,7 @@
     }
   },
   {
-    "id": "12275216-DS-11",
+    "id": "PC_0007",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "NSTEMI",
@@ -880,7 +880,7 @@
     }
   },
   {
-    "id": "12364675-DS-12",
+    "id": "PC_0008",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "NSTEMI",
@@ -896,7 +896,7 @@
     }
   },
   {
-    "id": "12806822-DS-18",
+    "id": "PC_0009",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "NSTEMI",
@@ -912,7 +912,7 @@
     }
   },
   {
-    "id": "12808249-DS-8",
+    "id": "PC_0010",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "NSTEMI",
@@ -928,7 +928,7 @@
     }
   },
   {
-    "id": "17105161-DS-12",
+    "id": "PC_0011",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "NSTEMI",
@@ -944,7 +944,7 @@
     }
   },
   {
-    "id": "17132866-DS-21",
+    "id": "PC_0012",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "NSTEMI",
@@ -960,7 +960,7 @@
     }
   },
   {
-    "id": "17183564-DS-13",
+    "id": "PC_0013",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "NSTEMI",
@@ -976,7 +976,7 @@
     }
   },
   {
-    "id": "17357689-DS-2",
+    "id": "PC_0014",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "NSTEMI",
@@ -992,7 +992,7 @@
     }
   },
   {
-    "id": "17399182-DS-7",
+    "id": "PC_0015",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "NSTEMI",
@@ -1008,7 +1008,7 @@
     }
   },
   {
-    "id": "17409962-DS-5",
+    "id": "PC_0016",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "NSTEMI",
@@ -1024,7 +1024,7 @@
     }
   },
   {
-    "id": "17505744-DS-20",
+    "id": "PC_0017",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "NSTEMI",
@@ -1040,7 +1040,7 @@
     }
   },
   {
-    "id": "17509032-DS-16",
+    "id": "PC_0018",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "NSTEMI",
@@ -1056,7 +1056,7 @@
     }
   },
   {
-    "id": "17511292-DS-12",
+    "id": "PC_0019",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "NSTEMI",
@@ -1072,7 +1072,7 @@
     }
   },
   {
-    "id": "17539265-DS-9",
+    "id": "PC_0020",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "NSTEMI",
@@ -1088,7 +1088,7 @@
     }
   },
   {
-    "id": "17577620-DS-14",
+    "id": "PC_0021",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "NSTEMI",
@@ -1104,7 +1104,7 @@
     }
   },
   {
-    "id": "17581064-DS-6",
+    "id": "PC_0022",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "NSTEMI",
@@ -1120,7 +1120,7 @@
     }
   },
   {
-    "id": "17685057-DS-12",
+    "id": "PC_0023",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "NSTEMI",
@@ -1136,7 +1136,7 @@
     }
   },
   {
-    "id": "17753691-DS-7",
+    "id": "PC_0024",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "NSTEMI",
@@ -1152,7 +1152,7 @@
     }
   },
   {
-    "id": "17822063-DS-15",
+    "id": "PC_0025",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "NSTEMI",
@@ -1168,7 +1168,7 @@
     }
   },
   {
-    "id": "17842926-DS-8",
+    "id": "PC_0026",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "NSTEMI",
@@ -1184,7 +1184,7 @@
     }
   },
   {
-    "id": "17915457-DS-19",
+    "id": "PC_0027",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "NSTEMI",
@@ -1200,7 +1200,7 @@
     }
   },
   {
-    "id": "17923616-DS-20",
+    "id": "PC_0028",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "NSTEMI",
@@ -1216,7 +1216,7 @@
     }
   },
   {
-    "id": "11514847-DS-14",
+    "id": "PC_0029",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "STEMI",
@@ -1232,7 +1232,7 @@
     }
   },
   {
-    "id": "11528474-DS-10",
+    "id": "PC_0030",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "STEMI",
@@ -1248,7 +1248,7 @@
     }
   },
   {
-    "id": "11801858-DS-13",
+    "id": "PC_0031",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "STEMI",
@@ -1264,7 +1264,7 @@
     }
   },
   {
-    "id": "12238650-DS-22",
+    "id": "PC_0032",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "STEMI",
@@ -1280,7 +1280,7 @@
     }
   },
   {
-    "id": "12392100-DS-22",
+    "id": "PC_0033",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "STEMI",
@@ -1296,7 +1296,7 @@
     }
   },
   {
-    "id": "13007301-DS-11",
+    "id": "PC_0034",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "STEMI",
@@ -1312,7 +1312,7 @@
     }
   },
   {
-    "id": "13288722-DS-12",
+    "id": "PC_0035",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "STEMI",
@@ -1328,7 +1328,7 @@
     }
   },
   {
-    "id": "13696506-DS-8",
+    "id": "PC_0036",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "STEMI",
@@ -1344,7 +1344,7 @@
     }
   },
   {
-    "id": "15100941-DS-6",
+    "id": "PC_0037",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "STEMI",
@@ -1360,7 +1360,7 @@
     }
   },
   {
-    "id": "15314906-DS-14",
+    "id": "PC_0038",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "STEMI",
@@ -1376,7 +1376,7 @@
     }
   },
   {
-    "id": "15379632-DS-17",
+    "id": "PC_0039",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "STEMI",
@@ -1392,7 +1392,7 @@
     }
   },
   {
-    "id": "15402809-DS-20",
+    "id": "PC_0040",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "STEMI",
@@ -1408,7 +1408,7 @@
     }
   },
   {
-    "id": "15838052-DS-15",
+    "id": "PC_0041",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "STEMI",
@@ -1424,7 +1424,7 @@
     }
   },
   {
-    "id": "16137568-DS-5",
+    "id": "PC_0042",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "STEMI",
@@ -1440,7 +1440,7 @@
     }
   },
   {
-    "id": "16250904-DS-15",
+    "id": "PC_0043",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "STEMI",
@@ -1456,7 +1456,7 @@
     }
   },
   {
-    "id": "11657791-DS-21",
+    "id": "PC_0044",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "UA",
@@ -1472,7 +1472,7 @@
     }
   },
   {
-    "id": "11677801-DS-33",
+    "id": "PC_0045",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "UA",
@@ -1488,7 +1488,7 @@
     }
   },
   {
-    "id": "11677801-DS-34",
+    "id": "PC_0046",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "UA",
@@ -1504,7 +1504,7 @@
     }
   },
   {
-    "id": "11706286-DS-17",
+    "id": "PC_0047",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "UA",
@@ -1520,7 +1520,7 @@
     }
   },
   {
-    "id": "11959580-DS-12",
+    "id": "PC_0048",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "UA",
@@ -1536,7 +1536,7 @@
     }
   },
   {
-    "id": "11985139-DS-4",
+    "id": "PC_0049",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "UA",
@@ -1552,7 +1552,7 @@
     }
   },
   {
-    "id": "12261639-DS-4",
+    "id": "PC_0050",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "UA",
@@ -1568,7 +1568,7 @@
     }
   },
   {
-    "id": "12445879-DS-18",
+    "id": "PC_0051",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "UA",
@@ -1584,7 +1584,7 @@
     }
   },
   {
-    "id": "12789116-DS-11",
+    "id": "PC_0052",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "UA",
@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "id": "12924595-DS-15",
+    "id": "PC_0053",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "UA",
@@ -1616,7 +1616,7 @@
     }
   },
   {
-    "id": "13000968-DS-9",
+    "id": "PC_0054",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "UA",
@@ -1632,7 +1632,7 @@
     }
   },
   {
-    "id": "13136218-DS-5",
+    "id": "PC_0055",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "UA",
@@ -1648,7 +1648,7 @@
     }
   },
   {
-    "id": "14167883-DS-17",
+    "id": "PC_0056",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "UA",
@@ -1664,7 +1664,7 @@
     }
   },
   {
-    "id": "14207519-DS-22",
+    "id": "PC_0057",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "UA",
@@ -1680,7 +1680,7 @@
     }
   },
   {
-    "id": "14301754-DS-15",
+    "id": "PC_0058",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "UA",
@@ -1696,7 +1696,7 @@
     }
   },
   {
-    "id": "14511469-DS-8",
+    "id": "PC_0059",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "UA",
@@ -1712,7 +1712,7 @@
     }
   },
   {
-    "id": "14512858-DS-5",
+    "id": "PC_0060",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "UA",
@@ -1728,7 +1728,7 @@
     }
   },
   {
-    "id": "14876183-DS-3",
+    "id": "PC_0061",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "UA",
@@ -1744,7 +1744,7 @@
     }
   },
   {
-    "id": "14879291-DS-16",
+    "id": "PC_0062",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "UA",
@@ -1760,7 +1760,7 @@
     }
   },
   {
-    "id": "14895513-DS-2",
+    "id": "PC_0063",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "UA",
@@ -1776,7 +1776,7 @@
     }
   },
   {
-    "id": "14946203-DS-21",
+    "id": "PC_0064",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "UA",
@@ -1792,7 +1792,7 @@
     }
   },
   {
-    "id": "15171397-DS-22",
+    "id": "PC_0065",
     "patient_case": {
       "disease_group": "Acute Coronary Syndrome",
       "specific_disease": "UA",
@@ -1808,7 +1808,7 @@
     }
   },
   {
-    "id": "13281479-DS-19",
+    "id": "PC_0066",
     "patient_case": {
       "disease_group": "Adrenal Insufficiency",
       "specific_disease": "Congenital Adrenal Hyperplasia",
@@ -1824,7 +1824,7 @@
     }
   },
   {
-    "id": "13281479-DS-1912",
+    "id": "PC_0067",
     "patient_case": {
       "disease_group": "Adrenal Insufficiency",
       "specific_disease": "Congenital Adrenal Hyperplasia",
@@ -1840,7 +1840,7 @@
     }
   },
   {
-    "id": "16003330-DS-18",
+    "id": "PC_0068",
     "patient_case": {
       "disease_group": "Adrenal Insufficiency",
       "specific_disease": "Congenital Adrenal Hyperplasia",
@@ -1856,7 +1856,7 @@
     }
   },
   {
-    "id": "16379709-DS-6",
+    "id": "PC_0069",
     "patient_case": {
       "disease_group": "Adrenal Insufficiency",
       "specific_disease": "Primary Adrenal Insufficiency",
@@ -1872,7 +1872,7 @@
     }
   },
   {
-    "id": "17076162-DS-12",
+    "id": "PC_0070",
     "patient_case": {
       "disease_group": "Adrenal Insufficiency",
       "specific_disease": "Primary Adrenal Insufficiency",
@@ -1888,7 +1888,7 @@
     }
   },
   {
-    "id": "17076162-DS-1222",
+    "id": "PC_0071",
     "patient_case": {
       "disease_group": "Adrenal Insufficiency",
       "specific_disease": "Primary Adrenal Insufficiency",
@@ -1904,7 +1904,7 @@
     }
   },
   {
-    "id": "18136887-DS-67",
+    "id": "PC_0072",
     "patient_case": {
       "disease_group": "Adrenal Insufficiency",
       "specific_disease": "Primary Adrenal Insufficiency",
@@ -1920,7 +1920,7 @@
     }
   },
   {
-    "id": "18136887-DS-78",
+    "id": "PC_0073",
     "patient_case": {
       "disease_group": "Adrenal Insufficiency",
       "specific_disease": "Primary Adrenal Insufficiency",
@@ -1936,7 +1936,7 @@
     }
   },
   {
-    "id": "19102476-DS-17",
+    "id": "PC_0074",
     "patient_case": {
       "disease_group": "Adrenal Insufficiency",
       "specific_disease": "Primary Adrenal Insufficiency",
@@ -1952,7 +1952,7 @@
     }
   },
   {
-    "id": "19102476-DS-1777",
+    "id": "PC_0075",
     "patient_case": {
       "disease_group": "Adrenal Insufficiency",
       "specific_disease": "Primary Adrenal Insufficiency",
@@ -1968,7 +1968,7 @@
     }
   },
   {
-    "id": "11698212-DS-3",
+    "id": "PC_0076",
     "patient_case": {
       "disease_group": "Adrenal Insufficiency",
       "specific_disease": "Secondary Adrenal Insufficiency",
@@ -1984,7 +1984,7 @@
     }
   },
   {
-    "id": "12468016-DS-60",
+    "id": "PC_0077",
     "patient_case": {
       "disease_group": "Adrenal Insufficiency",
       "specific_disease": "Secondary Adrenal Insufficiency",
@@ -2000,7 +2000,7 @@
     }
   },
   {
-    "id": "12468016-DS-6000",
+    "id": "PC_0078",
     "patient_case": {
       "disease_group": "Adrenal Insufficiency",
       "specific_disease": "Secondary Adrenal Insufficiency",
@@ -2016,7 +2016,7 @@
     }
   },
   {
-    "id": "12544251-DS-14",
+    "id": "PC_0079",
     "patient_case": {
       "disease_group": "Adrenal Insufficiency",
       "specific_disease": "Secondary Adrenal Insufficiency",
@@ -2032,7 +2032,7 @@
     }
   },
   {
-    "id": "12964119-DS-35",
+    "id": "PC_0080",
     "patient_case": {
       "disease_group": "Adrenal Insufficiency",
       "specific_disease": "Secondary Adrenal Insufficiency",
@@ -2048,7 +2048,7 @@
     }
   },
   {
-    "id": "12964119-DS-3555",
+    "id": "PC_0081",
     "patient_case": {
       "disease_group": "Adrenal Insufficiency",
       "specific_disease": "Secondary Adrenal Insufficiency",
@@ -2064,7 +2064,7 @@
     }
   },
   {
-    "id": "16003330-DS-18",
+    "id": "PC_0082",
     "patient_case": {
       "disease_group": "Adrenal Insufficiency",
       "specific_disease": "Secondary Adrenal Insufficiency",
@@ -2080,7 +2080,7 @@
     }
   },
   {
-    "id": "16379709-DS-6",
+    "id": "PC_0083",
     "patient_case": {
       "disease_group": "Adrenal Insufficiency",
       "specific_disease": "Secondary Adrenal Insufficiency",
@@ -2096,7 +2096,7 @@
     }
   },
   {
-    "id": "18136887-DS-67",
+    "id": "PC_0084",
     "patient_case": {
       "disease_group": "Adrenal Insufficiency",
       "specific_disease": "Secondary Adrenal Insufficiency",
@@ -2112,7 +2112,7 @@
     }
   },
   {
-    "id": "18136887-DS-78",
+    "id": "PC_0085",
     "patient_case": {
       "disease_group": "Adrenal Insufficiency",
       "specific_disease": "Secondary Adrenal Insufficiency",
@@ -2128,7 +2128,7 @@
     }
   },
   {
-    "id": "11999108-DS-14",
+    "id": "PC_0086",
     "patient_case": {
       "disease_group": "Alzheimer",
       "specific_disease": "NA",
@@ -2144,7 +2144,7 @@
     }
   },
   {
-    "id": "12109697-DS-15",
+    "id": "PC_0087",
     "patient_case": {
       "disease_group": "Alzheimer",
       "specific_disease": "NA",
@@ -2160,7 +2160,7 @@
     }
   },
   {
-    "id": "12134520-DS-16",
+    "id": "PC_0088",
     "patient_case": {
       "disease_group": "Alzheimer",
       "specific_disease": "NA",
@@ -2176,7 +2176,7 @@
     }
   },
   {
-    "id": "12312333-DS-17",
+    "id": "PC_0089",
     "patient_case": {
       "disease_group": "Alzheimer",
       "specific_disease": "NA",
@@ -2192,7 +2192,7 @@
     }
   },
   {
-    "id": "14238472-DS-8",
+    "id": "PC_0090",
     "patient_case": {
       "disease_group": "Alzheimer",
       "specific_disease": "NA",
@@ -2208,7 +2208,7 @@
     }
   },
   {
-    "id": "14795613-DS-21",
+    "id": "PC_0091",
     "patient_case": {
       "disease_group": "Alzheimer",
       "specific_disease": "NA",
@@ -2224,7 +2224,7 @@
     }
   },
   {
-    "id": "14940781-DS-5",
+    "id": "PC_0092",
     "patient_case": {
       "disease_group": "Alzheimer",
       "specific_disease": "NA",
@@ -2240,7 +2240,7 @@
     }
   },
   {
-    "id": "15898350-DS-19",
+    "id": "PC_0093",
     "patient_case": {
       "disease_group": "Alzheimer",
       "specific_disease": "NA",
@@ -2256,7 +2256,7 @@
     }
   },
   {
-    "id": "17277521-DS-10",
+    "id": "PC_0094",
     "patient_case": {
       "disease_group": "Alzheimer",
       "specific_disease": "NA",
@@ -2272,7 +2272,7 @@
     }
   },
   {
-    "id": "17739375-DS-13",
+    "id": "PC_0095",
     "patient_case": {
       "disease_group": "Alzheimer",
       "specific_disease": "NA",
@@ -2288,7 +2288,7 @@
     }
   },
   {
-    "id": "13040569-DS-4",
+    "id": "PC_0096",
     "patient_case": {
       "disease_group": "Aortic Dissection",
       "specific_disease": "Type A Aortic Dissection",
@@ -2304,7 +2304,7 @@
     }
   },
   {
-    "id": "17304892-DS-10",
+    "id": "PC_0097",
     "patient_case": {
       "disease_group": "Aortic Dissection",
       "specific_disease": "Type A Aortic Dissection",
@@ -2320,7 +2320,7 @@
     }
   },
   {
-    "id": "18066087-DS-7",
+    "id": "PC_0098",
     "patient_case": {
       "disease_group": "Aortic Dissection",
       "specific_disease": "Type A Aortic Dissection",
@@ -2336,7 +2336,7 @@
     }
   },
   {
-    "id": "18252585-DS-3",
+    "id": "PC_0099",
     "patient_case": {
       "disease_group": "Aortic Dissection",
       "specific_disease": "Type A Aortic Dissection",
@@ -2352,7 +2352,7 @@
     }
   },
   {
-    "id": "18297404-DS-6",
+    "id": "PC_0100",
     "patient_case": {
       "disease_group": "Aortic Dissection",
       "specific_disease": "Type A Aortic Dissection",
@@ -2368,7 +2368,7 @@
     }
   },
   {
-    "id": "13040569-DS-4",
+    "id": "PC_0101",
     "patient_case": {
       "disease_group": "Aortic Dissection",
       "specific_disease": "Type B Aortic Dissection",
@@ -2384,7 +2384,7 @@
     }
   },
   {
-    "id": "13642689-DS-5",
+    "id": "PC_0102",
     "patient_case": {
       "disease_group": "Aortic Dissection",
       "specific_disease": "Type B Aortic Dissection",
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "id": "14210167-DS-14",
+    "id": "PC_0103",
     "patient_case": {
       "disease_group": "Aortic Dissection",
       "specific_disease": "Type B Aortic Dissection",
@@ -2416,7 +2416,7 @@
     }
   },
   {
-    "id": "14210167-DS-15",
+    "id": "PC_0104",
     "patient_case": {
       "disease_group": "Aortic Dissection",
       "specific_disease": "Type B Aortic Dissection",
@@ -2432,7 +2432,7 @@
     }
   },
   {
-    "id": "14920657-DS-6",
+    "id": "PC_0105",
     "patient_case": {
       "disease_group": "Aortic Dissection",
       "specific_disease": "Type B Aortic Dissection",
@@ -2448,7 +2448,7 @@
     }
   },
   {
-    "id": "16045669-DS-3",
+    "id": "PC_0106",
     "patient_case": {
       "disease_group": "Aortic Dissection",
       "specific_disease": "Type B Aortic Dissection",
@@ -2464,7 +2464,7 @@
     }
   },
   {
-    "id": "16310435-DS-20",
+    "id": "PC_0107",
     "patient_case": {
       "disease_group": "Aortic Dissection",
       "specific_disease": "Type B Aortic Dissection",
@@ -2480,7 +2480,7 @@
     }
   },
   {
-    "id": "19210913-DS-17",
+    "id": "PC_0108",
     "patient_case": {
       "disease_group": "Aortic Dissection",
       "specific_disease": "Type B Aortic Dissection",
@@ -2496,7 +2496,7 @@
     }
   },
   {
-    "id": "19281526-DS-10",
+    "id": "PC_0109",
     "patient_case": {
       "disease_group": "Aortic Dissection",
       "specific_disease": "Type B Aortic Dissection",
@@ -2512,7 +2512,7 @@
     }
   },
   {
-    "id": "11897861-DS-3",
+    "id": "PC_0110",
     "patient_case": {
       "disease_group": "Asthma",
       "specific_disease": "Allergic Asthma",
@@ -2528,7 +2528,7 @@
     }
   },
   {
-    "id": "13885966-DS-24",
+    "id": "PC_0111",
     "patient_case": {
       "disease_group": "Asthma",
       "specific_disease": "Asthma",
@@ -2544,7 +2544,7 @@
     }
   },
   {
-    "id": "18681184-DS-5",
+    "id": "PC_0112",
     "patient_case": {
       "disease_group": "Asthma",
       "specific_disease": "Asthma",
@@ -2560,7 +2560,7 @@
     }
   },
   {
-    "id": "11707288-DS-14",
+    "id": "PC_0113",
     "patient_case": {
       "disease_group": "Asthma",
       "specific_disease": "COPD Asthma",
@@ -2576,7 +2576,7 @@
     }
   },
   {
-    "id": "15798127-DS-19",
+    "id": "PC_0114",
     "patient_case": {
       "disease_group": "Asthma",
       "specific_disease": "COPD Asthma",
@@ -2592,7 +2592,7 @@
     }
   },
   {
-    "id": "17892612-DS-5",
+    "id": "PC_0115",
     "patient_case": {
       "disease_group": "Asthma",
       "specific_disease": "Cough-Variant Asthma",
@@ -2608,7 +2608,7 @@
     }
   },
   {
-    "id": "17832311-DS-23",
+    "id": "PC_0116",
     "patient_case": {
       "disease_group": "Asthma",
       "specific_disease": "Non-Allergic Asthma",
@@ -2624,7 +2624,7 @@
     }
   },
   {
-    "id": "18153872-DS-13",
+    "id": "PC_0117",
     "patient_case": {
       "disease_group": "Asthma",
       "specific_disease": "Non-Allergic Asthma",
@@ -2640,7 +2640,7 @@
     }
   },
   {
-    "id": "18699864-DS-8",
+    "id": "PC_0118",
     "patient_case": {
       "disease_group": "Asthma",
       "specific_disease": "Non-Allergic Asthma",
@@ -2656,7 +2656,7 @@
     }
   },
   {
-    "id": "16105600-DS-18",
+    "id": "PC_0119",
     "patient_case": {
       "disease_group": "Asthma",
       "specific_disease": "Severe Asthma Exacerbation",
@@ -2672,7 +2672,7 @@
     }
   },
   {
-    "id": "17567631-DS-16",
+    "id": "PC_0120",
     "patient_case": {
       "disease_group": "Asthma",
       "specific_disease": "Severe Asthma Exacerbation",
@@ -2688,7 +2688,7 @@
     }
   },
   {
-    "id": "18192172-DS-11",
+    "id": "PC_0121",
     "patient_case": {
       "disease_group": "Asthma",
       "specific_disease": "Severe Asthma Exacerbation",
@@ -2704,7 +2704,7 @@
     }
   },
   {
-    "id": "19219717-DS-16",
+    "id": "PC_0122",
     "patient_case": {
       "disease_group": "Asthma",
       "specific_disease": "Severe Asthma Exacerbation",
@@ -2720,7 +2720,7 @@
     }
   },
   {
-    "id": "12116250-DS-20",
+    "id": "PC_0123",
     "patient_case": {
       "disease_group": "Atrial Fibrillation",
       "specific_disease": "Paroxysmal Atrial Fibrillation",
@@ -2736,7 +2736,7 @@
     }
   },
   {
-    "id": "13492756-DS-4",
+    "id": "PC_0124",
     "patient_case": {
       "disease_group": "Atrial Fibrillation",
       "specific_disease": "Paroxysmal Atrial Fibrillation",
@@ -2752,7 +2752,7 @@
     }
   },
   {
-    "id": "14647136-DS-8",
+    "id": "PC_0125",
     "patient_case": {
       "disease_group": "Atrial Fibrillation",
       "specific_disease": "Paroxysmal Atrial Fibrillation",
@@ -2768,7 +2768,7 @@
     }
   },
   {
-    "id": "16089043-DS-12",
+    "id": "PC_0126",
     "patient_case": {
       "disease_group": "Atrial Fibrillation",
       "specific_disease": "Paroxysmal Atrial Fibrillation",
@@ -2784,7 +2784,7 @@
     }
   },
   {
-    "id": "16123634-DS-14",
+    "id": "PC_0127",
     "patient_case": {
       "disease_group": "Atrial Fibrillation",
       "specific_disease": "Paroxysmal Atrial Fibrillation",
@@ -2800,7 +2800,7 @@
     }
   },
   {
-    "id": "17003536-DS-3",
+    "id": "PC_0128",
     "patient_case": {
       "disease_group": "Atrial Fibrillation",
       "specific_disease": "Paroxysmal Atrial Fibrillation",
@@ -2816,7 +2816,7 @@
     }
   },
   {
-    "id": "17943628-DS-15",
+    "id": "PC_0129",
     "patient_case": {
       "disease_group": "Atrial Fibrillation",
       "specific_disease": "Paroxysmal Atrial Fibrillation",
@@ -2832,7 +2832,7 @@
     }
   },
   {
-    "id": "19489502-DS-11",
+    "id": "PC_0130",
     "patient_case": {
       "disease_group": "Atrial Fibrillation",
       "specific_disease": "Paroxysmal Atrial Fibrillation",
@@ -2848,7 +2848,7 @@
     }
   },
   {
-    "id": "15008480-DS-3",
+    "id": "PC_0131",
     "patient_case": {
       "disease_group": "Atrial Fibrillation",
       "specific_disease": "Persistent Atrial Fibrillation",
@@ -2864,7 +2864,7 @@
     }
   },
   {
-    "id": "16368173-DS-2",
+    "id": "PC_0132",
     "patient_case": {
       "disease_group": "Atrial Fibrillation",
       "specific_disease": "Persistent Atrial Fibrillation",
@@ -2880,7 +2880,7 @@
     }
   },
   {
-    "id": "16683512-DS-14",
+    "id": "PC_0133",
     "patient_case": {
       "disease_group": "Cardiomyopathy",
       "specific_disease": "Arrhythmogenic Right Ventricular Cardiomyopathy",
@@ -2896,7 +2896,7 @@
     }
   },
   {
-    "id": "13216060-DS-9",
+    "id": "PC_0134",
     "patient_case": {
       "disease_group": "Cardiomyopathy",
       "specific_disease": "Dilated Cardiomyopathy",
@@ -2912,7 +2912,7 @@
     }
   },
   {
-    "id": "17369619-DS-15",
+    "id": "PC_0135",
     "patient_case": {
       "disease_group": "Cardiomyopathy",
       "specific_disease": "Dilated Cardiomyopathy",
@@ -2928,7 +2928,7 @@
     }
   },
   {
-    "id": "17519144-DS-15",
+    "id": "PC_0136",
     "patient_case": {
       "disease_group": "Cardiomyopathy",
       "specific_disease": "Dilated Cardiomyopathy",
@@ -2944,7 +2944,7 @@
     }
   },
   {
-    "id": "18065146-DS-8",
+    "id": "PC_0137",
     "patient_case": {
       "disease_group": "Cardiomyopathy",
       "specific_disease": "Dilated Cardiomyopathy",
@@ -2960,7 +2960,7 @@
     }
   },
   {
-    "id": "11901665-DS-24",
+    "id": "PC_0138",
     "patient_case": {
       "disease_group": "Cardiomyopathy",
       "specific_disease": "Hypertrophic Cardiomyopathy",
@@ -2976,7 +2976,7 @@
     }
   },
   {
-    "id": "15466684-DS-15",
+    "id": "PC_0139",
     "patient_case": {
       "disease_group": "Cardiomyopathy",
       "specific_disease": "Hypertrophic Cardiomyopathy",
@@ -2992,7 +2992,7 @@
     }
   },
   {
-    "id": "17067683-DS-6",
+    "id": "PC_0140",
     "patient_case": {
       "disease_group": "Cardiomyopathy",
       "specific_disease": "Restrictive Cardiomyopathy",
@@ -3008,7 +3008,7 @@
     }
   },
   {
-    "id": "18108905-DS-2",
+    "id": "PC_0141",
     "patient_case": {
       "disease_group": "Cardiomyopathy",
       "specific_disease": "Restrictive Cardiomyopathy",
@@ -3024,7 +3024,7 @@
     }
   },
   {
-    "id": "11482871-DS-15",
+    "id": "PC_0142",
     "patient_case": {
       "disease_group": "COPD",
       "specific_disease": "NA",
@@ -3040,7 +3040,7 @@
     }
   },
   {
-    "id": "11655904-DS-23",
+    "id": "PC_0143",
     "patient_case": {
       "disease_group": "COPD",
       "specific_disease": "NA",
@@ -3056,7 +3056,7 @@
     }
   },
   {
-    "id": "12206678-DS-90",
+    "id": "PC_0144",
     "patient_case": {
       "disease_group": "COPD",
       "specific_disease": "NA",
@@ -3072,7 +3072,7 @@
     }
   },
   {
-    "id": "12342173-DS-10",
+    "id": "PC_0145",
     "patient_case": {
       "disease_group": "COPD",
       "specific_disease": "NA",
@@ -3088,7 +3088,7 @@
     }
   },
   {
-    "id": "13227028-DS-14",
+    "id": "PC_0146",
     "patient_case": {
       "disease_group": "COPD",
       "specific_disease": "NA",
@@ -3104,7 +3104,7 @@
     }
   },
   {
-    "id": "13892051-DS-9",
+    "id": "PC_0147",
     "patient_case": {
       "disease_group": "COPD",
       "specific_disease": "NA",
@@ -3120,7 +3120,7 @@
     }
   },
   {
-    "id": "14725771-DS-12",
+    "id": "PC_0148",
     "patient_case": {
       "disease_group": "COPD",
       "specific_disease": "NA",
@@ -3136,7 +3136,7 @@
     }
   },
   {
-    "id": "14818191-DS-13",
+    "id": "PC_0149",
     "patient_case": {
       "disease_group": "COPD",
       "specific_disease": "NA",
@@ -3152,7 +3152,7 @@
     }
   },
   {
-    "id": "14994182-DS-36",
+    "id": "PC_0150",
     "patient_case": {
       "disease_group": "COPD",
       "specific_disease": "NA",
@@ -3168,7 +3168,7 @@
     }
   },
   {
-    "id": "15166831-DS-16",
+    "id": "PC_0151",
     "patient_case": {
       "disease_group": "COPD",
       "specific_disease": "NA",
@@ -3184,7 +3184,7 @@
     }
   },
   {
-    "id": "17187522-DS-41",
+    "id": "PC_0152",
     "patient_case": {
       "disease_group": "COPD",
       "specific_disease": "NA",
@@ -3200,7 +3200,7 @@
     }
   },
   {
-    "id": "17436407-DS-19",
+    "id": "PC_0153",
     "patient_case": {
       "disease_group": "COPD",
       "specific_disease": "NA",
@@ -3216,7 +3216,7 @@
     }
   },
   {
-    "id": "17468815-DS-13",
+    "id": "PC_0154",
     "patient_case": {
       "disease_group": "COPD",
       "specific_disease": "NA",
@@ -3232,7 +3232,7 @@
     }
   },
   {
-    "id": "17808538-DS-23",
+    "id": "PC_0155",
     "patient_case": {
       "disease_group": "COPD",
       "specific_disease": "NA",
@@ -3248,7 +3248,7 @@
     }
   },
   {
-    "id": "18096479-DS-10",
+    "id": "PC_0156",
     "patient_case": {
       "disease_group": "COPD",
       "specific_disease": "NA",
@@ -3264,7 +3264,7 @@
     }
   },
   {
-    "id": "18591903-DS-16",
+    "id": "PC_0157",
     "patient_case": {
       "disease_group": "COPD",
       "specific_disease": "NA",
@@ -3280,7 +3280,7 @@
     }
   },
   {
-    "id": "18656167-DS-64",
+    "id": "PC_0158",
     "patient_case": {
       "disease_group": "COPD",
       "specific_disease": "NA",
@@ -3296,7 +3296,7 @@
     }
   },
   {
-    "id": "18735835-DS-15",
+    "id": "PC_0159",
     "patient_case": {
       "disease_group": "COPD",
       "specific_disease": "NA",
@@ -3312,7 +3312,7 @@
     }
   },
   {
-    "id": "18923313-DS-6",
+    "id": "PC_0160",
     "patient_case": {
       "disease_group": "COPD",
       "specific_disease": "NA",
@@ -3328,7 +3328,7 @@
     }
   },
   {
-    "id": "12379918-DS-14",
+    "id": "PC_0161",
     "patient_case": {
       "disease_group": "Diabetes",
       "specific_disease": "Type I Diabetes",
@@ -3344,7 +3344,7 @@
     }
   },
   {
-    "id": "13839174-DS-21",
+    "id": "PC_0162",
     "patient_case": {
       "disease_group": "Diabetes",
       "specific_disease": "Type I Diabetes",
@@ -3360,7 +3360,7 @@
     }
   },
   {
-    "id": "15131866-DS-6",
+    "id": "PC_0163",
     "patient_case": {
       "disease_group": "Diabetes",
       "specific_disease": "Type I Diabetes",
@@ -3376,7 +3376,7 @@
     }
   },
   {
-    "id": "17517983-DS-49",
+    "id": "PC_0164",
     "patient_case": {
       "disease_group": "Diabetes",
       "specific_disease": "Type I Diabetes",
@@ -3392,7 +3392,7 @@
     }
   },
   {
-    "id": "17517983-DS-78",
+    "id": "PC_0165",
     "patient_case": {
       "disease_group": "Diabetes",
       "specific_disease": "Type I Diabetes",
@@ -3408,7 +3408,7 @@
     }
   },
   {
-    "id": "17523255-DS-7",
+    "id": "PC_0166",
     "patient_case": {
       "disease_group": "Diabetes",
       "specific_disease": "Type I Diabetes",
@@ -3424,7 +3424,7 @@
     }
   },
   {
-    "id": "19142711-DS-8",
+    "id": "PC_0167",
     "patient_case": {
       "disease_group": "Diabetes",
       "specific_disease": "Type I Diabetes",
@@ -3440,7 +3440,7 @@
     }
   },
   {
-    "id": "13050690-DS-6",
+    "id": "PC_0168",
     "patient_case": {
       "disease_group": "Diabetes",
       "specific_disease": "Type II Diabetes",
@@ -3456,7 +3456,7 @@
     }
   },
   {
-    "id": "13154769-DS-15",
+    "id": "PC_0169",
     "patient_case": {
       "disease_group": "Diabetes",
       "specific_disease": "Type II Diabetes",
@@ -3472,7 +3472,7 @@
     }
   },
   {
-    "id": "13180007-DS-17",
+    "id": "PC_0170",
     "patient_case": {
       "disease_group": "Diabetes",
       "specific_disease": "Type II Diabetes",
@@ -3488,7 +3488,7 @@
     }
   },
   {
-    "id": "13223220-DS-17",
+    "id": "PC_0171",
     "patient_case": {
       "disease_group": "Diabetes",
       "specific_disease": "Type II Diabetes",
@@ -3504,7 +3504,7 @@
     }
   },
   {
-    "id": "13301812-DS-3",
+    "id": "PC_0172",
     "patient_case": {
       "disease_group": "Diabetes",
       "specific_disease": "Type II Diabetes",
@@ -3520,7 +3520,7 @@
     }
   },
   {
-    "id": "13918653-DS-4",
+    "id": "PC_0173",
     "patient_case": {
       "disease_group": "Diabetes",
       "specific_disease": "Type II Diabetes",
@@ -3536,7 +3536,7 @@
     }
   },
   {
-    "id": "14070294-DS-14",
+    "id": "PC_0174",
     "patient_case": {
       "disease_group": "Epilepsy",
       "specific_disease": "Epilepsy",
@@ -3552,7 +3552,7 @@
     }
   },
   {
-    "id": "14535113-DS-34",
+    "id": "PC_0175",
     "patient_case": {
       "disease_group": "Epilepsy",
       "specific_disease": "Epilepsy",
@@ -3568,7 +3568,7 @@
     }
   },
   {
-    "id": "14690121-DS-15",
+    "id": "PC_0176",
     "patient_case": {
       "disease_group": "Epilepsy",
       "specific_disease": "Epilepsy",
@@ -3584,7 +3584,7 @@
     }
   },
   {
-    "id": "12280090-DS-12",
+    "id": "PC_0177",
     "patient_case": {
       "disease_group": "Epilepsy",
       "specific_disease": "Non-epileptic Seizure",
@@ -3600,7 +3600,7 @@
     }
   },
   {
-    "id": "12381874-DS-9",
+    "id": "PC_0178",
     "patient_case": {
       "disease_group": "Epilepsy",
       "specific_disease": "Non-epileptic Seizure",
@@ -3616,7 +3616,7 @@
     }
   },
   {
-    "id": "12788473-DS-11",
+    "id": "PC_0179",
     "patient_case": {
       "disease_group": "Epilepsy",
       "specific_disease": "Non-epileptic Seizure",
@@ -3632,7 +3632,7 @@
     }
   },
   {
-    "id": "12909121-DS-6",
+    "id": "PC_0180",
     "patient_case": {
       "disease_group": "Epilepsy",
       "specific_disease": "Non-epileptic Seizure",
@@ -3648,7 +3648,7 @@
     }
   },
   {
-    "id": "16314601-DS-5",
+    "id": "PC_0181",
     "patient_case": {
       "disease_group": "Epilepsy",
       "specific_disease": "Non-epileptic Seizure",
@@ -3664,7 +3664,7 @@
     }
   },
   {
-    "id": "11389640-DS-16",
+    "id": "PC_0182",
     "patient_case": {
       "disease_group": "Gastritis",
       "specific_disease": "Acute Gastritis",
@@ -3680,7 +3680,7 @@
     }
   },
   {
-    "id": "11520879-DS-3",
+    "id": "PC_0183",
     "patient_case": {
       "disease_group": "Gastritis",
       "specific_disease": "Acute Gastritis",
@@ -3696,7 +3696,7 @@
     }
   },
   {
-    "id": "11541457-DS-17",
+    "id": "PC_0184",
     "patient_case": {
       "disease_group": "Gastritis",
       "specific_disease": "Acute Gastritis",
@@ -3712,7 +3712,7 @@
     }
   },
   {
-    "id": "11589948-DS-19",
+    "id": "PC_0185",
     "patient_case": {
       "disease_group": "Gastritis",
       "specific_disease": "Acute Gastritis",
@@ -3728,7 +3728,7 @@
     }
   },
   {
-    "id": "11908878-DS-15",
+    "id": "PC_0186",
     "patient_case": {
       "disease_group": "Gastritis",
       "specific_disease": "Acute Gastritis",
@@ -3744,7 +3744,7 @@
     }
   },
   {
-    "id": "12441564-DS-18",
+    "id": "PC_0187",
     "patient_case": {
       "disease_group": "Gastritis",
       "specific_disease": "Acute Gastritis",
@@ -3760,7 +3760,7 @@
     }
   },
   {
-    "id": "17887687-DS-16",
+    "id": "PC_0188",
     "patient_case": {
       "disease_group": "Gastritis",
       "specific_disease": "Acute Gastritis",
@@ -3776,7 +3776,7 @@
     }
   },
   {
-    "id": "18001923-DS-35",
+    "id": "PC_0189",
     "patient_case": {
       "disease_group": "Gastritis",
       "specific_disease": "Acute Gastritis",
@@ -3792,7 +3792,7 @@
     }
   },
   {
-    "id": "18151206-DS-22",
+    "id": "PC_0190",
     "patient_case": {
       "disease_group": "Gastritis",
       "specific_disease": "Acute Gastritis",
@@ -3808,7 +3808,7 @@
     }
   },
   {
-    "id": "18473921-DS-14",
+    "id": "PC_0191",
     "patient_case": {
       "disease_group": "Gastritis",
       "specific_disease": "Acute Gastritis",
@@ -3824,7 +3824,7 @@
     }
   },
   {
-    "id": "18519555-DS-2",
+    "id": "PC_0192",
     "patient_case": {
       "disease_group": "Gastritis",
       "specific_disease": "Acute Gastritis",
@@ -3840,7 +3840,7 @@
     }
   },
   {
-    "id": "19341663-DS-15",
+    "id": "PC_0193",
     "patient_case": {
       "disease_group": "Gastritis",
       "specific_disease": "Acute Gastritis",
@@ -3856,7 +3856,7 @@
     }
   },
   {
-    "id": "19444258-DS-15",
+    "id": "PC_0194",
     "patient_case": {
       "disease_group": "Gastritis",
       "specific_disease": "Acute Gastritis",
@@ -3872,7 +3872,7 @@
     }
   },
   {
-    "id": "19542790-DS-3",
+    "id": "PC_0195",
     "patient_case": {
       "disease_group": "Gastritis",
       "specific_disease": "Acute Gastritis",
@@ -3888,7 +3888,7 @@
     }
   },
   {
-    "id": "11389640-DS-16",
+    "id": "PC_0196",
     "patient_case": {
       "disease_group": "Gastritis",
       "specific_disease": "Chronic Atrophic Gastritis",
@@ -3904,7 +3904,7 @@
     }
   },
   {
-    "id": "11546219-DS-21",
+    "id": "PC_0197",
     "patient_case": {
       "disease_group": "Gastritis",
       "specific_disease": "Chronic Atrophic Gastritis",
@@ -3920,7 +3920,7 @@
     }
   },
   {
-    "id": "17745031-DS-12",
+    "id": "PC_0198",
     "patient_case": {
       "disease_group": "Gastritis",
       "specific_disease": "Chronic Atrophic Gastritis",
@@ -3936,7 +3936,7 @@
     }
   },
   {
-    "id": "17776030-DS-15",
+    "id": "PC_0199",
     "patient_case": {
       "disease_group": "Gastritis",
       "specific_disease": "Chronic Atrophic Gastritis",
@@ -3952,7 +3952,7 @@
     }
   },
   {
-    "id": "17784861-DS-17",
+    "id": "PC_0200",
     "patient_case": {
       "disease_group": "Gastritis",
       "specific_disease": "Chronic Atrophic Gastritis",
@@ -3968,7 +3968,7 @@
     }
   },
   {
-    "id": "18001923-DS-35",
+    "id": "PC_0201",
     "patient_case": {
       "disease_group": "Gastritis",
       "specific_disease": "Chronic Atrophic Gastritis",
@@ -3984,7 +3984,7 @@
     }
   },
   {
-    "id": "18945414-DS-10",
+    "id": "PC_0202",
     "patient_case": {
       "disease_group": "Gastritis",
       "specific_disease": "Chronic Atrophic Gastritis",
@@ -4000,7 +4000,7 @@
     }
   },
   {
-    "id": "19329252-DS-12",
+    "id": "PC_0203",
     "patient_case": {
       "disease_group": "Gastritis",
       "specific_disease": "Chronic Atrophic Gastritis",
@@ -4016,7 +4016,7 @@
     }
   },
   {
-    "id": "12340605-DS-6",
+    "id": "PC_0204",
     "patient_case": {
       "disease_group": "Gastritis",
       "specific_disease": "Chronic Non-atrophic Gastritis",
@@ -4032,7 +4032,7 @@
     }
   },
   {
-    "id": "17540771-DS-9",
+    "id": "PC_0205",
     "patient_case": {
       "disease_group": "Gastritis",
       "specific_disease": "Chronic Non-atrophic Gastritis",
@@ -4048,7 +4048,7 @@
     }
   },
   {
-    "id": "17776030-DS-15",
+    "id": "PC_0206",
     "patient_case": {
       "disease_group": "Gastritis",
       "specific_disease": "Chronic Non-atrophic Gastritis",
@@ -4064,7 +4064,7 @@
     }
   },
   {
-    "id": "18945414-DS-10",
+    "id": "PC_0207",
     "patient_case": {
       "disease_group": "Gastritis",
       "specific_disease": "Chronic Non-atrophic Gastritis",
@@ -4080,7 +4080,7 @@
     }
   },
   {
-    "id": "18996244-DS-3",
+    "id": "PC_0208",
     "patient_case": {
       "disease_group": "Gastritis",
       "specific_disease": "Chronic Non-atrophic Gastritis",
@@ -4096,7 +4096,7 @@
     }
   },
   {
-    "id": "11458370-DS-14",
+    "id": "PC_0209",
     "patient_case": {
       "disease_group": "Gastro-oesophageal Reflux Disease",
       "specific_disease": "NA",
@@ -4112,7 +4112,7 @@
     }
   },
   {
-    "id": "12302912-DS-10",
+    "id": "PC_0210",
     "patient_case": {
       "disease_group": "Gastro-oesophageal Reflux Disease",
       "specific_disease": "NA",
@@ -4128,7 +4128,7 @@
     }
   },
   {
-    "id": "13063258-DS-20",
+    "id": "PC_0211",
     "patient_case": {
       "disease_group": "Gastro-oesophageal Reflux Disease",
       "specific_disease": "NA",
@@ -4144,7 +4144,7 @@
     }
   },
   {
-    "id": "13290763-DS-20",
+    "id": "PC_0212",
     "patient_case": {
       "disease_group": "Gastro-oesophageal Reflux Disease",
       "specific_disease": "NA",
@@ -4160,7 +4160,7 @@
     }
   },
   {
-    "id": "13573314-DS-34",
+    "id": "PC_0213",
     "patient_case": {
       "disease_group": "Gastro-oesophageal Reflux Disease",
       "specific_disease": "NA",
@@ -4176,7 +4176,7 @@
     }
   },
   {
-    "id": "13607135-DS-18",
+    "id": "PC_0214",
     "patient_case": {
       "disease_group": "Gastro-oesophageal Reflux Disease",
       "specific_disease": "NA",
@@ -4192,7 +4192,7 @@
     }
   },
   {
-    "id": "13661098-DS-14",
+    "id": "PC_0215",
     "patient_case": {
       "disease_group": "Gastro-oesophageal Reflux Disease",
       "specific_disease": "NA",
@@ -4208,7 +4208,7 @@
     }
   },
   {
-    "id": "13800231-DS-9",
+    "id": "PC_0216",
     "patient_case": {
       "disease_group": "Gastro-oesophageal Reflux Disease",
       "specific_disease": "NA",
@@ -4224,7 +4224,7 @@
     }
   },
   {
-    "id": "14175995-DS-14",
+    "id": "PC_0217",
     "patient_case": {
       "disease_group": "Gastro-oesophageal Reflux Disease",
       "specific_disease": "NA",
@@ -4240,7 +4240,7 @@
     }
   },
   {
-    "id": "14244305-DS-13",
+    "id": "PC_0218",
     "patient_case": {
       "disease_group": "Gastro-oesophageal Reflux Disease",
       "specific_disease": "NA",
@@ -4256,7 +4256,7 @@
     }
   },
   {
-    "id": "14592188-DS-9",
+    "id": "PC_0219",
     "patient_case": {
       "disease_group": "Gastro-oesophageal Reflux Disease",
       "specific_disease": "NA",
@@ -4272,7 +4272,7 @@
     }
   },
   {
-    "id": "14632181-DS-18",
+    "id": "PC_0220",
     "patient_case": {
       "disease_group": "Gastro-oesophageal Reflux Disease",
       "specific_disease": "NA",
@@ -4288,7 +4288,7 @@
     }
   },
   {
-    "id": "14828954-DS-17",
+    "id": "PC_0221",
     "patient_case": {
       "disease_group": "Gastro-oesophageal Reflux Disease",
       "specific_disease": "NA",
@@ -4304,7 +4304,7 @@
     }
   },
   {
-    "id": "15696887-DS-14",
+    "id": "PC_0222",
     "patient_case": {
       "disease_group": "Gastro-oesophageal Reflux Disease",
       "specific_disease": "NA",
@@ -4320,7 +4320,7 @@
     }
   },
   {
-    "id": "15872905-DS-4",
+    "id": "PC_0223",
     "patient_case": {
       "disease_group": "Gastro-oesophageal Reflux Disease",
       "specific_disease": "NA",
@@ -4336,7 +4336,7 @@
     }
   },
   {
-    "id": "16003661-DS-27",
+    "id": "PC_0224",
     "patient_case": {
       "disease_group": "Gastro-oesophageal Reflux Disease",
       "specific_disease": "NA",
@@ -4352,7 +4352,7 @@
     }
   },
   {
-    "id": "16276452-DS-8",
+    "id": "PC_0225",
     "patient_case": {
       "disease_group": "Gastro-oesophageal Reflux Disease",
       "specific_disease": "NA",
@@ -4368,7 +4368,7 @@
     }
   },
   {
-    "id": "16277357-DS-15",
+    "id": "PC_0226",
     "patient_case": {
       "disease_group": "Gastro-oesophageal Reflux Disease",
       "specific_disease": "NA",
@@ -4384,7 +4384,7 @@
     }
   },
   {
-    "id": "16330623-DS-12",
+    "id": "PC_0227",
     "patient_case": {
       "disease_group": "Gastro-oesophageal Reflux Disease",
       "specific_disease": "NA",
@@ -4400,7 +4400,7 @@
     }
   },
   {
-    "id": "16380225-DS-9",
+    "id": "PC_0228",
     "patient_case": {
       "disease_group": "Gastro-oesophageal Reflux Disease",
       "specific_disease": "NA",
@@ -4416,7 +4416,7 @@
     }
   },
   {
-    "id": "16512044-DS-19",
+    "id": "PC_0229",
     "patient_case": {
       "disease_group": "Gastro-oesophageal Reflux Disease",
       "specific_disease": "NA",
@@ -4432,7 +4432,7 @@
     }
   },
   {
-    "id": "17430704-DS-10",
+    "id": "PC_0230",
     "patient_case": {
       "disease_group": "Gastro-oesophageal Reflux Disease",
       "specific_disease": "NA",
@@ -4448,7 +4448,7 @@
     }
   },
   {
-    "id": "17430704-DS-14",
+    "id": "PC_0231",
     "patient_case": {
       "disease_group": "Gastro-oesophageal Reflux Disease",
       "specific_disease": "NA",
@@ -4464,7 +4464,7 @@
     }
   },
   {
-    "id": "17483512-DS-17",
+    "id": "PC_0232",
     "patient_case": {
       "disease_group": "Gastro-oesophageal Reflux Disease",
       "specific_disease": "NA",
@@ -4480,7 +4480,7 @@
     }
   },
   {
-    "id": "17531182-DS-17",
+    "id": "PC_0233",
     "patient_case": {
       "disease_group": "Gastro-oesophageal Reflux Disease",
       "specific_disease": "NA",
@@ -4496,7 +4496,7 @@
     }
   },
   {
-    "id": "17755142-DS-15",
+    "id": "PC_0234",
     "patient_case": {
       "disease_group": "Gastro-oesophageal Reflux Disease",
       "specific_disease": "NA",
@@ -4512,7 +4512,7 @@
     }
   },
   {
-    "id": "17762094-DS-13",
+    "id": "PC_0235",
     "patient_case": {
       "disease_group": "Gastro-oesophageal Reflux Disease",
       "specific_disease": "NA",
@@ -4528,7 +4528,7 @@
     }
   },
   {
-    "id": "17762094-DS-27",
+    "id": "PC_0236",
     "patient_case": {
       "disease_group": "Gastro-oesophageal Reflux Disease",
       "specific_disease": "NA",
@@ -4544,7 +4544,7 @@
     }
   },
   {
-    "id": "17796507-DS-20",
+    "id": "PC_0237",
     "patient_case": {
       "disease_group": "Gastro-oesophageal Reflux Disease",
       "specific_disease": "NA",
@@ -4560,7 +4560,7 @@
     }
   },
   {
-    "id": "17809917-DS-7",
+    "id": "PC_0238",
     "patient_case": {
       "disease_group": "Gastro-oesophageal Reflux Disease",
       "specific_disease": "NA",
@@ -4576,7 +4576,7 @@
     }
   },
   {
-    "id": "17830445-DS-7",
+    "id": "PC_0239",
     "patient_case": {
       "disease_group": "Gastro-oesophageal Reflux Disease",
       "specific_disease": "NA",
@@ -4592,7 +4592,7 @@
     }
   },
   {
-    "id": "18084435-DS-21",
+    "id": "PC_0240",
     "patient_case": {
       "disease_group": "Gastro-oesophageal Reflux Disease",
       "specific_disease": "NA",
@@ -4608,7 +4608,7 @@
     }
   },
   {
-    "id": "18296811-DS-10",
+    "id": "PC_0241",
     "patient_case": {
       "disease_group": "Gastro-oesophageal Reflux Disease",
       "specific_disease": "NA",
@@ -4624,7 +4624,7 @@
     }
   },
   {
-    "id": "18425773-DS-12",
+    "id": "PC_0242",
     "patient_case": {
       "disease_group": "Gastro-oesophageal Reflux Disease",
       "specific_disease": "NA",
@@ -4640,7 +4640,7 @@
     }
   },
   {
-    "id": "18635756-DS-17",
+    "id": "PC_0243",
     "patient_case": {
       "disease_group": "Gastro-oesophageal Reflux Disease",
       "specific_disease": "NA",
@@ -4656,7 +4656,7 @@
     }
   },
   {
-    "id": "18639999-DS-19",
+    "id": "PC_0244",
     "patient_case": {
       "disease_group": "Gastro-oesophageal Reflux Disease",
       "specific_disease": "NA",
@@ -4672,7 +4672,7 @@
     }
   },
   {
-    "id": "18740413-DS-13",
+    "id": "PC_0245",
     "patient_case": {
       "disease_group": "Gastro-oesophageal Reflux Disease",
       "specific_disease": "NA",
@@ -4688,7 +4688,7 @@
     }
   },
   {
-    "id": "18814172-DS-9",
+    "id": "PC_0246",
     "patient_case": {
       "disease_group": "Gastro-oesophageal Reflux Disease",
       "specific_disease": "NA",
@@ -4704,7 +4704,7 @@
     }
   },
   {
-    "id": "18905329-DS-20",
+    "id": "PC_0247",
     "patient_case": {
       "disease_group": "Gastro-oesophageal Reflux Disease",
       "specific_disease": "NA",
@@ -4720,7 +4720,7 @@
     }
   },
   {
-    "id": "19182957-DS-17",
+    "id": "PC_0248",
     "patient_case": {
       "disease_group": "Gastro-oesophageal Reflux Disease",
       "specific_disease": "NA",
@@ -4736,7 +4736,7 @@
     }
   },
   {
-    "id": "19242928-DS-8",
+    "id": "PC_0249",
     "patient_case": {
       "disease_group": "Gastro-oesophageal Reflux Disease",
       "specific_disease": "NA",
@@ -4752,7 +4752,7 @@
     }
   },
   {
-    "id": "11386787-DS-17",
+    "id": "PC_0250",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -4768,7 +4768,7 @@
     }
   },
   {
-    "id": "11422357-DS-14",
+    "id": "PC_0251",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -4784,7 +4784,7 @@
     }
   },
   {
-    "id": "11459120-DS-14",
+    "id": "PC_0252",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -4800,7 +4800,7 @@
     }
   },
   {
-    "id": "11459120-DS-16",
+    "id": "PC_0253",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -4816,7 +4816,7 @@
     }
   },
   {
-    "id": "11459120-DS-17",
+    "id": "PC_0254",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -4832,7 +4832,7 @@
     }
   },
   {
-    "id": "11459120-DS-20",
+    "id": "PC_0255",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -4848,7 +4848,7 @@
     }
   },
   {
-    "id": "11459120-DS-27",
+    "id": "PC_0256",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -4864,7 +4864,7 @@
     }
   },
   {
-    "id": "11465548-DS-9",
+    "id": "PC_0257",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -4880,7 +4880,7 @@
     }
   },
   {
-    "id": "11475050-DS-27",
+    "id": "PC_0258",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -4896,7 +4896,7 @@
     }
   },
   {
-    "id": "11607177-DS-14",
+    "id": "PC_0259",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -4912,7 +4912,7 @@
     }
   },
   {
-    "id": "11691034-DS-3",
+    "id": "PC_0260",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -4928,7 +4928,7 @@
     }
   },
   {
-    "id": "11696880-DS-19",
+    "id": "PC_0261",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -4944,7 +4944,7 @@
     }
   },
   {
-    "id": "11868165-DS-24",
+    "id": "PC_0262",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -4960,7 +4960,7 @@
     }
   },
   {
-    "id": "17123250-DS-19",
+    "id": "PC_0263",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -4976,7 +4976,7 @@
     }
   },
   {
-    "id": "17143325-DS-23",
+    "id": "PC_0264",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -4992,7 +4992,7 @@
     }
   },
   {
-    "id": "17165207-DS-20",
+    "id": "PC_0265",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -5008,7 +5008,7 @@
     }
   },
   {
-    "id": "17167392-DS-8",
+    "id": "PC_0266",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -5024,7 +5024,7 @@
     }
   },
   {
-    "id": "17176117-DS-4",
+    "id": "PC_0267",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -5040,7 +5040,7 @@
     }
   },
   {
-    "id": "17191670-DS-18",
+    "id": "PC_0268",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -5056,7 +5056,7 @@
     }
   },
   {
-    "id": "17196497-DS-3",
+    "id": "PC_0269",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -5072,7 +5072,7 @@
     }
   },
   {
-    "id": "17205507-DS-19",
+    "id": "PC_0270",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -5088,7 +5088,7 @@
     }
   },
   {
-    "id": "17243592-DS-15",
+    "id": "PC_0271",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -5104,7 +5104,7 @@
     }
   },
   {
-    "id": "17244619-DS-41",
+    "id": "PC_0272",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -5120,7 +5120,7 @@
     }
   },
   {
-    "id": "17277045-DS-9",
+    "id": "PC_0273",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -5136,7 +5136,7 @@
     }
   },
   {
-    "id": "17304513-DS-20",
+    "id": "PC_0274",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -5152,7 +5152,7 @@
     }
   },
   {
-    "id": "17316016-DS-14",
+    "id": "PC_0275",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -5168,7 +5168,7 @@
     }
   },
   {
-    "id": "17319103-DS-19",
+    "id": "PC_0276",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -5184,7 +5184,7 @@
     }
   },
   {
-    "id": "17322218-DS-17",
+    "id": "PC_0277",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -5200,7 +5200,7 @@
     }
   },
   {
-    "id": "17352394-DS-4",
+    "id": "PC_0278",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -5216,7 +5216,7 @@
     }
   },
   {
-    "id": "18536618-DS-21",
+    "id": "PC_0279",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -5232,7 +5232,7 @@
     }
   },
   {
-    "id": "18548050-DS-21",
+    "id": "PC_0280",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -5248,7 +5248,7 @@
     }
   },
   {
-    "id": "18581055-DS-19",
+    "id": "PC_0281",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -5264,7 +5264,7 @@
     }
   },
   {
-    "id": "18606160-DS-8",
+    "id": "PC_0282",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -5280,7 +5280,7 @@
     }
   },
   {
-    "id": "18624255-DS-11",
+    "id": "PC_0283",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -5296,7 +5296,7 @@
     }
   },
   {
-    "id": "18647733-DS-7",
+    "id": "PC_0284",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -5312,7 +5312,7 @@
     }
   },
   {
-    "id": "18693746-DS-10",
+    "id": "PC_0285",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -5328,7 +5328,7 @@
     }
   },
   {
-    "id": "18718424-DS-21",
+    "id": "PC_0286",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -5344,7 +5344,7 @@
     }
   },
   {
-    "id": "18729731-DS-13",
+    "id": "PC_0287",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -5360,7 +5360,7 @@
     }
   },
   {
-    "id": "18740324-DS-19",
+    "id": "PC_0288",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -5376,7 +5376,7 @@
     }
   },
   {
-    "id": "18834270-DS-10",
+    "id": "PC_0289",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -5392,7 +5392,7 @@
     }
   },
   {
-    "id": "18853045-DS-15",
+    "id": "PC_0290",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -5408,7 +5408,7 @@
     }
   },
   {
-    "id": "18853045-DS-16",
+    "id": "PC_0291",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -5424,7 +5424,7 @@
     }
   },
   {
-    "id": "18870530-DS-17",
+    "id": "PC_0292",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -5440,7 +5440,7 @@
     }
   },
   {
-    "id": "18888515-DS-22",
+    "id": "PC_0293",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -5456,7 +5456,7 @@
     }
   },
   {
-    "id": "18902344-DS-47",
+    "id": "PC_0294",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -5472,7 +5472,7 @@
     }
   },
   {
-    "id": "18962557-DS-15",
+    "id": "PC_0295",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -5488,7 +5488,7 @@
     }
   },
   {
-    "id": "19019784-DS-21",
+    "id": "PC_0296",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -5504,7 +5504,7 @@
     }
   },
   {
-    "id": "19042495-DS-22",
+    "id": "PC_0297",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -5520,7 +5520,7 @@
     }
   },
   {
-    "id": "19043930-DS-19",
+    "id": "PC_0298",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -5536,7 +5536,7 @@
     }
   },
   {
-    "id": "19058546-DS-16",
+    "id": "PC_0299",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -5552,7 +5552,7 @@
     }
   },
   {
-    "id": "19158991-DS-13",
+    "id": "PC_0300",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -5568,7 +5568,7 @@
     }
   },
   {
-    "id": "19213219-DS-11",
+    "id": "PC_0301",
     "patient_case": {
       "disease_group": "Heart Failure",
       "specific_disease": "NA",
@@ -5584,7 +5584,7 @@
     }
   },
   {
-    "id": "11750185-DS-15",
+    "id": "PC_0302",
     "patient_case": {
       "disease_group": "Hyperlipidemia",
       "specific_disease": "NA",
@@ -5600,7 +5600,7 @@
     }
   },
   {
-    "id": "13591813-DS-21",
+    "id": "PC_0303",
     "patient_case": {
       "disease_group": "Hyperlipidemia",
       "specific_disease": "NA",
@@ -5616,7 +5616,7 @@
     }
   },
   {
-    "id": "11416084-DS-14",
+    "id": "PC_0304",
     "patient_case": {
       "disease_group": "Hypertension",
       "specific_disease": "NA",
@@ -5632,7 +5632,7 @@
     }
   },
   {
-    "id": "11416084-DS-15",
+    "id": "PC_0305",
     "patient_case": {
       "disease_group": "Hypertension",
       "specific_disease": "NA",
@@ -5648,7 +5648,7 @@
     }
   },
   {
-    "id": "11416084-DS-16",
+    "id": "PC_0306",
     "patient_case": {
       "disease_group": "Hypertension",
       "specific_disease": "NA",
@@ -5664,7 +5664,7 @@
     }
   },
   {
-    "id": "11416397-DS-6",
+    "id": "PC_0307",
     "patient_case": {
       "disease_group": "Hypertension",
       "specific_disease": "NA",
@@ -5680,7 +5680,7 @@
     }
   },
   {
-    "id": "11501987-DS-11",
+    "id": "PC_0308",
     "patient_case": {
       "disease_group": "Hypertension",
       "specific_disease": "NA",
@@ -5696,7 +5696,7 @@
     }
   },
   {
-    "id": "11737430-DS-29",
+    "id": "PC_0309",
     "patient_case": {
       "disease_group": "Hypertension",
       "specific_disease": "NA",
@@ -5712,7 +5712,7 @@
     }
   },
   {
-    "id": "11962352-DS-7",
+    "id": "PC_0310",
     "patient_case": {
       "disease_group": "Hypertension",
       "specific_disease": "NA",
@@ -5728,7 +5728,7 @@
     }
   },
   {
-    "id": "12006801-DS-3",
+    "id": "PC_0311",
     "patient_case": {
       "disease_group": "Hypertension",
       "specific_disease": "NA",
@@ -5744,7 +5744,7 @@
     }
   },
   {
-    "id": "12551014-DS-6",
+    "id": "PC_0312",
     "patient_case": {
       "disease_group": "Hypertension",
       "specific_disease": "NA",
@@ -5760,7 +5760,7 @@
     }
   },
   {
-    "id": "12828031-DS-27",
+    "id": "PC_0313",
     "patient_case": {
       "disease_group": "Hypertension",
       "specific_disease": "NA",
@@ -5776,7 +5776,7 @@
     }
   },
   {
-    "id": "13092414-DS-18",
+    "id": "PC_0314",
     "patient_case": {
       "disease_group": "Hypertension",
       "specific_disease": "NA",
@@ -5792,7 +5792,7 @@
     }
   },
   {
-    "id": "13127922-DS-11",
+    "id": "PC_0315",
     "patient_case": {
       "disease_group": "Hypertension",
       "specific_disease": "NA",
@@ -5808,7 +5808,7 @@
     }
   },
   {
-    "id": "13313134-DS-21",
+    "id": "PC_0316",
     "patient_case": {
       "disease_group": "Hypertension",
       "specific_disease": "NA",
@@ -5824,7 +5824,7 @@
     }
   },
   {
-    "id": "13826272-DS-12",
+    "id": "PC_0317",
     "patient_case": {
       "disease_group": "Hypertension",
       "specific_disease": "NA",
@@ -5840,7 +5840,7 @@
     }
   },
   {
-    "id": "14936659-DS-23",
+    "id": "PC_0318",
     "patient_case": {
       "disease_group": "Hypertension",
       "specific_disease": "NA",
@@ -5856,7 +5856,7 @@
     }
   },
   {
-    "id": "14944299-DS-17",
+    "id": "PC_0319",
     "patient_case": {
       "disease_group": "Hypertension",
       "specific_disease": "NA",
@@ -5872,7 +5872,7 @@
     }
   },
   {
-    "id": "15185281-DS-14",
+    "id": "PC_0320",
     "patient_case": {
       "disease_group": "Hypertension",
       "specific_disease": "NA",
@@ -5888,7 +5888,7 @@
     }
   },
   {
-    "id": "15706386-DS-10",
+    "id": "PC_0321",
     "patient_case": {
       "disease_group": "Hypertension",
       "specific_disease": "NA",
@@ -5904,7 +5904,7 @@
     }
   },
   {
-    "id": "15874317-DS-28",
+    "id": "PC_0322",
     "patient_case": {
       "disease_group": "Hypertension",
       "specific_disease": "NA",
@@ -5920,7 +5920,7 @@
     }
   },
   {
-    "id": "16543302-DS-6",
+    "id": "PC_0323",
     "patient_case": {
       "disease_group": "Hypertension",
       "specific_disease": "NA",
@@ -5936,7 +5936,7 @@
     }
   },
   {
-    "id": "16617903-DS-15",
+    "id": "PC_0324",
     "patient_case": {
       "disease_group": "Hypertension",
       "specific_disease": "NA",
@@ -5952,7 +5952,7 @@
     }
   },
   {
-    "id": "17035408-DS-19",
+    "id": "PC_0325",
     "patient_case": {
       "disease_group": "Hypertension",
       "specific_disease": "NA",
@@ -5968,7 +5968,7 @@
     }
   },
   {
-    "id": "17604315-DS-9",
+    "id": "PC_0326",
     "patient_case": {
       "disease_group": "Hypertension",
       "specific_disease": "NA",
@@ -5984,7 +5984,7 @@
     }
   },
   {
-    "id": "17665357-DS-3",
+    "id": "PC_0327",
     "patient_case": {
       "disease_group": "Hypertension",
       "specific_disease": "NA",
@@ -6000,7 +6000,7 @@
     }
   },
   {
-    "id": "17960078-DS-62",
+    "id": "PC_0328",
     "patient_case": {
       "disease_group": "Hypertension",
       "specific_disease": "NA",
@@ -6016,7 +6016,7 @@
     }
   },
   {
-    "id": "18026938-DS-17",
+    "id": "PC_0329",
     "patient_case": {
       "disease_group": "Hypertension",
       "specific_disease": "NA",
@@ -6032,7 +6032,7 @@
     }
   },
   {
-    "id": "18217759-DS-11",
+    "id": "PC_0330",
     "patient_case": {
       "disease_group": "Hypertension",
       "specific_disease": "NA",
@@ -6048,7 +6048,7 @@
     }
   },
   {
-    "id": "18528299-DS-9",
+    "id": "PC_0331",
     "patient_case": {
       "disease_group": "Hypertension",
       "specific_disease": "NA",
@@ -6064,7 +6064,7 @@
     }
   },
   {
-    "id": "18732758-DS-3",
+    "id": "PC_0332",
     "patient_case": {
       "disease_group": "Hypertension",
       "specific_disease": "NA",
@@ -6080,7 +6080,7 @@
     }
   },
   {
-    "id": "18944079-DS-17",
+    "id": "PC_0333",
     "patient_case": {
       "disease_group": "Hypertension",
       "specific_disease": "NA",
@@ -6096,7 +6096,7 @@
     }
   },
   {
-    "id": "19141642-DS-10",
+    "id": "PC_0334",
     "patient_case": {
       "disease_group": "Hypertension",
       "specific_disease": "NA",
@@ -6112,7 +6112,7 @@
     }
   },
   {
-    "id": "19435301-DS-12",
+    "id": "PC_0335",
     "patient_case": {
       "disease_group": "Hypertension",
       "specific_disease": "NA",
@@ -6128,7 +6128,7 @@
     }
   },
   {
-    "id": "17676552-DS-10",
+    "id": "PC_0336",
     "patient_case": {
       "disease_group": "Migraine",
       "specific_disease": "Migraine With Aura",
@@ -6144,7 +6144,7 @@
     }
   },
   {
-    "id": "18427803-DS-5",
+    "id": "PC_0337",
     "patient_case": {
       "disease_group": "Migraine",
       "specific_disease": "Migraine With Aura",
@@ -6160,7 +6160,7 @@
     }
   },
   {
-    "id": "18805216-DS-21",
+    "id": "PC_0338",
     "patient_case": {
       "disease_group": "Migraine",
       "specific_disease": "Migraine With Aura",
@@ -6176,7 +6176,7 @@
     }
   },
   {
-    "id": "17185323-DS-14",
+    "id": "PC_0339",
     "patient_case": {
       "disease_group": "Migraine",
       "specific_disease": "Migraine Without Aura",
@@ -6192,7 +6192,7 @@
     }
   },
   {
-    "id": "12994754-DS-20",
+    "id": "PC_0340",
     "patient_case": {
       "disease_group": "Multiple Sclerosis",
       "specific_disease": "Primary Progressive Multiple Sclerosis",
@@ -6208,7 +6208,7 @@
     }
   },
   {
-    "id": "13036011-DS-18",
+    "id": "PC_0341",
     "patient_case": {
       "disease_group": "Multiple Sclerosis",
       "specific_disease": "Primary Progressive Multiple Sclerosis",
@@ -6224,7 +6224,7 @@
     }
   },
   {
-    "id": "11475935-DS-17",
+    "id": "PC_0342",
     "patient_case": {
       "disease_group": "Multiple Sclerosis",
       "specific_disease": "Relapsing-Remitting Multiple Sclerosis",
@@ -6240,7 +6240,7 @@
     }
   },
   {
-    "id": "11981102-DS-12",
+    "id": "PC_0343",
     "patient_case": {
       "disease_group": "Multiple Sclerosis",
       "specific_disease": "Relapsing-Remitting Multiple Sclerosis",
@@ -6256,7 +6256,7 @@
     }
   },
   {
-    "id": "12108816-DS-21",
+    "id": "PC_0344",
     "patient_case": {
       "disease_group": "Multiple Sclerosis",
       "specific_disease": "Relapsing-Remitting Multiple Sclerosis",
@@ -6272,7 +6272,7 @@
     }
   },
   {
-    "id": "12172828-DS-20",
+    "id": "PC_0345",
     "patient_case": {
       "disease_group": "Multiple Sclerosis",
       "specific_disease": "Relapsing-Remitting Multiple Sclerosis",
@@ -6288,7 +6288,7 @@
     }
   },
   {
-    "id": "12331699-DS-23",
+    "id": "PC_0346",
     "patient_case": {
       "disease_group": "Multiple Sclerosis",
       "specific_disease": "Relapsing-Remitting Multiple Sclerosis",
@@ -6304,7 +6304,7 @@
     }
   },
   {
-    "id": "12331699-DS-2311",
+    "id": "PC_0347",
     "patient_case": {
       "disease_group": "Multiple Sclerosis",
       "specific_disease": "Relapsing-Remitting Multiple Sclerosis",
@@ -6320,7 +6320,7 @@
     }
   },
   {
-    "id": "12546487-DS-16",
+    "id": "PC_0348",
     "patient_case": {
       "disease_group": "Multiple Sclerosis",
       "specific_disease": "Relapsing-Remitting Multiple Sclerosis",
@@ -6336,7 +6336,7 @@
     }
   },
   {
-    "id": "12546487-DS-17",
+    "id": "PC_0349",
     "patient_case": {
       "disease_group": "Multiple Sclerosis",
       "specific_disease": "Relapsing-Remitting Multiple Sclerosis",
@@ -6352,7 +6352,7 @@
     }
   },
   {
-    "id": "12594529-DS-11",
+    "id": "PC_0350",
     "patient_case": {
       "disease_group": "Multiple Sclerosis",
       "specific_disease": "Relapsing-Remitting Multiple Sclerosis",
@@ -6368,7 +6368,7 @@
     }
   },
   {
-    "id": "12979013-DS-8",
+    "id": "PC_0351",
     "patient_case": {
       "disease_group": "Multiple Sclerosis",
       "specific_disease": "Relapsing-Remitting Multiple Sclerosis",
@@ -6384,7 +6384,7 @@
     }
   },
   {
-    "id": "12994754-DS-19",
+    "id": "PC_0352",
     "patient_case": {
       "disease_group": "Multiple Sclerosis",
       "specific_disease": "Relapsing-Remitting Multiple Sclerosis",
@@ -6400,7 +6400,7 @@
     }
   },
   {
-    "id": "12994754-DS-21",
+    "id": "PC_0353",
     "patient_case": {
       "disease_group": "Multiple Sclerosis",
       "specific_disease": "Relapsing-Remitting Multiple Sclerosis",
@@ -6416,7 +6416,7 @@
     }
   },
   {
-    "id": "13043422-DS-9",
+    "id": "PC_0354",
     "patient_case": {
       "disease_group": "Multiple Sclerosis",
       "specific_disease": "Relapsing-Remitting Multiple Sclerosis",
@@ -6432,7 +6432,7 @@
     }
   },
   {
-    "id": "13849116-DS-12",
+    "id": "PC_0355",
     "patient_case": {
       "disease_group": "Multiple Sclerosis",
       "specific_disease": "Relapsing-Remitting Multiple Sclerosis",
@@ -6448,7 +6448,7 @@
     }
   },
   {
-    "id": "13901573-DS-18",
+    "id": "PC_0356",
     "patient_case": {
       "disease_group": "Multiple Sclerosis",
       "specific_disease": "Relapsing-Remitting Multiple Sclerosis",
@@ -6464,7 +6464,7 @@
     }
   },
   {
-    "id": "14676772-DS-16",
+    "id": "PC_0357",
     "patient_case": {
       "disease_group": "Multiple Sclerosis",
       "specific_disease": "Relapsing-Remitting Multiple Sclerosis",
@@ -6480,7 +6480,7 @@
     }
   },
   {
-    "id": "14784368-DS-15",
+    "id": "PC_0358",
     "patient_case": {
       "disease_group": "Multiple Sclerosis",
       "specific_disease": "Relapsing-Remitting Multiple Sclerosis",
@@ -6496,7 +6496,7 @@
     }
   },
   {
-    "id": "14789229-DS-15",
+    "id": "PC_0359",
     "patient_case": {
       "disease_group": "Multiple Sclerosis",
       "specific_disease": "Relapsing-Remitting Multiple Sclerosis",
@@ -6512,7 +6512,7 @@
     }
   },
   {
-    "id": "15116755-DS-19",
+    "id": "PC_0360",
     "patient_case": {
       "disease_group": "Multiple Sclerosis",
       "specific_disease": "Relapsing-Remitting Multiple Sclerosis",
@@ -6528,7 +6528,7 @@
     }
   },
   {
-    "id": "15226178-DS-22",
+    "id": "PC_0361",
     "patient_case": {
       "disease_group": "Multiple Sclerosis",
       "specific_disease": "Relapsing-Remitting Multiple Sclerosis",
@@ -6544,7 +6544,7 @@
     }
   },
   {
-    "id": "15333597-DS-11",
+    "id": "PC_0362",
     "patient_case": {
       "disease_group": "Multiple Sclerosis",
       "specific_disease": "Relapsing-Remitting Multiple Sclerosis",
@@ -6560,7 +6560,7 @@
     }
   },
   {
-    "id": "15353648-DS-17",
+    "id": "PC_0363",
     "patient_case": {
       "disease_group": "Multiple Sclerosis",
       "specific_disease": "Relapsing-Remitting Multiple Sclerosis",
@@ -6576,7 +6576,7 @@
     }
   },
   {
-    "id": "12331699-DS-23",
+    "id": "PC_0364",
     "patient_case": {
       "disease_group": "Multiple Sclerosis",
       "specific_disease": "Secondary Progressive Multiple Sclerosis",
@@ -6592,7 +6592,7 @@
     }
   },
   {
-    "id": "12846155-DS-8",
+    "id": "PC_0365",
     "patient_case": {
       "disease_group": "Multiple Sclerosis",
       "specific_disease": "Secondary Progressive Multiple Sclerosis",
@@ -6608,7 +6608,7 @@
     }
   },
   {
-    "id": "13901573-DS-16",
+    "id": "PC_0366",
     "patient_case": {
       "disease_group": "Multiple Sclerosis",
       "specific_disease": "Secondary Progressive Multiple Sclerosis",
@@ -6624,7 +6624,7 @@
     }
   },
   {
-    "id": "11833885-DS-11",
+    "id": "PC_0367",
     "patient_case": {
       "disease_group": "Peptic Ulcer Disease",
       "specific_disease": "Duodenal Ulcers",
@@ -6640,7 +6640,7 @@
     }
   },
   {
-    "id": "13188037-DS-21",
+    "id": "PC_0368",
     "patient_case": {
       "disease_group": "Peptic Ulcer Disease",
       "specific_disease": "Duodenal Ulcers",
@@ -6656,7 +6656,7 @@
     }
   },
   {
-    "id": "13688835-DS-12",
+    "id": "PC_0369",
     "patient_case": {
       "disease_group": "Peptic Ulcer Disease",
       "specific_disease": "Duodenal Ulcers",
@@ -6672,7 +6672,7 @@
     }
   },
   {
-    "id": "15177004-DS-21",
+    "id": "PC_0370",
     "patient_case": {
       "disease_group": "Peptic Ulcer Disease",
       "specific_disease": "Duodenal Ulcers",
@@ -6688,7 +6688,7 @@
     }
   },
   {
-    "id": "15177004-DS-211",
+    "id": "PC_0371",
     "patient_case": {
       "disease_group": "Peptic Ulcer Disease",
       "specific_disease": "Duodenal Ulcers",
@@ -6704,7 +6704,7 @@
     }
   },
   {
-    "id": "16882192-DS-33",
+    "id": "PC_0372",
     "patient_case": {
       "disease_group": "Peptic Ulcer Disease",
       "specific_disease": "Duodenal Ulcers",
@@ -6720,7 +6720,7 @@
     }
   },
   {
-    "id": "17910930-DS-11",
+    "id": "PC_0373",
     "patient_case": {
       "disease_group": "Peptic Ulcer Disease",
       "specific_disease": "Duodenal Ulcers",
@@ -6736,7 +6736,7 @@
     }
   },
   {
-    "id": "19505167-DS-17",
+    "id": "PC_0374",
     "patient_case": {
       "disease_group": "Peptic Ulcer Disease",
       "specific_disease": "Duodenal Ulcers",
@@ -6752,7 +6752,7 @@
     }
   },
   {
-    "id": "11416792-DS-14",
+    "id": "PC_0375",
     "patient_case": {
       "disease_group": "Peptic Ulcer Disease",
       "specific_disease": "Gastric Ulcers",
@@ -6768,7 +6768,7 @@
     }
   },
   {
-    "id": "11797021-DS-19",
+    "id": "PC_0376",
     "patient_case": {
       "disease_group": "Peptic Ulcer Disease",
       "specific_disease": "Gastric Ulcers",
@@ -6784,7 +6784,7 @@
     }
   },
   {
-    "id": "11993263-DS-8",
+    "id": "PC_0377",
     "patient_case": {
       "disease_group": "Peptic Ulcer Disease",
       "specific_disease": "Gastric Ulcers",
@@ -6800,7 +6800,7 @@
     }
   },
   {
-    "id": "12021335-DS-5",
+    "id": "PC_0378",
     "patient_case": {
       "disease_group": "Peptic Ulcer Disease",
       "specific_disease": "Gastric Ulcers",
@@ -6816,7 +6816,7 @@
     }
   },
   {
-    "id": "12484285-DS-2",
+    "id": "PC_0379",
     "patient_case": {
       "disease_group": "Peptic Ulcer Disease",
       "specific_disease": "Gastric Ulcers",
@@ -6832,7 +6832,7 @@
     }
   },
   {
-    "id": "12680418-DS-19",
+    "id": "PC_0380",
     "patient_case": {
       "disease_group": "Peptic Ulcer Disease",
       "specific_disease": "Gastric Ulcers",
@@ -6848,7 +6848,7 @@
     }
   },
   {
-    "id": "14041557-DS-15",
+    "id": "PC_0381",
     "patient_case": {
       "disease_group": "Peptic Ulcer Disease",
       "specific_disease": "Gastric Ulcers",
@@ -6864,7 +6864,7 @@
     }
   },
   {
-    "id": "14564935-DS-18",
+    "id": "PC_0382",
     "patient_case": {
       "disease_group": "Peptic Ulcer Disease",
       "specific_disease": "Gastric Ulcers",
@@ -6880,7 +6880,7 @@
     }
   },
   {
-    "id": "14925002-DS-9",
+    "id": "PC_0383",
     "patient_case": {
       "disease_group": "Peptic Ulcer Disease",
       "specific_disease": "Gastric Ulcers",
@@ -6896,7 +6896,7 @@
     }
   },
   {
-    "id": "15658321-DS-8",
+    "id": "PC_0384",
     "patient_case": {
       "disease_group": "Peptic Ulcer Disease",
       "specific_disease": "Gastric Ulcers",
@@ -6912,7 +6912,7 @@
     }
   },
   {
-    "id": "16714362-DS-15",
+    "id": "PC_0385",
     "patient_case": {
       "disease_group": "Peptic Ulcer Disease",
       "specific_disease": "Gastric Ulcers",
@@ -6928,7 +6928,7 @@
     }
   },
   {
-    "id": "16714362-DS-1533",
+    "id": "PC_0386",
     "patient_case": {
       "disease_group": "Peptic Ulcer Disease",
       "specific_disease": "Gastric Ulcers",
@@ -6944,7 +6944,7 @@
     }
   },
   {
-    "id": "17590576-DS-20",
+    "id": "PC_0387",
     "patient_case": {
       "disease_group": "Peptic Ulcer Disease",
       "specific_disease": "Gastric Ulcers",
@@ -6960,7 +6960,7 @@
     }
   },
   {
-    "id": "17676595-DS-13",
+    "id": "PC_0388",
     "patient_case": {
       "disease_group": "Peptic Ulcer Disease",
       "specific_disease": "Gastric Ulcers",
@@ -6976,7 +6976,7 @@
     }
   },
   {
-    "id": "17868682-DS-8",
+    "id": "PC_0389",
     "patient_case": {
       "disease_group": "Peptic Ulcer Disease",
       "specific_disease": "Gastric Ulcers",
@@ -6992,7 +6992,7 @@
     }
   },
   {
-    "id": "17868682-DS-81",
+    "id": "PC_0390",
     "patient_case": {
       "disease_group": "Peptic Ulcer Disease",
       "specific_disease": "Gastric Ulcers",
@@ -7008,7 +7008,7 @@
     }
   },
   {
-    "id": "17910930-DS-11",
+    "id": "PC_0391",
     "patient_case": {
       "disease_group": "Peptic Ulcer Disease",
       "specific_disease": "Gastric Ulcers",
@@ -7024,7 +7024,7 @@
     }
   },
   {
-    "id": "19163991-DS-11",
+    "id": "PC_0392",
     "patient_case": {
       "disease_group": "Peptic Ulcer Disease",
       "specific_disease": "Gastric Ulcers",
@@ -7040,7 +7040,7 @@
     }
   },
   {
-    "id": "19458321-DS-18",
+    "id": "PC_0393",
     "patient_case": {
       "disease_group": "Peptic Ulcer Disease",
       "specific_disease": "Gastric Ulcers",
@@ -7056,7 +7056,7 @@
     }
   },
   {
-    "id": "19505167-DS-17",
+    "id": "PC_0394",
     "patient_case": {
       "disease_group": "Peptic Ulcer Disease",
       "specific_disease": "Gastric Ulcers",
@@ -7072,7 +7072,7 @@
     }
   },
   {
-    "id": "11573828-DS-4",
+    "id": "PC_0395",
     "patient_case": {
       "disease_group": "Pituitary Disease",
       "specific_disease": "Pituitary Macroadenoma",
@@ -7088,7 +7088,7 @@
     }
   },
   {
-    "id": "12688174-DS-17",
+    "id": "PC_0396",
     "patient_case": {
       "disease_group": "Pituitary Disease",
       "specific_disease": "Pituitary Macroadenoma",
@@ -7104,7 +7104,7 @@
     }
   },
   {
-    "id": "12709553-DS-7",
+    "id": "PC_0397",
     "patient_case": {
       "disease_group": "Pituitary Disease",
       "specific_disease": "Pituitary Macroadenoma",
@@ -7120,7 +7120,7 @@
     }
   },
   {
-    "id": "13246627-DS-4",
+    "id": "PC_0398",
     "patient_case": {
       "disease_group": "Pituitary Disease",
       "specific_disease": "Pituitary Macroadenoma",
@@ -7136,7 +7136,7 @@
     }
   },
   {
-    "id": "13562354-DS-13",
+    "id": "PC_0399",
     "patient_case": {
       "disease_group": "Pituitary Disease",
       "specific_disease": "Pituitary Macroadenoma",
@@ -7152,7 +7152,7 @@
     }
   },
   {
-    "id": "14633589-DS-5",
+    "id": "PC_0400",
     "patient_case": {
       "disease_group": "Pituitary Disease",
       "specific_disease": "Pituitary Macroadenoma",
@@ -7168,7 +7168,7 @@
     }
   },
   {
-    "id": "15430683-DS-10",
+    "id": "PC_0401",
     "patient_case": {
       "disease_group": "Pituitary Disease",
       "specific_disease": "Pituitary Macroadenoma",
@@ -7184,7 +7184,7 @@
     }
   },
   {
-    "id": "17779332-DS-11",
+    "id": "PC_0402",
     "patient_case": {
       "disease_group": "Pituitary Disease",
       "specific_disease": "Pituitary Macroadenoma",
@@ -7200,7 +7200,7 @@
     }
   },
   {
-    "id": "18987116-DS-10",
+    "id": "PC_0403",
     "patient_case": {
       "disease_group": "Pituitary Disease",
       "specific_disease": "Pituitary Macroadenoma",
@@ -7216,7 +7216,7 @@
     }
   },
   {
-    "id": "19001641-DS-19",
+    "id": "PC_0404",
     "patient_case": {
       "disease_group": "Pituitary Disease",
       "specific_disease": "Pituitary Macroadenoma",
@@ -7232,7 +7232,7 @@
     }
   },
   {
-    "id": "19135392-DS-7",
+    "id": "PC_0405",
     "patient_case": {
       "disease_group": "Pituitary Disease",
       "specific_disease": "Pituitary Macroadenoma",
@@ -7248,7 +7248,7 @@
     }
   },
   {
-    "id": "18144647-DS-16",
+    "id": "PC_0406",
     "patient_case": {
       "disease_group": "Pituitary Disease",
       "specific_disease": "Pituitary Microadenoma",
@@ -7264,7 +7264,7 @@
     }
   },
   {
-    "id": "11620099-DS-7",
+    "id": "PC_0407",
     "patient_case": {
       "disease_group": "Pneumonia",
       "specific_disease": "Bacterial Pneumonia",
@@ -7280,7 +7280,7 @@
     }
   },
   {
-    "id": "13503429-DS-16",
+    "id": "PC_0408",
     "patient_case": {
       "disease_group": "Pneumonia",
       "specific_disease": "Bacterial Pneumonia",
@@ -7296,7 +7296,7 @@
     }
   },
   {
-    "id": "13504185-DS-20",
+    "id": "PC_0409",
     "patient_case": {
       "disease_group": "Pneumonia",
       "specific_disease": "Bacterial Pneumonia",
@@ -7312,7 +7312,7 @@
     }
   },
   {
-    "id": "14110132-DS-24",
+    "id": "PC_0410",
     "patient_case": {
       "disease_group": "Pneumonia",
       "specific_disease": "Bacterial Pneumonia",
@@ -7328,7 +7328,7 @@
     }
   },
   {
-    "id": "15824797-DS-15",
+    "id": "PC_0411",
     "patient_case": {
       "disease_group": "Pneumonia",
       "specific_disease": "Bacterial Pneumonia",
@@ -7344,7 +7344,7 @@
     }
   },
   {
-    "id": "15824797-DS-151",
+    "id": "PC_0412",
     "patient_case": {
       "disease_group": "Pneumonia",
       "specific_disease": "Bacterial Pneumonia",
@@ -7360,7 +7360,7 @@
     }
   },
   {
-    "id": "16147199-DS-4",
+    "id": "PC_0413",
     "patient_case": {
       "disease_group": "Pneumonia",
       "specific_disease": "Bacterial Pneumonia",
@@ -7376,7 +7376,7 @@
     }
   },
   {
-    "id": "16752897-DS-11",
+    "id": "PC_0414",
     "patient_case": {
       "disease_group": "Pneumonia",
       "specific_disease": "Bacterial Pneumonia",
@@ -7392,7 +7392,7 @@
     }
   },
   {
-    "id": "16956657-DS-4",
+    "id": "PC_0415",
     "patient_case": {
       "disease_group": "Pneumonia",
       "specific_disease": "Bacterial Pneumonia",
@@ -7408,7 +7408,7 @@
     }
   },
   {
-    "id": "17414827-DS-11",
+    "id": "PC_0416",
     "patient_case": {
       "disease_group": "Pneumonia",
       "specific_disease": "Bacterial Pneumonia",
@@ -7424,7 +7424,7 @@
     }
   },
   {
-    "id": "19103590-DS-16",
+    "id": "PC_0417",
     "patient_case": {
       "disease_group": "Pneumonia",
       "specific_disease": "Bacterial Pneumonia",
@@ -7440,7 +7440,7 @@
     }
   },
   {
-    "id": "19313611-DS-17",
+    "id": "PC_0418",
     "patient_case": {
       "disease_group": "Pneumonia",
       "specific_disease": "Bacterial Pneumonia",
@@ -7456,7 +7456,7 @@
     }
   },
   {
-    "id": "19441625-DS-18",
+    "id": "PC_0419",
     "patient_case": {
       "disease_group": "Pneumonia",
       "specific_disease": "Bacterial Pneumonia",
@@ -7472,7 +7472,7 @@
     }
   },
   {
-    "id": "extra-1",
+    "id": "PC_0420",
     "patient_case": {
       "disease_group": "Pneumonia",
       "specific_disease": "Bacterial Pneumonia",
@@ -7488,7 +7488,7 @@
     }
   },
   {
-    "id": "extra-2",
+    "id": "PC_0421",
     "patient_case": {
       "disease_group": "Pneumonia",
       "specific_disease": "Bacterial Pneumonia",
@@ -7504,7 +7504,7 @@
     }
   },
   {
-    "id": "extra-3",
+    "id": "PC_0422",
     "patient_case": {
       "disease_group": "Pneumonia",
       "specific_disease": "Bacterial Pneumonia",
@@ -7520,7 +7520,7 @@
     }
   },
   {
-    "id": "13316652-DS-5",
+    "id": "PC_0423",
     "patient_case": {
       "disease_group": "Pneumonia",
       "specific_disease": "Viral Pneumonia",
@@ -7536,7 +7536,7 @@
     }
   },
   {
-    "id": "15585852-DS-17",
+    "id": "PC_0424",
     "patient_case": {
       "disease_group": "Pneumonia",
       "specific_disease": "Viral Pneumonia",
@@ -7552,7 +7552,7 @@
     }
   },
   {
-    "id": "15782217-DS-15",
+    "id": "PC_0425",
     "patient_case": {
       "disease_group": "Pneumonia",
       "specific_disease": "Viral Pneumonia",
@@ -7568,7 +7568,7 @@
     }
   },
   {
-    "id": "17763117-DS-13",
+    "id": "PC_0426",
     "patient_case": {
       "disease_group": "Pneumonia",
       "specific_disease": "Viral Pneumonia",
@@ -7584,7 +7584,7 @@
     }
   },
   {
-    "id": "11580528-DS-8",
+    "id": "PC_0427",
     "patient_case": {
       "disease_group": "Pulmonary Embolism",
       "specific_disease": "Low-risk PE",
@@ -7600,7 +7600,7 @@
     }
   },
   {
-    "id": "11590913-DS-13",
+    "id": "PC_0428",
     "patient_case": {
       "disease_group": "Pulmonary Embolism",
       "specific_disease": "Low-risk PE",
@@ -7616,7 +7616,7 @@
     }
   },
   {
-    "id": "12341559-DS-15",
+    "id": "PC_0429",
     "patient_case": {
       "disease_group": "Pulmonary Embolism",
       "specific_disease": "Low-risk PE",
@@ -7632,7 +7632,7 @@
     }
   },
   {
-    "id": "12759698-DS-3",
+    "id": "PC_0430",
     "patient_case": {
       "disease_group": "Pulmonary Embolism",
       "specific_disease": "Low-risk PE",
@@ -7648,7 +7648,7 @@
     }
   },
   {
-    "id": "12763117-DS-14",
+    "id": "PC_0431",
     "patient_case": {
       "disease_group": "Pulmonary Embolism",
       "specific_disease": "Low-risk PE",
@@ -7664,7 +7664,7 @@
     }
   },
   {
-    "id": "12831732-DS-11",
+    "id": "PC_0432",
     "patient_case": {
       "disease_group": "Pulmonary Embolism",
       "specific_disease": "Low-risk PE",
@@ -7680,7 +7680,7 @@
     }
   },
   {
-    "id": "13327415-DS-25",
+    "id": "PC_0433",
     "patient_case": {
       "disease_group": "Pulmonary Embolism",
       "specific_disease": "Low-risk PE",
@@ -7696,7 +7696,7 @@
     }
   },
   {
-    "id": "13420510-DS-15",
+    "id": "PC_0434",
     "patient_case": {
       "disease_group": "Pulmonary Embolism",
       "specific_disease": "Low-risk PE",
@@ -7712,7 +7712,7 @@
     }
   },
   {
-    "id": "13738109-DS-20",
+    "id": "PC_0435",
     "patient_case": {
       "disease_group": "Pulmonary Embolism",
       "specific_disease": "Low-risk PE",
@@ -7728,7 +7728,7 @@
     }
   },
   {
-    "id": "15190301-DS-16",
+    "id": "PC_0436",
     "patient_case": {
       "disease_group": "Pulmonary Embolism",
       "specific_disease": "Low-risk PE",
@@ -7744,7 +7744,7 @@
     }
   },
   {
-    "id": "15276169-DS-20",
+    "id": "PC_0437",
     "patient_case": {
       "disease_group": "Pulmonary Embolism",
       "specific_disease": "Low-risk PE",
@@ -7760,7 +7760,7 @@
     }
   },
   {
-    "id": "15418476-DS-5",
+    "id": "PC_0438",
     "patient_case": {
       "disease_group": "Pulmonary Embolism",
       "specific_disease": "Low-risk PE",
@@ -7776,7 +7776,7 @@
     }
   },
   {
-    "id": "15427589-DS-8",
+    "id": "PC_0439",
     "patient_case": {
       "disease_group": "Pulmonary Embolism",
       "specific_disease": "Low-risk PE",
@@ -7792,7 +7792,7 @@
     }
   },
   {
-    "id": "16261765-DS-15",
+    "id": "PC_0440",
     "patient_case": {
       "disease_group": "Pulmonary Embolism",
       "specific_disease": "Low-risk PE",
@@ -7808,7 +7808,7 @@
     }
   },
   {
-    "id": "16502049-DS-12",
+    "id": "PC_0441",
     "patient_case": {
       "disease_group": "Pulmonary Embolism",
       "specific_disease": "Low-risk PE",
@@ -7824,7 +7824,7 @@
     }
   },
   {
-    "id": "16823547-DS-8",
+    "id": "PC_0442",
     "patient_case": {
       "disease_group": "Pulmonary Embolism",
       "specific_disease": "Low-risk PE",
@@ -7840,7 +7840,7 @@
     }
   },
   {
-    "id": "16856084-DS-11",
+    "id": "PC_0443",
     "patient_case": {
       "disease_group": "Pulmonary Embolism",
       "specific_disease": "Low-risk PE",
@@ -7856,7 +7856,7 @@
     }
   },
   {
-    "id": "17087118-DS-14",
+    "id": "PC_0444",
     "patient_case": {
       "disease_group": "Pulmonary Embolism",
       "specific_disease": "Low-risk PE",
@@ -7872,7 +7872,7 @@
     }
   },
   {
-    "id": "17440689-DS-5",
+    "id": "PC_0445",
     "patient_case": {
       "disease_group": "Pulmonary Embolism",
       "specific_disease": "Low-risk PE",
@@ -7888,7 +7888,7 @@
     }
   },
   {
-    "id": "18130160-DS-15",
+    "id": "PC_0446",
     "patient_case": {
       "disease_group": "Pulmonary Embolism",
       "specific_disease": "Low-risk PE",
@@ -7904,7 +7904,7 @@
     }
   },
   {
-    "id": "18895551-DS-18",
+    "id": "PC_0447",
     "patient_case": {
       "disease_group": "Pulmonary Embolism",
       "specific_disease": "Low-risk PE",
@@ -7920,7 +7920,7 @@
     }
   },
   {
-    "id": "15917563-DS-14",
+    "id": "PC_0448",
     "patient_case": {
       "disease_group": "Pulmonary Embolism",
       "specific_disease": "Massive PE",
@@ -7936,7 +7936,7 @@
     }
   },
   {
-    "id": "17850733-DS-7",
+    "id": "PC_0449",
     "patient_case": {
       "disease_group": "Pulmonary Embolism",
       "specific_disease": "Massive PE",
@@ -7952,7 +7952,7 @@
     }
   },
   {
-    "id": "12301488-DS-7",
+    "id": "PC_0450",
     "patient_case": {
       "disease_group": "Pulmonary Embolism",
       "specific_disease": "Submassive PE",
@@ -7968,7 +7968,7 @@
     }
   },
   {
-    "id": "12519803-DS-18",
+    "id": "PC_0451",
     "patient_case": {
       "disease_group": "Pulmonary Embolism",
       "specific_disease": "Submassive PE",
@@ -7984,7 +7984,7 @@
     }
   },
   {
-    "id": "12533087-DS-14",
+    "id": "PC_0452",
     "patient_case": {
       "disease_group": "Pulmonary Embolism",
       "specific_disease": "Submassive PE",
@@ -8000,7 +8000,7 @@
     }
   },
   {
-    "id": "12554980-DS-15",
+    "id": "PC_0453",
     "patient_case": {
       "disease_group": "Pulmonary Embolism",
       "specific_disease": "Submassive PE",
@@ -8016,7 +8016,7 @@
     }
   },
   {
-    "id": "12964739-DS-12",
+    "id": "PC_0454",
     "patient_case": {
       "disease_group": "Pulmonary Embolism",
       "specific_disease": "Submassive PE",
@@ -8032,7 +8032,7 @@
     }
   },
   {
-    "id": "15536737-DS-18",
+    "id": "PC_0455",
     "patient_case": {
       "disease_group": "Pulmonary Embolism",
       "specific_disease": "Submassive PE",
@@ -8048,7 +8048,7 @@
     }
   },
   {
-    "id": "15686498-DS-16",
+    "id": "PC_0456",
     "patient_case": {
       "disease_group": "Pulmonary Embolism",
       "specific_disease": "Submassive PE",
@@ -8064,7 +8064,7 @@
     }
   },
   {
-    "id": "16061224-DS-14",
+    "id": "PC_0457",
     "patient_case": {
       "disease_group": "Pulmonary Embolism",
       "specific_disease": "Submassive PE",
@@ -8080,7 +8080,7 @@
     }
   },
   {
-    "id": "16179881-DS-7",
+    "id": "PC_0458",
     "patient_case": {
       "disease_group": "Pulmonary Embolism",
       "specific_disease": "Submassive PE",
@@ -8096,7 +8096,7 @@
     }
   },
   {
-    "id": "16658982-DS-20",
+    "id": "PC_0459",
     "patient_case": {
       "disease_group": "Pulmonary Embolism",
       "specific_disease": "Submassive PE",
@@ -8112,7 +8112,7 @@
     }
   },
   {
-    "id": "18344499-DS-16",
+    "id": "PC_0460",
     "patient_case": {
       "disease_group": "Pulmonary Embolism",
       "specific_disease": "Submassive PE",
@@ -8128,7 +8128,7 @@
     }
   },
   {
-    "id": "18865972-DS-3",
+    "id": "PC_0461",
     "patient_case": {
       "disease_group": "Pulmonary Embolism",
       "specific_disease": "Submassive PE",
@@ -8144,7 +8144,7 @@
     }
   },
   {
-    "id": "11408894-DS-2",
+    "id": "PC_0462",
     "patient_case": {
       "disease_group": "Stroke",
       "specific_disease": "Hemorrhagic Stroke",
@@ -8160,7 +8160,7 @@
     }
   },
   {
-    "id": "12086937-DS-2",
+    "id": "PC_0463",
     "patient_case": {
       "disease_group": "Stroke",
       "specific_disease": "Hemorrhagic Stroke",
@@ -8176,7 +8176,7 @@
     }
   },
   {
-    "id": "12190635-DS-14",
+    "id": "PC_0464",
     "patient_case": {
       "disease_group": "Stroke",
       "specific_disease": "Hemorrhagic Stroke",
@@ -8192,7 +8192,7 @@
     }
   },
   {
-    "id": "13256522-DS-5",
+    "id": "PC_0465",
     "patient_case": {
       "disease_group": "Stroke",
       "specific_disease": "Hemorrhagic Stroke",
@@ -8208,7 +8208,7 @@
     }
   },
   {
-    "id": "14112332-DS-18",
+    "id": "PC_0466",
     "patient_case": {
       "disease_group": "Stroke",
       "specific_disease": "Hemorrhagic Stroke",
@@ -8224,7 +8224,7 @@
     }
   },
   {
-    "id": "14189463-DS-10",
+    "id": "PC_0467",
     "patient_case": {
       "disease_group": "Stroke",
       "specific_disease": "Hemorrhagic Stroke",
@@ -8240,7 +8240,7 @@
     }
   },
   {
-    "id": "14588438-DS-21",
+    "id": "PC_0468",
     "patient_case": {
       "disease_group": "Stroke",
       "specific_disease": "Hemorrhagic Stroke",
@@ -8256,7 +8256,7 @@
     }
   },
   {
-    "id": "14651148-DS-19",
+    "id": "PC_0469",
     "patient_case": {
       "disease_group": "Stroke",
       "specific_disease": "Hemorrhagic Stroke",
@@ -8272,7 +8272,7 @@
     }
   },
   {
-    "id": "15039042-DS-12",
+    "id": "PC_0470",
     "patient_case": {
       "disease_group": "Stroke",
       "specific_disease": "Hemorrhagic Stroke",
@@ -8288,7 +8288,7 @@
     }
   },
   {
-    "id": "15100095-DS-13",
+    "id": "PC_0471",
     "patient_case": {
       "disease_group": "Stroke",
       "specific_disease": "Hemorrhagic Stroke",
@@ -8304,7 +8304,7 @@
     }
   },
   {
-    "id": "15612258-DS-17",
+    "id": "PC_0472",
     "patient_case": {
       "disease_group": "Stroke",
       "specific_disease": "Hemorrhagic Stroke",
@@ -8320,7 +8320,7 @@
     }
   },
   {
-    "id": "16646033-DS-13",
+    "id": "PC_0473",
     "patient_case": {
       "disease_group": "Stroke",
       "specific_disease": "Hemorrhagic Stroke",
@@ -8336,7 +8336,7 @@
     }
   },
   {
-    "id": "19155318-DS-5",
+    "id": "PC_0474",
     "patient_case": {
       "disease_group": "Stroke",
       "specific_disease": "Hemorrhagic Stroke",
@@ -8352,7 +8352,7 @@
     }
   },
   {
-    "id": "19441468-DS-19",
+    "id": "PC_0475",
     "patient_case": {
       "disease_group": "Stroke",
       "specific_disease": "Hemorrhagic Stroke",
@@ -8368,7 +8368,7 @@
     }
   },
   {
-    "id": "stroke_sample1",
+    "id": "PC_0476",
     "patient_case": {
       "disease_group": "Stroke",
       "specific_disease": "Hemorrhagic Stroke",
@@ -8384,7 +8384,7 @@
     }
   },
   {
-    "id": "11452808-DS-20",
+    "id": "PC_0477",
     "patient_case": {
       "disease_group": "Stroke",
       "specific_disease": "Ischemic Stroke",
@@ -8400,7 +8400,7 @@
     }
   },
   {
-    "id": "11790430-DS-20",
+    "id": "PC_0478",
     "patient_case": {
       "disease_group": "Stroke",
       "specific_disease": "Ischemic Stroke",
@@ -8416,7 +8416,7 @@
     }
   },
   {
-    "id": "11800237-DS-4",
+    "id": "PC_0479",
     "patient_case": {
       "disease_group": "Stroke",
       "specific_disease": "Ischemic Stroke",
@@ -8432,7 +8432,7 @@
     }
   },
   {
-    "id": "11853860-DS-23",
+    "id": "PC_0480",
     "patient_case": {
       "disease_group": "Stroke",
       "specific_disease": "Ischemic Stroke",
@@ -8448,7 +8448,7 @@
     }
   },
   {
-    "id": "11875736-DS-6",
+    "id": "PC_0481",
     "patient_case": {
       "disease_group": "Stroke",
       "specific_disease": "Ischemic Stroke",
@@ -8464,7 +8464,7 @@
     }
   },
   {
-    "id": "11882869-DS-11",
+    "id": "PC_0482",
     "patient_case": {
       "disease_group": "Stroke",
       "specific_disease": "Ischemic Stroke",
@@ -8480,7 +8480,7 @@
     }
   },
   {
-    "id": "11896216-DS-7",
+    "id": "PC_0483",
     "patient_case": {
       "disease_group": "Stroke",
       "specific_disease": "Ischemic Stroke",
@@ -8496,7 +8496,7 @@
     }
   },
   {
-    "id": "14538785-DS-15",
+    "id": "PC_0484",
     "patient_case": {
       "disease_group": "Stroke",
       "specific_disease": "Ischemic Stroke",
@@ -8512,7 +8512,7 @@
     }
   },
   {
-    "id": "16172945-DS-19",
+    "id": "PC_0485",
     "patient_case": {
       "disease_group": "Stroke",
       "specific_disease": "Ischemic Stroke",
@@ -8528,7 +8528,7 @@
     }
   },
   {
-    "id": "18833652-DS-11",
+    "id": "PC_0486",
     "patient_case": {
       "disease_group": "Stroke",
       "specific_disease": "Ischemic Stroke",
@@ -8544,7 +8544,7 @@
     }
   },
   {
-    "id": "18908844-DS-9",
+    "id": "PC_0487",
     "patient_case": {
       "disease_group": "Stroke",
       "specific_disease": "Ischemic Stroke",
@@ -8560,7 +8560,7 @@
     }
   },
   {
-    "id": "19038331-DS-17",
+    "id": "PC_0488",
     "patient_case": {
       "disease_group": "Stroke",
       "specific_disease": "Ischemic Stroke",
@@ -8576,7 +8576,7 @@
     }
   },
   {
-    "id": "19227459-DS-11",
+    "id": "PC_0489",
     "patient_case": {
       "disease_group": "Stroke",
       "specific_disease": "Ischemic Stroke",
@@ -8592,7 +8592,7 @@
     }
   },
   {
-    "id": "13746170-DS-4",
+    "id": "PC_0490",
     "patient_case": {
       "disease_group": "Thyroid Disease",
       "specific_disease": "Hyperthyroidism",
@@ -8608,7 +8608,7 @@
     }
   },
   {
-    "id": "13787731-DS-4",
+    "id": "PC_0491",
     "patient_case": {
       "disease_group": "Thyroid Disease",
       "specific_disease": "Hyperthyroidism",
@@ -8624,7 +8624,7 @@
     }
   },
   {
-    "id": "16471629-DS-2",
+    "id": "PC_0492",
     "patient_case": {
       "disease_group": "Thyroid Disease",
       "specific_disease": "Hyperthyroidism",
@@ -8640,7 +8640,7 @@
     }
   },
   {
-    "id": "16693380-DS-20",
+    "id": "PC_0493",
     "patient_case": {
       "disease_group": "Thyroid Disease",
       "specific_disease": "Hyperthyroidism",
@@ -8656,7 +8656,7 @@
     }
   },
   {
-    "id": "11697485-DS-10",
+    "id": "PC_0494",
     "patient_case": {
       "disease_group": "Thyroid Disease",
       "specific_disease": "Hypothyroidism",
@@ -8672,7 +8672,7 @@
     }
   },
   {
-    "id": "13561991-DS-10",
+    "id": "PC_0495",
     "patient_case": {
       "disease_group": "Thyroid Disease",
       "specific_disease": "Hypothyroidism",
@@ -8688,7 +8688,7 @@
     }
   },
   {
-    "id": "14596661-DS-6",
+    "id": "PC_0496",
     "patient_case": {
       "disease_group": "Thyroid Disease",
       "specific_disease": "Hypothyroidism",
@@ -8704,7 +8704,7 @@
     }
   },
   {
-    "id": "16973388-DS-20",
+    "id": "PC_0497",
     "patient_case": {
       "disease_group": "Thyroid Disease",
       "specific_disease": "Thyroid Nodules",
@@ -8720,7 +8720,7 @@
     }
   },
   {
-    "id": "18292099-DS-19",
+    "id": "PC_0498",
     "patient_case": {
       "disease_group": "Thyroid Disease",
       "specific_disease": "Thyroid Nodules",
@@ -8736,7 +8736,7 @@
     }
   },
   {
-    "id": "15973805-DS-23",
+    "id": "PC_0499",
     "patient_case": {
       "disease_group": "Thyroid Disease",
       "specific_disease": "Thyroiditis",
@@ -8752,7 +8752,7 @@
     }
   },
   {
-    "id": "13187640-DS-14",
+    "id": "PC_0500",
     "patient_case": {
       "disease_group": "Tuberculosis",
       "specific_disease": "NA",
@@ -8768,7 +8768,7 @@
     }
   },
   {
-    "id": "13691292-DS-3",
+    "id": "PC_0501",
     "patient_case": {
       "disease_group": "Tuberculosis",
       "specific_disease": "NA",
@@ -8784,7 +8784,7 @@
     }
   },
   {
-    "id": "13730220-DS-5",
+    "id": "PC_0502",
     "patient_case": {
       "disease_group": "Tuberculosis",
       "specific_disease": "NA",
@@ -8800,7 +8800,7 @@
     }
   },
   {
-    "id": "15590996-DS-20",
+    "id": "PC_0503",
     "patient_case": {
       "disease_group": "Tuberculosis",
       "specific_disease": "NA",
@@ -8816,7 +8816,7 @@
     }
   },
   {
-    "id": "15793371-DS-13",
+    "id": "PC_0504",
     "patient_case": {
       "disease_group": "Tuberculosis",
       "specific_disease": "NA",
@@ -8832,7 +8832,7 @@
     }
   },
   {
-    "id": "11878388-DS-21",
+    "id": "PC_0505",
     "patient_case": {
       "disease_group": "Upper Gastrointestinal Bleeding",
       "specific_disease": "NA",
@@ -8848,7 +8848,7 @@
     }
   },
   {
-    "id": "13971464-DS-11",
+    "id": "PC_0506",
     "patient_case": {
       "disease_group": "Upper Gastrointestinal Bleeding",
       "specific_disease": "NA",
@@ -8864,7 +8864,7 @@
     }
   },
   {
-    "id": "14545508-DS-6",
+    "id": "PC_0507",
     "patient_case": {
       "disease_group": "Upper Gastrointestinal Bleeding",
       "specific_disease": "NA",
@@ -8880,7 +8880,7 @@
     }
   },
   {
-    "id": "15247348-DS-14",
+    "id": "PC_0508",
     "patient_case": {
       "disease_group": "Upper Gastrointestinal Bleeding",
       "specific_disease": "NA",
@@ -8896,7 +8896,7 @@
     }
   },
   {
-    "id": "15616719-DS-22",
+    "id": "PC_0509",
     "patient_case": {
       "disease_group": "Upper Gastrointestinal Bleeding",
       "specific_disease": "NA",
@@ -8912,7 +8912,7 @@
     }
   },
   {
-    "id": "16620644-DS-7",
+    "id": "PC_0510",
     "patient_case": {
       "disease_group": "Upper Gastrointestinal Bleeding",
       "specific_disease": "NA",
@@ -8928,7 +8928,7 @@
     }
   },
   {
-    "id": "17028519-DS-23",
+    "id": "PC_0511",
     "patient_case": {
       "disease_group": "Upper Gastrointestinal Bleeding",
       "specific_disease": "NA",

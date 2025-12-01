@@ -31,7 +31,7 @@ PATIENT_PICKLE = os.path.join(VECTOR_STORE_DIR, "patient_items.pkl")
 # ---------------------------
 # Load SentenceTransformer
 # ---------------------------
-model = SentenceTransformer("all-MiniLM-L6-v2")  # CPU embeddings
+model = SentenceTransformer('nomic-ai/nomic-embed-text-v1.5', trust_remote_code=True)
 
 # ---------------------------
 # Load or Create KB Items and Patient Items

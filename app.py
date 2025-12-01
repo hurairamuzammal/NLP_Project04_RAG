@@ -271,7 +271,7 @@ if st.button("Diagnose"):
             except Exception as e:
                 st.error(f"Error displaying item {idx}: {e}")
         
-        st.markdown("### AI Diagnosis")
+        st.markdown("### AI Response")
         st.write(answer)
 
         st.markdown(f"**Average Relevance Score:** {avg_score:.2f}")

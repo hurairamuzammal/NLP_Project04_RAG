@@ -37,25 +37,49 @@ model = SentenceTransformer("all-MiniLM-L6-v2")  # CPU embeddings
 # Load or Create KB Items and Patient Items
 # ---------------------------
 if os.path.exists(KB_PICKLE) and os.path.exists(PATIENT_PICKLE):
-    with open(KB_PICKLE, "rb") as f:
-        kb_items = pickle.load(f)
-    with open(PATIENT_PICKLE, "rb") as f:
-        patient_items = pickle.load(f)
+    try:
+        with open(KB_PICKLE, "rb") as f:
+            kb_items = pickle.load(f)
+        with open(PATIENT_PICKLE, "rb") as f:
+            patient_items = pickle.load(f)
+        st.success(f"Loaded {len(kb_items)} KB items and {len(patient_items)} patient cases from pickle files")
+    except Exception as e:
+        st.error(f"Error loading pickle files: {e}")
+        # Fall back to loading from JSON
+        kb_items = []
+        patient_items = []
 else:
-    st.warning("Pickle files not found, loading from JSON and creating them...")
-    with open(DATA_PATH, "r") as f:
-        data = json.load(f)
-    kb_items = [item for item in data if "medicalKB" in item]
-    patient_items = [item for item in data if "patient_case" in item]
-    
-    # Create vector_store directory if it doesn't exist
-    os.makedirs(VECTOR_STORE_DIR, exist_ok=True)
-    
-    # Save pickle files
-    with open(KB_PICKLE, "wb") as f:
-        pickle.dump(kb_items, f)
-    with open(PATIENT_PICKLE, "wb") as f:
-        pickle.dump(patient_items, f)
+    kb_items = []
+    patient_items = []
+
+if len(kb_items) == 0 or len(patient_items) == 0:
+    st.warning("Pickle files not found or empty, loading from JSON and creating them...")
+    try:
+        with open(DATA_PATH, "r") as f:
+            data = json.load(f)
+        
+        # Filter and validate items
+        kb_items = [item for item in data if "medicalKB" in item and "id" in item]
+        patient_items = [item for item in data if "patient_case" in item and "id" in item]
+        
+        st.info(f"Loaded {len(kb_items)} KB items and {len(patient_items)} patient cases from JSON")
+        
+        # Create vector_store directory if it doesn't exist
+        os.makedirs(VECTOR_STORE_DIR, exist_ok=True)
+        
+        # Save pickle files
+        with open(KB_PICKLE, "wb") as f:
+            pickle.dump(kb_items, f)
+        with open(PATIENT_PICKLE, "wb") as f:
+            pickle.dump(patient_items, f)
+        
+        st.success("Pickle files created successfully")
+    except FileNotFoundError:
+        st.error(f"JSON file not found at: {DATA_PATH}")
+        st.stop()
+    except Exception as e:
+        st.error(f"Error loading JSON: {e}")
+        st.stop()
 
 # ---------------------------
 # Load or Build FAISS Index for Medical KB
@@ -127,16 +151,24 @@ def generate_answer(query, api_key, k_kb=2, k_cases=2):
     retrieved = retrieve(query, k_kb=k_kb, k_cases=k_cases)
 
     context_parts = []
-    for source_type, item, score in retrieved:
-        if source_type == "KB":
-            context_parts.append(f"- [KB: {item['id']}] {item['medicalKB']} (Relevance: {score:.2f})")
-        else:
-            # Patient case has nested structure - extract the relevant information
-            case_data = item['patient_case']
-            # Combine all inputs into a readable format
-            inputs_text = " | ".join([f"{k}: {v}" for k, v in case_data.get('inputs', {}).items() if v and v != "None"])
-            case_summary = f"Disease: {case_data.get('specific_disease', 'Unknown')} | {inputs_text[:500]}"
-            context_parts.append(f"- [CASE: {item['id']}] {case_summary} (Relevance: {score:.2f})")
+    for idx, (source_type, item, score) in enumerate(retrieved):
+        try:
+            if source_type == "KB":
+                item_id = item.get('id', f'KB_{idx}')
+                kb_text = item.get('medicalKB', 'No content')
+                context_parts.append(f"- [KB: {item_id}] {kb_text} (Relevance: {score:.2f})")
+            else:
+                # Patient case has nested structure - extract the relevant information
+                item_id = item.get('id', f'CASE_{idx}')
+                case_data = item.get('patient_case', {})
+                # Combine all inputs into a readable format
+                inputs = case_data.get('inputs', {})
+                inputs_text = " | ".join([f"{k}: {v}" for k, v in inputs.items() if v and v != "None"])
+                case_summary = f"Disease: {case_data.get('specific_disease', 'Unknown')} | {inputs_text[:500]}"
+                context_parts.append(f"- [CASE: {item_id}] {case_summary} (Relevance: {score:.2f})")
+        except Exception as e:
+            st.warning(f"Error processing item {idx}: {e}")
+            continue
     
     context_str = "\n".join(context_parts)
     avg_score = sum(score for _, _, score in retrieved)/len(retrieved) if retrieved else 0.0
@@ -215,22 +247,29 @@ if st.button("Diagnose"):
         
         st.markdown("### Retrieved Knowledge & Similar Cases")
         for idx, (source_type, item, score) in enumerate(retrieved_items, 1):
-            if source_type == "KB":
-                st.markdown(f"**{idx}. [Medical KB] {item['id']}** - Score: {score:.2f}")
-                st.write(item['medicalKB'])
-            else:
-                case_data = item['patient_case']
-                st.markdown(f"**{idx}. [Patient Case] {item['id']}** - Score: {score:.2f}")
-                st.markdown(f"**Disease:** {case_data.get('specific_disease', 'Unknown')} ({case_data.get('disease_group', 'Unknown')})")
-                
-                # Show inputs
-                inputs = case_data.get('inputs', {})
-                with st.expander("View Case Details"):
-                    for key, value in inputs.items():
-                        if value and value != "None":
-                            st.markdown(f"**{key}:**")
-                            st.write(value)
-                            st.markdown("---")
+            try:
+                if source_type == "KB":
+                    item_id = item.get('id', f'KB_{idx}')
+                    kb_text = item.get('medicalKB', 'No content available')
+                    st.markdown(f"**{idx}. [Medical KB] {item_id}** - Score: {score:.2f}")
+                    st.write(kb_text)
+                else:
+                    item_id = item.get('id', f'CASE_{idx}')
+                    case_data = item.get('patient_case', {})
+                    st.markdown(f"**{idx}. [Patient Case] {item_id}** - Score: {score:.2f}")
+                    st.markdown(f"**Disease:** {case_data.get('specific_disease', 'Unknown')} ({case_data.get('disease_group', 'Unknown')})")
+                    
+                    # Show inputs
+                    inputs = case_data.get('inputs', {})
+                    if inputs:
+                        with st.expander("View Case Details"):
+                            for key, value in inputs.items():
+                                if value and value != "None":
+                                    st.markdown(f"**{key}:**")
+                                    st.write(value)
+                                    st.markdown("---")
+            except Exception as e:
+                st.error(f"Error displaying item {idx}: {e}")
         
         st.markdown("### AI Diagnosis")
         st.write(answer)

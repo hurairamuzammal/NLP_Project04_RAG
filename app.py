@@ -21,7 +21,7 @@ st.set_page_config(
 # Paths
 # ---------------------------
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_PATH = os.path.join(BASE_DIR, "combined_rag_data.json")
+DATA_PATH = os.path.join(BASE_DIR,"mimic-iv-ext-direct-1.0.0","My_Dataset","combined_rag_data.json")
 KB_FAISS_PATH = os.path.join(BASE_DIR, "medical_kb_index.faiss")
 CASES_FAISS_PATH = os.path.join(BASE_DIR, "patient_cases_index.faiss")
 KB_PICKLE = os.path.join(BASE_DIR, "kb_items.pkl")

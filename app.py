@@ -84,10 +84,24 @@ if len(kb_items) == 0 or len(patient_items) == 0:
 # ---------------------------
 # Load or Build FAISS Index for Medical KB
 # ---------------------------
+# ---------------------------
+# Load or Build FAISS Index for Medical KB
+# ---------------------------
+rebuild_kb = True
 if os.path.exists(KB_FAISS_PATH):
-    kb_faiss_index = faiss.read_index(KB_FAISS_PATH)
-else:
-    st.warning("KB FAISS index not found, rebuilding...")
+    try:
+        kb_faiss_index = faiss.read_index(KB_FAISS_PATH)
+        if kb_faiss_index.d == model.get_sentence_embedding_dimension():
+            rebuild_kb = False
+        else:
+            st.warning(f"KB FAISS index dimension mismatch ({kb_faiss_index.d} vs {model.get_sentence_embedding_dimension()}), rebuilding...")
+    except Exception as e:
+        st.error(f"Error loading KB FAISS index: {e}, rebuilding...")
+
+if rebuild_kb:
+    if not os.path.exists(KB_FAISS_PATH):
+        st.warning("KB FAISS index not found, rebuilding...")
+    
     kb_texts = [item["medicalKB"] for item in kb_items]
     kb_emb = model.encode(kb_texts, convert_to_numpy=True, show_progress_bar=True).astype("float32")
     faiss.normalize_L2(kb_emb)
@@ -100,10 +114,21 @@ else:
 # ---------------------------
 # Load or Build FAISS Index for Patient Cases
 # ---------------------------
+rebuild_cases = True
 if os.path.exists(CASES_FAISS_PATH):
-    cases_faiss_index = faiss.read_index(CASES_FAISS_PATH)
-else:
-    st.warning("Cases FAISS index not found, rebuilding...")
+    try:
+        cases_faiss_index = faiss.read_index(CASES_FAISS_PATH)
+        if cases_faiss_index.d == model.get_sentence_embedding_dimension():
+            rebuild_cases = False
+        else:
+            st.warning(f"Cases FAISS index dimension mismatch ({cases_faiss_index.d} vs {model.get_sentence_embedding_dimension()}), rebuilding...")
+    except Exception as e:
+        st.error(f"Error loading Cases FAISS index: {e}, rebuilding...")
+
+if rebuild_cases:
+    if not os.path.exists(CASES_FAISS_PATH):
+        st.warning("Cases FAISS index not found, rebuilding...")
+        
     case_texts = [item["patient_case"] for item in patient_items]
     case_emb = model.encode(case_texts, convert_to_numpy=True, show_progress_bar=True).astype("float32")
     faiss.normalize_L2(case_emb)

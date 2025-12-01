@@ -3,6 +3,7 @@ accelerate
 sentence-transformers
 faiss-cpu
 torch
+einops
 streamlit
 python-dotenv
 huggingface-hub

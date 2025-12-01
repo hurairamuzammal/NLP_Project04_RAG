@@ -21,11 +21,12 @@ st.set_page_config(
 # Paths
 # ---------------------------
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+VECTOR_STORE_DIR = os.path.join(BASE_DIR, "vector_store")
 DATA_PATH = os.path.join(BASE_DIR,"mimic-iv-ext-direct-1.0.0","My_Dataset","combined_rag_data.json")
-KB_FAISS_PATH = os.path.join(BASE_DIR, "medical_kb_index.faiss")
-CASES_FAISS_PATH = os.path.join(BASE_DIR, "patient_cases_index.faiss")
-KB_PICKLE = os.path.join(BASE_DIR, "kb_items.pkl")
-PATIENT_PICKLE = os.path.join(BASE_DIR, "patient_items.pkl")
+KB_FAISS_PATH = os.path.join(VECTOR_STORE_DIR, "medical_kb_index.faiss")
+CASES_FAISS_PATH = os.path.join(VECTOR_STORE_DIR, "patient_cases_index.faiss")
+KB_PICKLE = os.path.join(VECTOR_STORE_DIR, "kb_items.pkl")
+PATIENT_PICKLE = os.path.join(VECTOR_STORE_DIR, "patient_items.pkl")
 
 # ---------------------------
 # Load SentenceTransformer
@@ -47,6 +48,9 @@ else:
     kb_items = [item for item in data if "medicalKB" in item]
     patient_items = [item for item in data if "patient_case" in item]
     
+    # Create vector_store directory if it doesn't exist
+    os.makedirs(VECTOR_STORE_DIR, exist_ok=True)
+    
     # Save pickle files
     with open(KB_PICKLE, "wb") as f:
         pickle.dump(kb_items, f)
@@ -66,6 +70,7 @@ else:
     dim = kb_emb.shape[1]
     kb_faiss_index = faiss.IndexFlatIP(dim)
     kb_faiss_index.add(kb_emb)
+    os.makedirs(VECTOR_STORE_DIR, exist_ok=True)
     faiss.write_index(kb_faiss_index, KB_FAISS_PATH)
 
 # ---------------------------
@@ -81,6 +86,7 @@ else:
     dim = case_emb.shape[1]
     cases_faiss_index = faiss.IndexFlatIP(dim)
     cases_faiss_index.add(case_emb)
+    os.makedirs(VECTOR_STORE_DIR, exist_ok=True)
     faiss.write_index(cases_faiss_index, CASES_FAISS_PATH)
 
 # ---------------------------

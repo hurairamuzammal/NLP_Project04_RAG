@@ -131,7 +131,12 @@ def generate_answer(query, api_key, k_kb=2, k_cases=2):
         if source_type == "KB":
             context_parts.append(f"- [KB: {item['id']}] {item['medicalKB']} (Relevance: {score:.2f})")
         else:
-            context_parts.append(f"- [CASE: {item['id']}] {item['patient_case']} (Relevance: {score:.2f})")
+            # Patient case has nested structure - extract the relevant information
+            case_data = item['patient_case']
+            # Combine all inputs into a readable format
+            inputs_text = " | ".join([f"{k}: {v}" for k, v in case_data.get('inputs', {}).items() if v and v != "None"])
+            case_summary = f"Disease: {case_data.get('specific_disease', 'Unknown')} | {inputs_text[:500]}"
+            context_parts.append(f"- [CASE: {item['id']}] {case_summary} (Relevance: {score:.2f})")
     
     context_str = "\n".join(context_parts)
     avg_score = sum(score for _, _, score in retrieved)/len(retrieved) if retrieved else 0.0
@@ -162,11 +167,46 @@ Structure response:
 # ---------------------------
 st.title("Medical RAG Assistant")
 st.markdown("#### AI-powered Diagnosis using Retrieval-Augmented Generation (RAG)")
+st.markdown("---")
 
 load_dotenv()
 api_key = os.getenv("GEMINI_API_KEY")
 
-user_input = st.text_area("Patient Case Input", height=200)
+# Initialize session state
+if "input_text" not in st.session_state:
+    st.session_state.input_text = ""
+
+# Example patient cases
+st.subheader("Try an Example Case")
+st.markdown("")  # Add spacing
+
+# Example buttons in a 3-column layout
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    if st.button("Example 1: NSTEMI with CAD", use_container_width=True):
+        st.session_state.input_text = """A female patient presented with dull aching pain in the back and chest that began yesterday while at rest. This pain is different from her usual sharp chest pain episodes and lasted significantly longer. The pain was not relieved by multiple sublingual nitroglycerin tablets taken at home. She reports ongoing shortness of breath for several weeks. She has a significant cardiac history including coronary artery disease, and multiple comorbidities: uncontrolled type 2 diabetes mellitus, hypertension, hypothyroidism, asthma, obstructive sleep apnea, and morbid obesity with BMI between 40-44.9. Her father had a myocardial infarction. On examination, vital signs showed blood pressure 186/71 mmHg, heart rate 88 beats per minute, temperature 98 degrees F, respiratory rate 18 per minute, and oxygen saturation 98% on room air. Physical examination revealed distant heart sounds, regular rate and rhythm without murmurs, clear lungs bilaterally, soft obese abdomen, and 1+ bilateral pitting edema. Laboratory studies showed elevated troponin at 0.60, white blood cell count 9.3, hemoglobin 13.7, markedly elevated glucose at 339, and bicarbonate 24. Electrocardiogram demonstrated sinus rhythm at rate 62, QTc interval 456 milliseconds, with no new ischemic changes."""
+
+with col2:
+    if st.button("Example 2: NSTEMI 3-Vessel", use_container_width=True):
+        st.session_state.input_text = """A 66-year-old male initially presented with urinary retention requiring Foley catheter placement, after which he developed profound weakness, hypotension, and diaphoresis. Over the past month, he has experienced intermittent weakness episodes and syncopal events. His exercise tolerance has significantly decreased, becoming short of breath with even brief periods of activity. Notably, he denied chest pain during this acute episode. He has chronic back pain and has not received medical care for the past decade. Vital signs at presentation were blood pressure 157/85 mmHg, heart rate 98 beats per minute, temperature 98.4 degrees F, respiratory rate 16 per minute, and oxygen saturation 98%. Physical examination showed a comfortable-appearing patient with clear chest auscultation, regular cardiac rhythm, soft abdomen, no peripheral edema, and warm dry skin. Laboratory results revealed troponin elevation at 0.34, white blood cell count 10.8, hemoglobin 15.4, glucose 127, and hemoglobin A1c 5.5%. Electrocardiogram showed T wave inversions in the inferolateral leads with less than 1mm ST elevations in leads I and aVL, and Q waves anteriorly and inferiorly. Cardiac catheterization demonstrated severe three-vessel coronary artery disease with complete occlusion of the right coronary artery and diffuse disease in the left anterior descending and circumflex arteries."""
+
+with col3:
+    if st.button("Example 3: NSTEMI with DM/AFib", use_container_width=True):
+        st.session_state.input_text = """A male patient with known diabetes mellitus, atrial fibrillation, and hypertension presented with one day of epigastric pressure occurring at rest without radiation. The pain began while sitting and persisted until he fell asleep. Similar epigastric discomfort occurred the morning of admission after taking his daily medications. He experienced complete pain relief after taking aspirin 325mg at home. He denied exertional chest pain, shortness of breath, nausea, vomiting, or diaphoresis. Additionally, he reported having diarrhea for approximately one month. He is on both oral agents and insulin for diabetes management. His family history is significant for myocardial infarction in his father and diabetes in his mother. Vital signs on presentation were blood pressure 140/82 mmHg, heart rate 74 beats per minute, temperature 98.4 degrees F, respiratory rate 21 per minute, and oxygen saturation 95% on room air. Physical examination revealed a patient in no acute distress with clear oropharynx, regular cardiac rhythm, clear lung fields bilaterally, soft non-tender abdomen, and no peripheral edema. Initial laboratory studies showed troponin 0.27 which subsequently rose to 1.77, white blood cell count 9.5, hemoglobin 15.0, elevated glucose at 286, and international normalized ratio 1.0. Electrocardiogram demonstrated ST segment elevation in lead III, T wave inversions in leads V4 through V6, and ST segment depressions in leads I and V6, findings consistent with acute myocardial ischemia."""
+
+st.markdown("")  # Add spacing
+st.markdown("### Enter Patient Case")
+user_input = st.text_area(
+    "Patient Case Input", 
+    value=st.session_state.input_text,
+    height=200,
+    placeholder="Describe the patient symptoms, vitals, and relevant medical history...",
+    label_visibility="collapsed"
+)
+
+# Privacy statement
+st.caption("⚠️ Privacy Notice: Please avoid entering patient names or any sensitive personal information.")
 
 if st.button("Diagnose"):
     if user_input.strip():
@@ -179,8 +219,18 @@ if st.button("Diagnose"):
                 st.markdown(f"**{idx}. [Medical KB] {item['id']}** - Score: {score:.2f}")
                 st.write(item['medicalKB'])
             else:
+                case_data = item['patient_case']
                 st.markdown(f"**{idx}. [Patient Case] {item['id']}** - Score: {score:.2f}")
-                st.write(item['patient_case'])
+                st.markdown(f"**Disease:** {case_data.get('specific_disease', 'Unknown')} ({case_data.get('disease_group', 'Unknown')})")
+                
+                # Show inputs
+                inputs = case_data.get('inputs', {})
+                with st.expander("View Case Details"):
+                    for key, value in inputs.items():
+                        if value and value != "None":
+                            st.markdown(f"**{key}:**")
+                            st.write(value)
+                            st.markdown("---")
         
         st.markdown("### AI Diagnosis")
         st.write(answer)

@@ -204,7 +204,7 @@ def generate_answer(query, api_key, k_kb=2, k_cases=2):
     prompt = f"""
 You are a medical expert.
 Use the following knowledge base and similar patient cases to answer the patient query.
-
+However if the information is insufficient, state that you cannot provide a diagnosis as it risks patient safety!.
 {context_str}
 
 Patient Query:
@@ -214,6 +214,7 @@ Structure response:
 1. EXTRACTED INFO: summarize key info from KB and cases
 2. DIAGNOSIS: give clear diagnosis
 3. REASONING: support diagnosis with bullets, reference symptoms
+
 """
     try:
         gemini_model = genai.GenerativeModel("gemini-2.0-flash")

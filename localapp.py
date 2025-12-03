@@ -1,3 +1,8 @@
+import os
+# Suppress TensorFlow warnings
+os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+
 import streamlit as st
 import json
 import pickle
@@ -5,7 +10,6 @@ from dotenv import load_dotenv
 from sentence_transformers import SentenceTransformer
 import numpy as np
 import faiss
-import os
 import google.generativeai as genai
 
 # ---------------------------
@@ -23,8 +27,8 @@ st.set_page_config(
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 VECTOR_STORE_DIR = os.path.join(BASE_DIR, "vector_store")
 DATA_PATH = os.path.join(BASE_DIR,"mimic-iv-ext-direct-1.0.0","My_Dataset","combined_rag_data.json")
-KB_FAISS_PATH = os.path.join(VECTOR_STORE_DIR, "kb_index.faiss")
-CASES_FAISS_PATH = os.path.join(VECTOR_STORE_DIR, "patient_index.faiss")
+KB_FAISS_PATH = os.path.join(VECTOR_STORE_DIR, "medical_kb_index.faiss")
+CASES_FAISS_PATH = os.path.join(VECTOR_STORE_DIR, "patient_cases_index.faiss")
 KB_PICKLE = os.path.join(VECTOR_STORE_DIR, "kb_items.pkl")
 PATIENT_PICKLE = os.path.join(VECTOR_STORE_DIR, "patient_items.pkl")
 
